@@ -44,6 +44,10 @@ chardet>=5.2.0
 # lxml>=4.9.0             # XML/HTML解析器（如果需要）
 # aiohttp>=3.8.0          # 异步HTTP（如果需要）
 
+# Web框架
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
 # 开发和测试依赖（可选）
 # pytest>=7.4.0
 # pytest-asyncio>=0.21.0
