@@ -1,6 +1,25 @@
+# Railway部署专用 - 仅包含Web服务必需依赖
+# 移除重型依赖：Selenium、OpenCV、Pillow等
+
+# FastAPI Web框架
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
+
+# 核心数据处理
 requests>=2.31.0
 pandas>=2.0.0
-pillow>=10.0.0
-python-multipart>=0.0.6
+numpy>=1.24.0
+
+# 配置和环境
+python-dotenv>=1.0.0
+PyYAML>=6.0
+jsonschema>=4.19.0
+
+# 任务调度（轻量版）
+schedule>=1.2.0
+
+# 实用工具
+python-dateutil>=2.8.0
+requests-cache>=1.1.0
+chardet>=5.2.0
+urllib3>=2.0.0
