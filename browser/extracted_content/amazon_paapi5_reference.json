@@ -1,0 +1,34 @@
+📄 Extracted from page: API Reference · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/api-reference.html
+
+Extracted content:
+```json
+{
+    "title": "API Reference · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/api-reference.html",
+    "summary": "This is the main API Reference page for Product Advertising API 5.0, providing comprehensive documentation for developers integrating with Amazon's product advertising services. The page serves as an entry point to detailed documentation covering operations, resources, locale-specific information, and best programming practices. The API enables developers to search for Amazon products, retrieve detailed product information, browse nodes, and access offer data across multiple international Amazon marketplaces.",
+    "key_points": [
+        "Product Advertising API 5.0 provides four main Operations: GetBrowseNodes, GetItems, GetVariations, and SearchItems",
+        "The API offers nine key Resources: BrowseNodeInfo, BrowseNodes, Images, ItemInfo, Offers, OffersV2, ParentASIN, SearchRefinements, and VariationSummary",
+        "Comprehensive locale support covering 20+ countries/regions including US, UK, Germany, France, Japan, Canada, Australia, and others",
+        "The API reference is organized into logical sections: Operations, Resources, Locale Reference, and Best Programming Practices",
+        "Detailed documentation with examples is available for each operation and resource",
+        "The API supports various use cases including buying price lookup, localized product details, prime eligibility, and browse node navigation",
+        "Additional features include search refinements, offer information retrieval, and support for external identifiers (UPC/EAN/ISBN)",
+        "The documentation includes common request parameters, error handling, and troubleshooting guides"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/operations.html",
+        "https://webservices.amazon.com/paapi5/documentation/resources.html",
+        "https://webservices.amazon.com/paapi5/documentation/locale-reference.html",
+        "https://webservices.amazon.com/paapi5/documentation/common-request-parameters.html",
+        "https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html",
+        "https://webservices.amazon.com/paapi5/documentation/getbrowsenodes.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-variations.html",
+        "https://webservices.amazon.com/paapi5/documentation/search-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/use-cases.html"
+    ],
+    "file_name": "amazon_paapi5_reference.json"
+}
+```

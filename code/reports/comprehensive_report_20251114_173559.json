@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-11-14T17:35:59.253517",
+  "summary": {
+    "total_tasks": 4,
+    "successful_tasks": 4,
+    "failed_tasks": 0,
+    "total_products": 72,
+    "success_rate": 1.0
+  },
+  "platforms": {
+    "amazon": {
+      "total_tasks": 2,
+      "successful_tasks": 2,
+      "failed_tasks": 0,
+      "total_products": 40,
+      "success_rate": 1.0
+    },
+    "tiktok": {
+      "total_tasks": 2,
+      "successful_tasks": 2,
+      "failed_tasks": 0,
+      "total_products": 32,
+      "success_rate": 1.0
+    }
+  }
+}

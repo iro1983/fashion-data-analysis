@@ -1,0 +1,30 @@
+📄 Extracted from page: Register for Product Advertising API · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/register-for-pa-api.html
+
+Extracted content:
+```json
+{
+    "title": "Register for Product Advertising API · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/register-for-pa-api.html",
+    "summary": "This page provides detailed instructions for registering for Amazon's Product Advertising API 5.0. It outlines the prerequisite requirements, including having an accepted Amazon Associates account with qualified sales, and provides step-by-step registration procedures. The guide emphasizes that only primary account owners can sign up for the API and allows management of up to two access key pairs for credential management.",
+    "key_points": [
+        "Must have Amazon Associates account that has been reviewed and received final acceptance into the program",
+        "API sign up is only available to associates who have referred qualified sales and been accepted into the program",
+        "If no Associates account exists, must sign up for Amazon Associates first",
+        "Can request final acceptance by completing Associates Contact Us form with details about API access needs",
+        "Only primary account owner of Amazon Associate account can sign up for Product Advertising API",
+        "Registration process: Tools → Product Advertising API → Join",
+        "After signing up, receive Access Key and Secret Key on Download credentials page",
+        "Maximum of two access key pairs allowed per account",
+        "Credentials can be managed through 'Manage Your Account' - add new pairs or delete existing ones",
+        "Credentials must be specified when making requests to the Product Advertising API",
+        "Can advertise products from Amazon marketplace where you have fully accepted Associate status"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/troubleshooting/sign-up-as-an-associate.html",
+        "https://webservices.amazon.com/paapi5/contact-us.html",
+        "https://webservices.amazon.com/paapi5/documentation/quick-start.html"
+    ],
+    "file_name": "amazon_product_advertising_api_registration.json"
+}
+```

@@ -1,0 +1,31 @@
+📄 Extracted from page: OffersV2 · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/offersV2.html
+
+Extracted content:
+```json
+{
+    "title": "OffersV2 · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/offersV2.html",
+    "summary": "This page documents the OffersV2 resource in Amazon's Product Advertising API 5.0, which contains various resources related to offer listings for items. The OffersV2 resource is recommended over the older Offers resource and provides increased reliability and data quality. It includes comprehensive information about price fields, availability, conditions, deal details, merchant information, and various pricing-related attributes. The API will eventually replace the existing Offers API, with all new offer features being added to OffersV2.",
+    "key_points": [
+        "OffersV2 is the recommended resource for offer listings, replacing the older Offers resource",
+        "Contains comprehensive pricing information including Money, PricePerUnit, SavingBasis, and Savings",
+        "Provides detailed availability information with multiple status types (IN_STOCK, OUT_OF_STOCK, PREORDER, etc.)",
+        "Includes condition details (New, Used, Refurbished) with sub-conditions and notes",
+        "Features deal information including access types, badges, early access duration, and timing",
+        "Contains merchant information with ID and name fields",
+        "Includes loyalty points support (currently only for Japan marketplace)",
+        "Provides buy box winner status and MAP policy violation indicators",
+        "Supports various offer types including Lightning Deal and Subscribe & Save",
+        "Includes sample responses and detailed field descriptions for all components"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/offersV2.html",
+        "https://www.amazon.com/deals",
+        "https://www.amazon.co.jp/-/en/gp/help/customer/display.html?nodeId=GGB6FCM85P9UKC7T",
+        "https://webservices.amazon.com/paapi5/documentation/get-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/search-items.html"
+    ],
+    "file_name": "offersv2_api_documentation.json"
+}
+```

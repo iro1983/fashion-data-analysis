@@ -1,0 +1,31 @@
+📄 Extracted from page: API Rates · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html
+
+Extracted content:
+```json
+{
+    "title": "API Rates · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html",
+    "summary": "This page explains the API rate limits and usage constraints for Amazon's Product Advertising API 5.0. It covers the initial usage limits (1 TPS, 8640 TPD for first 30 days), revenue-based scaling system (1 TPD per 5 cents revenue, 1 TPS per $4320 revenue up to max 10 TPS), definitions of key terms like TPS/TPD, primary account, and shipped revenue. The page also explains access revocation rules, best practices for API attribution, and how to check sales attribution through the Associates Central Link Type Performance report.",
+    "key_points": [
+        "Initial usage limit: 1 TPS (transaction per second) and 8640 TPD (transactions per day) for first 30-day period",
+        "TPS definition: Maximum number of API calls per second, each API call counts as one transaction regardless of items requested",
+        "TPD definition: Maximum number of API calls per day, throttling occurs when daily limit is exhausted even if TPS limit allows",
+        "Revenue-based scaling: Account earns 1 TPD for every $0.05 or 1 TPS (up to max 10 TPS) for every $4320 of shipped item revenue",
+        "Revenue calculation based on previous 30-day period, automatically updated daily",
+        "Primary Account: Amazon username/password used to create Associates account and generate PA API credentials",
+        "Shipped revenue: Total sales volume of shipped items from clicks through PA API-generated links",
+        "Access revocation: Account loses API access if no qualified referring sales for 30 consecutive days",
+        "Access restoration: Regained within 2 days after referred sales are shipped",
+        "Best practices: Use PA API links without editing, ensure Associate and API accounts use same Amazon account, use primary account for requests, include Partner tag in all requests",
+        "Error handling: Exceeding usage limits or revoked access returns 429 TooManyRequests error",
+        "Sales attribution tracking: Available via Link Type Performance report on Associates Central"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/troubleshooting/error-messages.html",
+        "https://webservices.amazon.com/paapi5/documentation/best-programming-practices.html",
+        "https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html"
+    ],
+    "file_name": "amazon_paapi5_rates.json"
+}
+```

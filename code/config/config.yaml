@@ -1,0 +1,75 @@
+# Amazon与TikTok数据抓取协调器配置文件
+# ======================================
+
+# 数据库配置
+database:
+  type: sqlite  # 数据库类型：sqlite, postgresql, mysql
+  path: data/scraping.db  # 数据库文件路径
+  backup_enabled: true  # 是否启用备份
+  
+# 抓取配置
+scraping:
+  # Amazon抓取配置
+  amazon:
+    enabled: true  # 是否启用Amazon抓取
+    max_concurrent: 3  # 最大并发数
+    request_delay: 1.0  # 请求间隔（秒）
+    user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    # 产品类别
+    categories:
+      - "T-Shirt"
+      - "Hoodie" 
+      - "Sweatshirt"
+    # 搜索关键词
+    keywords:
+      - "print"
+      - "graphic"
+      - "design"
+  
+  # TikTok抓取配置
+  tiktok:
+    enabled: true  # 是否启用TikTok抓取
+    max_concurrent: 2  # 最大并发数
+    request_delay: 2.0  # 请求间隔（秒）
+    # 产品类别
+    categories:
+      - "服装"
+      - "时尚"
+      - "潮流"
+    # 搜索关键词
+    keywords:
+      - "印花"
+      - "T恤"
+      - "卫衣"
+
+# 重试配置
+retry:
+  max_retries: 3  # 最大重试次数
+  backoff_factor: 2  # 退避因子
+  retry_delay: 5  # 重试延迟（秒）
+
+# 监控配置
+monitoring:
+  log_level: INFO  # 日志级别：DEBUG, INFO, WARNING, ERROR
+  performance_tracking: true  # 是否启用性能跟踪
+  alert_thresholds:
+    failure_rate: 0.3  # 失败率告警阈值
+    avg_response_time: 30  # 平均响应时间告警阈值（秒）
+
+# 高级配置
+advanced:
+  # 数据去重配置
+  deduplication:
+    enabled: true
+    strategy: "product_id"  # 去重策略：product_id, url, title
+  
+  # 数据质量验证
+  data_validation:
+    enabled: true
+    strict_mode: false  # 严格模式
+  
+  # 输出配置
+  output:
+    format: "json"  # 输出格式：json, csv, excel
+    compress: false  # 是否压缩
+    max_file_size: "100MB"  # 最大文件大小

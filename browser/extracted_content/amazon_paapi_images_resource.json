@@ -1,0 +1,28 @@
+📄 Extracted from page: Images · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/images.html
+
+Extracted content:
+{
+    "title": "Images · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/images.html",
+    "summary": "The Images resource in Amazon Product Advertising API 5.0 returns URLs for all available images of an item in three sizes (Small, Medium, Large) along with height and width dimensions. It includes two main containers: Primary images (displayed in search results and detail pages) and Variants (all other images). Each image size contains URL, Height, and Width values. The resource is available across all locales and can be used with GetItems, GetVariations, and SearchItems operations.",
+    "key_points": [
+        "Images resource returns URLs for all available images in three sizes: Small, Medium, and Large",
+        "Returns image URLs along with height and width dimensions for proper display",
+        "Two main image containers: Primary (main product image) and Variants (additional images)",
+        "Each image size (Small/Medium/Large) contains three values: URL, Height, and Width",
+        "Available across all locales",
+        "Image sizes specified by _SLXXX_ suffix in URL where XXX is pixels on longest side",
+        "Small size: 75 pixels, Medium size: 160 pixels, Large size: 500 pixels",
+        "Can be used with GetItems, GetVariations, and SearchItems operations",
+        "Six resource combinations available: Images.Primary.Small/Medium/Large and Images.Variants.Small/Medium/Large"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/images.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-variations.html",
+        "https://webservices.amazon.com/paapi5/documentation/search-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/"
+    ],
+    "file_name": "amazon_paapi_images_resource.json"
+}

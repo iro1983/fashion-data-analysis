@@ -1,0 +1,37 @@
+📄 Extracted from page: Resources · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/resources.html
+
+Extracted content:
+```json
+{
+    "title": "Resources · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/resources.html",
+    "summary": "The Resources page provides a comprehensive overview of all available resources in Amazon's Product Advertising API 5.0. Resources determine what information will be returned in API responses. Each API operation can request only certain resources, and the page serves as a central hub linking to detailed documentation for each resource type. The page contains a table listing all supported high-level resources with their descriptions and links to individual resource pages.",
+    "key_points": [
+        "Resources determine what information is returned in API responses",
+        "Each operation can request only certain resources",
+        "Product Advertising API supports 8 high-level resources",
+        "BrowseNodeInfo: Returns browse node information associated with an item",
+        "BrowseNodes: Returns browse node information for GetBrowseNodes requests",
+        "Images: Returns image URLs for items in various sizes",
+        "ItemInfo: Returns item information for items",
+        "Offers: Returns offer information for items",
+        "OffersV2: Returns offer information (newer API version)",
+        "ParentASIN: Returns parent ASIN for an item",
+        "SearchRefinements: Returns dynamic search refinements for search requests"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/browsenodeinfo.html",
+        "https://webservices.amazon.com/paapi5/documentation/browsenodes.html",
+        "https://webservices.amazon.com/paapi5/documentation/images.html",
+        "https://webservices.amazon.com/paapi5/documentation/item-info.html",
+        "https://webservices.amazon.com/paapi5/documentation/offers.html",
+        "https://webservices.amazon.com/paapi5/documentation/offersV2.html",
+        "https://webservices.amazon.com/paapi5/documentation/parent-asin.html",
+        "https://webservices.amazon.com/paapi5/documentation/search-refinements.html",
+        "https://webservices.amazon.com/paapi5/documentation/operations.html",
+        "https://webservices.amazon.com/paapi5/documentation/api-reference.html"
+    ],
+    "file_name": "amazon_paapi_resources.json"
+}
+```

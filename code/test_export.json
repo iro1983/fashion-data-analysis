@@ -1,0 +1,26 @@
+[
+  {
+    "id": 2,
+    "asin": "TEST1234567",
+    "title": "测试印花T恤",
+    "price": 19.99,
+    "original_price": 29.99,
+    "rating": 4.5,
+    "review_count": 128,
+    "brand": "Test Brand",
+    "category": "print-tshirt",
+    "availability": "有库存",
+    "image_url": "https://example.com/image.jpg",
+    "detail_page_url": "https://www.amazon.com/dp/TEST1234567",
+    "seller_name": "Test Seller",
+    "seller_link": "https://seller.example.com",
+    "features": "[\"100%\\u68c9\\u8d28\", \"\\u8212\\u9002\\u900f\\u6c14\"]",
+    "description": "测试产品描述",
+    "rank": 12345,
+    "bestseller_flag": 1,
+    "timestamp": "2025-11-14T17:34:38.084989",
+    "hash": "6fc64530aef5afb759278909344ce6d4",
+    "created_at": "2025-11-14 09:34:38",
+    "updated_at": "2025-11-14 09:34:38"
+  }
+]

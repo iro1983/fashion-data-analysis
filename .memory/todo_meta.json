@@ -1,0 +1,48 @@
+{
+  "todos": {
+    "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "获取GitHub Personal Access Token（替代密码登录）",
+        "details": "安全原因，GitHub不再支持密码登录。需要指导用户创建Personal Access Token用于程序化访问。",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "创建GitHub仓库 'fashion-data-analysis'",
+        "details": "使用用户信息(iro1983)创建新的GitHub仓库，包含完整项目代码、部署配置和文档。",
+        "status": "completed",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "创建Railway账户并连接GitHub",
+        "details": "指导用户在Railway.app注册账户，使用GitHub登录方式连接已创建的仓库。",
+        "status": "completed",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "配置云端部署环境",
+        "details": "GitHub代码推送已修复，401个文件已成功推送到仓库。现在需要在Railway中重新创建项目并部署应用。",
+        "status": "in_progress",
+        "priority": "high"
+      },
+      "5": {
+        "id": "5",
+        "content": "部署应用并测试功能",
+        "details": "自动部署Python应用到Railway，验证数据抓取、数据库存储和仪表板功能是否正常工作。",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "提供最终的云端访问URL",
+        "details": "完成部署后，向用户提供访问链接，并提供完整的使用说明文档。",
+        "status": "pending",
+        "priority": "medium"
+      }
+    }
+  }
+}

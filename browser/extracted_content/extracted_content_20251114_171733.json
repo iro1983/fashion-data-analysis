@@ -1,0 +1,39 @@
+📄 Extracted from page: Contact Us · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/contact-us.html
+
+Extracted content:
+Looking at the provided page content, I can see this is actually a "Contact Us" page for the Amazon Product Advertising API, not the "API Rates" page you were looking for. However, I can see there's a link to the API Rates page in the navigation. Let me extract the content from this Contact Us page and note the relevant API Rates link.
+
+```json
+{
+    "title": "Contact Us · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/contact-us.html",
+    "summary": "This is the Contact Us page for Amazon Product Advertising API 5.0. It provides instructions on how to contact Amazon Associates Customer Service for account-related concerns, specifically for the Product Advertising API. The page outlines a 4-step process for raising support requests, including selecting Product Advertising API from a dropdown, entering comments with sample requests/responses, and mentions that account acceptance requests are reviewed within 3-4 days.",
+    "key_points": [
+        "This is a Contact Us page for Amazon Associates Customer Service",
+        "Designed for Amazon Associates account related concerns",
+        "4-step process to raise support requests: Help > Contact Us > Product Advertising API > Comments > Send E-mail",
+        "Login to Associates account is not mandatory for this process",
+        "Users should include sample request and response along with use-case in comments for API-related questions",
+        "Requests for final acceptance of Amazon Associates account are reviewed by specialists",
+        "Response time for account acceptance requests is 3-4 days",
+        "For Product Advertising API specific questions, users should provide detailed technical information"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html (API Rates page - contains API call limits, quotas, and throttling rules)",
+        "./ (Introduction page)",
+        "read-la.html (License Agreement)",
+        "register-for-pa-api.html (Register for Product Advertising API)",
+        "quick-start.html (Quick Start)",
+        "use-cases.html (Use Cases)",
+        "sending-request.html (Sending a Request)",
+        "api-reference.html (API Reference)",
+        "faq.html (FAQ)",
+        "troubleshooting.html (Troubleshooting)",
+        "document-history.html (Document History)"
+    ],
+    "file_name": "amazon_paapi_contact_us.json"
+}
+```
+
+**Note**: This page does not contain the API Rates information you requested. The actual API Rates page with details about API call limits, request quotas, rate limits, and throttling rules is available at: `https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html`

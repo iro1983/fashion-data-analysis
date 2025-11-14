@@ -1,0 +1,197 @@
+name: Daily Data Scraping Pipeline
+
+on:
+  schedule:
+    # 每天凌晨2点执行 (UTC时间)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force run scraping (ignore schedule)'
+        required: false
+        default: 'false'
+        type: boolean
+  push:
+    branches: [ main ]
+    paths:
+      - 'code/**'
+      - '.github/workflows/**'
+
+env:
+  PYTHON_VERSION: '3.9'
+  NODE_VERSION: '18'
+
+jobs:
+  scrape-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: 'pip'
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        cd code
+        pip install -r requirements.txt
+        if [ -f requirements_data_cleaner.txt ]; then
+          pip install -r requirements_data_cleaner.txt
+        fi
+
+    - name: Run data scraping
+      run: |
+        cd code
+        python main.py --platform both --mode scheduled --output ./data/
+      env:
+        TIKTOK_USERNAME: ${{ secrets.TIKTOK_USERNAME }}
+        TIKTOK_PASSWORD: ${{ secrets.TIKTOK_PASSWORD }}
+        AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+        AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+        AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+    - name: Upload scraping logs
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: scraping-logs-${{ github.run_number }}
+        path: |
+          code/logs/
+          code/data/
+        retention-days: 7
+
+    - name: Deploy to cloud storage
+      run: |
+        if [ -f "code/data/scraping.db" ]; then
+          # 将数据上传到云存储 (这里以AWS S3为例)
+          aws s3 cp code/data/scraping.db s3://${{ secrets.S3_BUCKET }}/data/scraping-${{ github.run_number }}.db \
+            --sse AES256
+        fi
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: ap-southeast-1
+
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    needs: scrape-data
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+        cache-dependency-path: 'fashion-dashboard/package-lock.json'
+
+    - name: Install dependencies
+      run: |
+        cd fashion-dashboard
+        npm ci
+
+    - name: Build frontend
+      run: |
+        cd fashion-dashboard
+        npm run build
+      env:
+        VITE_API_BASE_URL: ${{ secrets.API_BASE_URL }}
+        VITE_DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v25
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-args: '--prod'
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+
+    - name: Create deployment summary
+      run: |
+        echo "## 部署状态报告" > $GITHUB_STEP_SUMMARY
+        echo "✅ 数据抓取任务已完成" >> $GITHUB_STEP_SUMMARY
+        echo "✅ 前端应用已部署到 Vercel" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 部署详情" >> $GITHUB_STEP_SUMMARY
+        echo "- **运行时间**: ${{ github.run_started_at }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **提交ID**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **分支**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+
+  notify-status:
+    runs-on: ubuntu-latest
+    needs: [scrape-data, deploy-frontend]
+    if: always()
+    
+    steps:
+    - name: Notify Slack on success
+      if: needs.scrape-data.result == 'success'
+      uses: 8398a7/action-slack@v3
+      with:
+        status: success
+        text: "🎉 TikTok & Amazon 数据抓取任务执行成功!"
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow
+
+    - name: Notify Slack on failure
+      if: needs.scrape-data.result == 'failure'
+      uses: 8398a7/action-slack@v3
+      with:
+        status: failure
+        text: "❌ TikTok & Amazon 数据抓取任务执行失败!"
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow
+
+    - name: Send email notification
+      if: always()
+      run: |
+        if [ "${{ needs.scrape-data.result }}" == "success" ]; then
+          SUBJECT="✅ 数据抓取任务成功完成 - $(date +'%Y-%m-%d %H:%M:%S')"
+          BODY="数据抓取任务已成功完成:\n\n- 任务ID: ${{ github.run_id }}\n- 执行时间: ${{ github.run_started_at }}\n- 分支: ${{ github.ref_name }}\n\n请访问仪表板查看最新数据。"
+        else
+          SUBJECT="❌ 数据抓取任务失败 - $(date +'%Y-%m-%d %H:%M:%S')"
+          BODY="数据抓取任务执行失败:\n\n- 任务ID: ${{ github.run_id }}\n- 执行时间: ${{ github.run_started_at }}\n- 失败任务: ${{ needs.scrape-data.result }}\n\n请检查日志并重新运行。"
+        fi
+        
+        echo "$BODY" | mail -s "$SUBJECT" ${{ secrets.NOTIFICATION_EMAIL }}
+      env:
+        SMTP_HOST: ${{ secrets.SMTP_HOST }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+
+  cleanup:
+    runs-on: ubuntu-latest
+    needs: [scrape-data, deploy-frontend]
+    if: always() && (needs.scrape-data.result != 'success' || needs.deploy-frontend.result != 'success')
+    
+    steps:
+    - name: Cleanup failed artifacts
+      run: |
+        echo "清理失败的部署产物..."
+        # 可以在这里添加清理逻辑
+        # 例如：删除临时文件、回滚部署等
+
+    - name: Create incident report
+      run: |
+        echo "## 故障报告" >> $GITHUB_STEP_SUMMARY
+        echo "### 任务状态" >> $GITHUB_STEP_SUMMARY
+        echo "- 数据抓取: ${{ needs.scrape-data.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "- 前端部署: ${{ needs.deploy-frontend.result }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 建议操作" >> $GITHUB_STEP_SUMMARY
+        echo "1. 检查日志文件" >> $GITHUB_STEP_SUMMARY
+        echo "2. 验证网络连接" >> $GITHUB_STEP_SUMMARY
+        echo "3. 确认API密钥有效性" >> $GITHUB_STEP_SUMMARY
+        echo "4. 重新运行工作流" >> $GITHUB_STEP_SUMMARY

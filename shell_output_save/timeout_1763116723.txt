@@ -1,0 +1,2768 @@
+============================================================
+数据库性能测试
+============================================================
+2025-11-14 18:36:44,876 - database - INFO - 数据库索引创建完成
+2025-11-14 18:36:45,060 - database - INFO - 数据库初始化完成
+2025-11-14 18:36:45,061 - database - INFO - 自动备份任务已启动
+2025-11-14 18:36:45,063 - __main__ - INFO - 开始数据库性能测试...
+2025-11-14 18:36:45,067 - __main__ - INFO - 开始准备测试数据...
+2025-11-14 18:36:45,070 - __main__ - INFO - 生成 50 条测试数据...
+2025-11-14 18:36:45,134 - database - INFO - 新产品已插入: ID 1
+2025-11-14 18:36:45,194 - database - INFO - 新产品已插入: ID 2
+2025-11-14 18:36:45,247 - database - INFO - 新产品已插入: ID 3
+2025-11-14 18:36:45,301 - database - INFO - 新产品已插入: ID 4
+2025-11-14 18:36:45,343 - database - INFO - 新产品已插入: ID 5
+2025-11-14 18:36:45,408 - database - INFO - 新产品已插入: ID 6
+2025-11-14 18:36:45,450 - database - INFO - 新产品已插入: ID 7
+2025-11-14 18:36:45,504 - database - INFO - 新产品已插入: ID 8
+2025-11-14 18:36:45,560 - database - INFO - 新产品已插入: ID 9
+2025-11-14 18:36:45,618 - database - INFO - 新产品已插入: ID 10
+2025-11-14 18:36:45,671 - database - INFO - 新产品已插入: ID 11
+2025-11-14 18:36:45,720 - database - INFO - 新产品已插入: ID 12
+2025-11-14 18:36:45,760 - database - INFO - 新产品已插入: ID 13
+2025-11-14 18:36:45,808 - database - INFO - 新产品已插入: ID 14
+2025-11-14 18:36:45,851 - database - INFO - 新产品已插入: ID 15
+2025-11-14 18:36:45,907 - database - INFO - 新产品已插入: ID 16
+2025-11-14 18:36:45,956 - database - INFO - 新产品已插入: ID 17
+2025-11-14 18:36:46,003 - database - INFO - 新产品已插入: ID 18
+2025-11-14 18:36:46,052 - database - INFO - 新产品已插入: ID 19
+2025-11-14 18:36:46,094 - database - INFO - 新产品已插入: ID 20
+2025-11-14 18:36:46,141 - database - INFO - 新产品已插入: ID 21
+2025-11-14 18:36:46,188 - database - INFO - 新产品已插入: ID 22
+2025-11-14 18:36:46,218 - database - INFO - 新产品已插入: ID 23
+2025-11-14 18:36:46,251 - database - INFO - 新产品已插入: ID 24
+2025-11-14 18:36:46,285 - database - INFO - 新产品已插入: ID 25
+2025-11-14 18:36:46,320 - database - INFO - 新产品已插入: ID 26
+2025-11-14 18:36:46,356 - database - INFO - 新产品已插入: ID 27
+2025-11-14 18:36:46,394 - database - INFO - 新产品已插入: ID 28
+2025-11-14 18:36:46,422 - database - INFO - 新产品已插入: ID 29
+2025-11-14 18:36:46,459 - database - INFO - 新产品已插入: ID 30
+2025-11-14 18:36:46,561 - database - INFO - 新产品已插入: ID 31
+2025-11-14 18:36:46,612 - database - INFO - 新产品已插入: ID 32
+2025-11-14 18:36:46,666 - database - INFO - 新产品已插入: ID 33
+2025-11-14 18:36:46,703 - database - INFO - 新产品已插入: ID 34
+2025-11-14 18:36:46,737 - database - INFO - 新产品已插入: ID 35
+2025-11-14 18:36:46,768 - database - INFO - 新产品已插入: ID 36
+2025-11-14 18:36:46,796 - database - INFO - 新产品已插入: ID 37
+2025-11-14 18:36:46,826 - database - INFO - 新产品已插入: ID 38
+2025-11-14 18:36:46,865 - database - INFO - 新产品已插入: ID 39
+2025-11-14 18:36:46,903 - database - INFO - 新产品已插入: ID 40
+2025-11-14 18:36:46,937 - database - INFO - 新产品已插入: ID 41
+2025-11-14 18:36:46,966 - database - INFO - 新产品已插入: ID 42
+2025-11-14 18:36:47,008 - database - INFO - 新产品已插入: ID 43
+2025-11-14 18:36:47,039 - database - INFO - 新产品已插入: ID 44
+2025-11-14 18:36:47,098 - database - INFO - 新产品已插入: ID 45
+2025-11-14 18:36:47,130 - database - INFO - 新产品已插入: ID 46
+2025-11-14 18:36:47,160 - database - INFO - 新产品已插入: ID 47
+2025-11-14 18:36:47,193 - database - INFO - 新产品已插入: ID 48
+2025-11-14 18:36:47,236 - database - INFO - 新产品已插入: ID 49
+2025-11-14 18:36:47,276 - database - INFO - 新产品已插入: ID 50
+2025-11-14 18:36:47,276 - __main__ - INFO - 插入 50 条数据用时: 2.20s, 速率: 22.7 records/s
+2025-11-14 18:36:47,276 - __main__ - INFO - 生成 200 条测试数据...
+2025-11-14 18:36:47,312 - database - INFO - 产品已更新: https://test.com/product/1
+2025-11-14 18:36:47,346 - database - INFO - 产品已更新: https://test.com/product/2
+2025-11-14 18:36:47,393 - database - INFO - 产品已更新: https://test.com/product/3
+2025-11-14 18:36:47,439 - database - INFO - 产品已更新: https://test.com/product/4
+2025-11-14 18:36:47,469 - database - INFO - 产品已更新: https://test.com/product/5
+2025-11-14 18:36:47,501 - database - INFO - 产品已更新: https://test.com/product/6
+2025-11-14 18:36:47,551 - database - INFO - 产品已更新: https://test.com/product/7
+2025-11-14 18:36:47,581 - database - INFO - 产品已更新: https://test.com/product/8
+2025-11-14 18:36:47,621 - database - INFO - 产品已更新: https://test.com/product/9
+2025-11-14 18:36:47,651 - database - INFO - 产品已更新: https://test.com/product/10
+2025-11-14 18:36:47,683 - database - INFO - 产品已更新: https://test.com/product/11
+2025-11-14 18:36:47,719 - database - INFO - 产品已更新: https://test.com/product/12
+2025-11-14 18:36:47,761 - database - INFO - 产品已更新: https://test.com/product/13
+2025-11-14 18:36:47,806 - database - INFO - 产品已更新: https://test.com/product/14
+2025-11-14 18:36:47,868 - database - INFO - 产品已更新: https://test.com/product/15
+2025-11-14 18:36:47,912 - database - INFO - 产品已更新: https://test.com/product/16
+2025-11-14 18:36:47,946 - database - INFO - 产品已更新: https://test.com/product/17
+2025-11-14 18:36:47,974 - database - INFO - 产品已更新: https://test.com/product/18
+2025-11-14 18:36:48,007 - database - INFO - 产品已更新: https://test.com/product/19
+2025-11-14 18:36:48,043 - database - INFO - 产品已更新: https://test.com/product/20
+2025-11-14 18:36:48,080 - database - INFO - 产品已更新: https://test.com/product/21
+2025-11-14 18:36:48,117 - database - INFO - 产品已更新: https://test.com/product/22
+2025-11-14 18:36:48,177 - database - INFO - 产品已更新: https://test.com/product/23
+2025-11-14 18:36:48,218 - database - INFO - 产品已更新: https://test.com/product/24
+2025-11-14 18:36:48,248 - database - INFO - 产品已更新: https://test.com/product/25
+2025-11-14 18:36:48,280 - database - INFO - 产品已更新: https://test.com/product/26
+2025-11-14 18:36:48,309 - database - INFO - 产品已更新: https://test.com/product/27
+2025-11-14 18:36:48,342 - database - INFO - 产品已更新: https://test.com/product/28
+2025-11-14 18:36:48,377 - database - INFO - 产品已更新: https://test.com/product/29
+2025-11-14 18:36:48,410 - database - INFO - 产品已更新: https://test.com/product/30
+2025-11-14 18:36:48,442 - database - INFO - 产品已更新: https://test.com/product/31
+2025-11-14 18:36:48,480 - database - INFO - 产品已更新: https://test.com/product/32
+2025-11-14 18:36:48,514 - database - INFO - 产品已更新: https://test.com/product/33
+2025-11-14 18:36:48,561 - database - INFO - 产品已更新: https://test.com/product/34
+2025-11-14 18:36:48,599 - database - INFO - 产品已更新: https://test.com/product/35
+2025-11-14 18:36:48,637 - database - INFO - 产品已更新: https://test.com/product/36
+2025-11-14 18:36:48,675 - database - INFO - 产品已更新: https://test.com/product/37
+2025-11-14 18:36:48,709 - database - INFO - 产品已更新: https://test.com/product/38
+2025-11-14 18:36:48,746 - database - INFO - 产品已更新: https://test.com/product/39
+2025-11-14 18:36:48,784 - database - INFO - 产品已更新: https://test.com/product/40
+2025-11-14 18:36:48,815 - database - INFO - 产品已更新: https://test.com/product/41
+2025-11-14 18:36:48,849 - database - INFO - 产品已更新: https://test.com/product/42
+2025-11-14 18:36:48,893 - database - INFO - 产品已更新: https://test.com/product/43
+2025-11-14 18:36:48,944 - database - INFO - 产品已更新: https://test.com/product/44
+2025-11-14 18:36:48,975 - database - INFO - 产品已更新: https://test.com/product/45
+2025-11-14 18:36:49,008 - database - INFO - 产品已更新: https://test.com/product/46
+2025-11-14 18:36:49,044 - database - INFO - 产品已更新: https://test.com/product/47
+2025-11-14 18:36:49,074 - database - INFO - 产品已更新: https://test.com/product/48
+2025-11-14 18:36:49,105 - database - INFO - 产品已更新: https://test.com/product/49
+2025-11-14 18:36:49,142 - database - INFO - 产品已更新: https://test.com/product/50
+2025-11-14 18:36:49,174 - database - INFO - 新产品已插入: ID 51
+2025-11-14 18:36:49,223 - database - INFO - 新产品已插入: ID 52
+2025-11-14 18:36:49,272 - database - INFO - 新产品已插入: ID 53
+2025-11-14 18:36:49,312 - database - INFO - 新产品已插入: ID 54
+2025-11-14 18:36:49,348 - database - INFO - 新产品已插入: ID 55
+2025-11-14 18:36:49,395 - database - INFO - 新产品已插入: ID 56
+2025-11-14 18:36:49,438 - database - INFO - 新产品已插入: ID 57
+2025-11-14 18:36:49,484 - database - INFO - 新产品已插入: ID 58
+2025-11-14 18:36:49,526 - database - INFO - 新产品已插入: ID 59
+2025-11-14 18:36:49,576 - database - INFO - 新产品已插入: ID 60
+2025-11-14 18:36:49,626 - database - INFO - 新产品已插入: ID 61
+2025-11-14 18:36:49,680 - database - INFO - 新产品已插入: ID 62
+2025-11-14 18:36:49,727 - database - INFO - 新产品已插入: ID 63
+2025-11-14 18:36:49,763 - database - INFO - 新产品已插入: ID 64
+2025-11-14 18:36:49,809 - database - INFO - 新产品已插入: ID 65
+2025-11-14 18:36:49,850 - database - INFO - 新产品已插入: ID 66
+2025-11-14 18:36:49,881 - database - INFO - 新产品已插入: ID 67
+2025-11-14 18:36:49,919 - database - INFO - 新产品已插入: ID 68
+2025-11-14 18:36:49,953 - database - INFO - 新产品已插入: ID 69
+2025-11-14 18:36:50,009 - database - INFO - 新产品已插入: ID 70
+2025-11-14 18:36:50,054 - database - INFO - 新产品已插入: ID 71
+2025-11-14 18:36:50,087 - database - INFO - 新产品已插入: ID 72
+2025-11-14 18:36:50,134 - database - INFO - 新产品已插入: ID 73
+2025-11-14 18:36:50,163 - database - INFO - 新产品已插入: ID 74
+2025-11-14 18:36:50,216 - database - INFO - 新产品已插入: ID 75
+2025-11-14 18:36:50,262 - database - INFO - 新产品已插入: ID 76
+2025-11-14 18:36:50,299 - database - INFO - 新产品已插入: ID 77
+2025-11-14 18:36:50,346 - database - INFO - 新产品已插入: ID 78
+2025-11-14 18:36:50,377 - database - INFO - 新产品已插入: ID 79
+2025-11-14 18:36:50,416 - database - INFO - 新产品已插入: ID 80
+2025-11-14 18:36:50,462 - database - INFO - 新产品已插入: ID 81
+2025-11-14 18:36:50,515 - database - INFO - 新产品已插入: ID 82
+2025-11-14 18:36:50,558 - database - INFO - 新产品已插入: ID 83
+2025-11-14 18:36:50,592 - database - INFO - 新产品已插入: ID 84
+2025-11-14 18:36:50,637 - database - INFO - 新产品已插入: ID 85
+2025-11-14 18:36:50,673 - database - INFO - 新产品已插入: ID 86
+2025-11-14 18:36:50,726 - database - INFO - 新产品已插入: ID 87
+2025-11-14 18:36:50,759 - database - INFO - 新产品已插入: ID 88
+2025-11-14 18:36:50,793 - database - INFO - 新产品已插入: ID 89
+2025-11-14 18:36:50,826 - database - INFO - 新产品已插入: ID 90
+2025-11-14 18:36:50,867 - database - INFO - 新产品已插入: ID 91
+2025-11-14 18:36:50,901 - database - INFO - 新产品已插入: ID 92
+2025-11-14 18:36:50,942 - database - INFO - 新产品已插入: ID 93
+2025-11-14 18:36:50,980 - database - INFO - 新产品已插入: ID 94
+2025-11-14 18:36:51,015 - database - INFO - 新产品已插入: ID 95
+2025-11-14 18:36:51,047 - database - INFO - 新产品已插入: ID 96
+2025-11-14 18:36:51,082 - database - INFO - 新产品已插入: ID 97
+2025-11-14 18:36:51,120 - database - INFO - 新产品已插入: ID 98
+2025-11-14 18:36:51,166 - database - INFO - 新产品已插入: ID 99
+2025-11-14 18:36:51,218 - database - INFO - 新产品已插入: ID 100
+2025-11-14 18:36:51,256 - database - INFO - 新产品已插入: ID 101
+2025-11-14 18:36:51,290 - database - INFO - 新产品已插入: ID 102
+2025-11-14 18:36:51,332 - database - INFO - 新产品已插入: ID 103
+2025-11-14 18:36:51,372 - database - INFO - 新产品已插入: ID 104
+2025-11-14 18:36:51,421 - database - INFO - 新产品已插入: ID 105
+2025-11-14 18:36:51,500 - database - INFO - 新产品已插入: ID 106
+2025-11-14 18:36:51,543 - database - INFO - 新产品已插入: ID 107
+2025-11-14 18:36:51,576 - database - INFO - 新产品已插入: ID 108
+2025-11-14 18:36:51,620 - database - INFO - 新产品已插入: ID 109
+2025-11-14 18:36:51,660 - database - INFO - 新产品已插入: ID 110
+2025-11-14 18:36:51,724 - database - INFO - 新产品已插入: ID 111
+2025-11-14 18:36:51,772 - database - INFO - 新产品已插入: ID 112
+2025-11-14 18:36:51,810 - database - INFO - 新产品已插入: ID 113
+2025-11-14 18:36:51,857 - database - INFO - 新产品已插入: ID 114
+2025-11-14 18:36:51,897 - database - INFO - 新产品已插入: ID 115
+2025-11-14 18:36:51,956 - database - INFO - 新产品已插入: ID 116
+2025-11-14 18:36:51,993 - database - INFO - 新产品已插入: ID 117
+2025-11-14 18:36:52,042 - database - INFO - 新产品已插入: ID 118
+2025-11-14 18:36:52,132 - database - INFO - 新产品已插入: ID 119
+2025-11-14 18:36:52,190 - database - INFO - 新产品已插入: ID 120
+2025-11-14 18:36:52,224 - database - INFO - 新产品已插入: ID 121
+2025-11-14 18:36:52,270 - database - INFO - 新产品已插入: ID 122
+2025-11-14 18:36:52,316 - database - INFO - 新产品已插入: ID 123
+2025-11-14 18:36:52,354 - database - INFO - 新产品已插入: ID 124
+2025-11-14 18:36:52,409 - database - INFO - 新产品已插入: ID 125
+2025-11-14 18:36:52,453 - database - INFO - 新产品已插入: ID 126
+2025-11-14 18:36:52,497 - database - INFO - 新产品已插入: ID 127
+2025-11-14 18:36:52,536 - database - INFO - 新产品已插入: ID 128
+2025-11-14 18:36:52,598 - database - INFO - 新产品已插入: ID 129
+2025-11-14 18:36:52,643 - database - INFO - 新产品已插入: ID 130
+2025-11-14 18:36:52,706 - database - INFO - 新产品已插入: ID 131
+2025-11-14 18:36:52,739 - database - INFO - 新产品已插入: ID 132
+2025-11-14 18:36:52,799 - database - INFO - 新产品已插入: ID 133
+2025-11-14 18:36:52,840 - database - INFO - 新产品已插入: ID 134
+2025-11-14 18:36:52,881 - database - INFO - 新产品已插入: ID 135
+2025-11-14 18:36:52,917 - database - INFO - 新产品已插入: ID 136
+2025-11-14 18:36:52,956 - database - INFO - 新产品已插入: ID 137
+2025-11-14 18:36:53,002 - database - INFO - 新产品已插入: ID 138
+2025-11-14 18:36:53,034 - database - INFO - 新产品已插入: ID 139
+2025-11-14 18:36:53,067 - database - INFO - 新产品已插入: ID 140
+2025-11-14 18:36:53,103 - database - INFO - 新产品已插入: ID 141
+2025-11-14 18:36:53,138 - database - INFO - 新产品已插入: ID 142
+2025-11-14 18:36:53,172 - database - INFO - 新产品已插入: ID 143
+2025-11-14 18:36:53,208 - database - INFO - 新产品已插入: ID 144
+2025-11-14 18:36:53,248 - database - INFO - 新产品已插入: ID 145
+2025-11-14 18:36:53,303 - database - INFO - 新产品已插入: ID 146
+2025-11-14 18:36:53,343 - database - INFO - 新产品已插入: ID 147
+2025-11-14 18:36:53,377 - database - INFO - 新产品已插入: ID 148
+2025-11-14 18:36:53,411 - database - INFO - 新产品已插入: ID 149
+2025-11-14 18:36:53,446 - database - INFO - 新产品已插入: ID 150
+2025-11-14 18:36:53,488 - database - INFO - 新产品已插入: ID 151
+2025-11-14 18:36:53,530 - database - INFO - 新产品已插入: ID 152
+2025-11-14 18:36:53,568 - database - INFO - 新产品已插入: ID 153
+2025-11-14 18:36:53,609 - database - INFO - 新产品已插入: ID 154
+2025-11-14 18:36:53,642 - database - INFO - 新产品已插入: ID 155
+2025-11-14 18:36:53,678 - database - INFO - 新产品已插入: ID 156
+2025-11-14 18:36:53,719 - database - INFO - 新产品已插入: ID 157
+2025-11-14 18:36:53,757 - database - INFO - 新产品已插入: ID 158
+2025-11-14 18:36:53,793 - database - INFO - 新产品已插入: ID 159
+2025-11-14 18:36:53,824 - database - INFO - 新产品已插入: ID 160
+2025-11-14 18:36:53,857 - database - INFO - 新产品已插入: ID 161
+2025-11-14 18:36:53,901 - database - INFO - 新产品已插入: ID 162
+2025-11-14 18:36:53,939 - database - INFO - 新产品已插入: ID 163
+2025-11-14 18:36:53,985 - database - INFO - 新产品已插入: ID 164
+2025-11-14 18:36:54,023 - database - INFO - 新产品已插入: ID 165
+2025-11-14 18:36:54,061 - database - INFO - 新产品已插入: ID 166
+2025-11-14 18:36:54,098 - database - INFO - 新产品已插入: ID 167
+2025-11-14 18:36:54,137 - database - INFO - 新产品已插入: ID 168
+2025-11-14 18:36:54,183 - database - INFO - 新产品已插入: ID 169
+2025-11-14 18:36:54,228 - database - INFO - 新产品已插入: ID 170
+2025-11-14 18:36:54,263 - database - INFO - 新产品已插入: ID 171
+2025-11-14 18:36:54,299 - database - INFO - 新产品已插入: ID 172
+2025-11-14 18:36:54,332 - database - INFO - 新产品已插入: ID 173
+2025-11-14 18:36:54,365 - database - INFO - 新产品已插入: ID 174
+2025-11-14 18:36:54,399 - database - INFO - 新产品已插入: ID 175
+2025-11-14 18:36:54,436 - database - INFO - 新产品已插入: ID 176
+2025-11-14 18:36:54,468 - database - INFO - 新产品已插入: ID 177
+2025-11-14 18:36:54,518 - database - INFO - 新产品已插入: ID 178
+2025-11-14 18:36:54,556 - database - INFO - 新产品已插入: ID 179
+2025-11-14 18:36:54,591 - database - INFO - 新产品已插入: ID 180
+2025-11-14 18:36:54,628 - database - INFO - 新产品已插入: ID 181
+2025-11-14 18:36:54,665 - database - INFO - 新产品已插入: ID 182
+2025-11-14 18:36:54,697 - database - INFO - 新产品已插入: ID 183
+2025-11-14 18:36:54,732 - database - INFO - 新产品已插入: ID 184
+2025-11-14 18:36:54,772 - database - INFO - 新产品已插入: ID 185
+2025-11-14 18:36:54,820 - database - INFO - 新产品已插入: ID 186
+2025-11-14 18:36:54,858 - database - INFO - 新产品已插入: ID 187
+2025-11-14 18:36:54,899 - database - INFO - 新产品已插入: ID 188
+2025-11-14 18:36:54,939 - database - INFO - 新产品已插入: ID 189
+2025-11-14 18:36:54,976 - database - INFO - 新产品已插入: ID 190
+2025-11-14 18:36:55,012 - database - INFO - 新产品已插入: ID 191
+2025-11-14 18:36:55,050 - database - INFO - 新产品已插入: ID 192
+2025-11-14 18:36:55,089 - database - INFO - 新产品已插入: ID 193
+2025-11-14 18:36:55,127 - database - INFO - 新产品已插入: ID 194
+2025-11-14 18:36:55,169 - database - INFO - 新产品已插入: ID 195
+2025-11-14 18:36:55,203 - database - INFO - 新产品已插入: ID 196
+2025-11-14 18:36:55,243 - database - INFO - 新产品已插入: ID 197
+2025-11-14 18:36:55,284 - database - INFO - 新产品已插入: ID 198
+2025-11-14 18:36:55,322 - database - INFO - 新产品已插入: ID 199
+2025-11-14 18:36:55,366 - database - INFO - 新产品已插入: ID 200
+2025-11-14 18:36:55,366 - __main__ - INFO - 插入 200 条数据用时: 8.09s, 速率: 24.7 records/s
+2025-11-14 18:36:55,366 - __main__ - INFO - 生成 1000 条测试数据...
+2025-11-14 18:36:55,432 - database - INFO - 产品已更新: https://test.com/product/1
+2025-11-14 18:36:55,472 - database - INFO - 产品已更新: https://test.com/product/2
+2025-11-14 18:36:55,517 - database - INFO - 产品已更新: https://test.com/product/3
+2025-11-14 18:36:55,554 - database - INFO - 产品已更新: https://test.com/product/4
+2025-11-14 18:36:55,597 - database - INFO - 产品已更新: https://test.com/product/5
+2025-11-14 18:36:55,634 - database - INFO - 产品已更新: https://test.com/product/6
+2025-11-14 18:36:55,668 - database - INFO - 产品已更新: https://test.com/product/7
+2025-11-14 18:36:55,714 - database - INFO - 产品已更新: https://test.com/product/8
+2025-11-14 18:36:55,752 - database - INFO - 产品已更新: https://test.com/product/9
+2025-11-14 18:36:55,786 - database - INFO - 产品已更新: https://test.com/product/10
+2025-11-14 18:36:55,823 - database - INFO - 产品已更新: https://test.com/product/11
+2025-11-14 18:36:55,860 - database - INFO - 产品已更新: https://test.com/product/12
+2025-11-14 18:36:55,895 - database - INFO - 产品已更新: https://test.com/product/13
+2025-11-14 18:36:55,934 - database - INFO - 产品已更新: https://test.com/product/14
+2025-11-14 18:36:55,969 - database - INFO - 产品已更新: https://test.com/product/15
+2025-11-14 18:36:56,013 - database - INFO - 产品已更新: https://test.com/product/16
+2025-11-14 18:36:56,049 - database - INFO - 产品已更新: https://test.com/product/17
+2025-11-14 18:36:56,089 - database - INFO - 产品已更新: https://test.com/product/18
+2025-11-14 18:36:56,137 - database - INFO - 产品已更新: https://test.com/product/19
+2025-11-14 18:36:56,169 - database - INFO - 产品已更新: https://test.com/product/20
+2025-11-14 18:36:56,213 - database - INFO - 产品已更新: https://test.com/product/21
+2025-11-14 18:36:56,255 - database - INFO - 产品已更新: https://test.com/product/22
+2025-11-14 18:36:56,291 - database - INFO - 产品已更新: https://test.com/product/23
+2025-11-14 18:36:56,337 - database - INFO - 产品已更新: https://test.com/product/24
+2025-11-14 18:36:56,370 - database - INFO - 产品已更新: https://test.com/product/25
+2025-11-14 18:36:56,402 - database - INFO - 产品已更新: https://test.com/product/26
+2025-11-14 18:36:56,439 - database - INFO - 产品已更新: https://test.com/product/27
+2025-11-14 18:36:56,476 - database - INFO - 产品已更新: https://test.com/product/28
+2025-11-14 18:36:56,508 - database - INFO - 产品已更新: https://test.com/product/29
+2025-11-14 18:36:56,552 - database - INFO - 产品已更新: https://test.com/product/30
+2025-11-14 18:36:56,586 - database - INFO - 产品已更新: https://test.com/product/31
+2025-11-14 18:36:56,627 - database - INFO - 产品已更新: https://test.com/product/32
+2025-11-14 18:36:56,673 - database - INFO - 产品已更新: https://test.com/product/33
+2025-11-14 18:36:56,709 - database - INFO - 产品已更新: https://test.com/product/34
+2025-11-14 18:36:56,746 - database - INFO - 产品已更新: https://test.com/product/35
+2025-11-14 18:36:56,783 - database - INFO - 产品已更新: https://test.com/product/36
+2025-11-14 18:36:56,821 - database - INFO - 产品已更新: https://test.com/product/37
+2025-11-14 18:36:56,865 - database - INFO - 产品已更新: https://test.com/product/38
+2025-11-14 18:36:56,907 - database - INFO - 产品已更新: https://test.com/product/39
+2025-11-14 18:36:56,945 - database - INFO - 产品已更新: https://test.com/product/40
+2025-11-14 18:36:56,984 - database - INFO - 产品已更新: https://test.com/product/41
+2025-11-14 18:36:57,037 - database - INFO - 产品已更新: https://test.com/product/42
+2025-11-14 18:36:57,071 - database - INFO - 产品已更新: https://test.com/product/43
+2025-11-14 18:36:57,107 - database - INFO - 产品已更新: https://test.com/product/44
+2025-11-14 18:36:57,138 - database - INFO - 产品已更新: https://test.com/product/45
+2025-11-14 18:36:57,171 - database - INFO - 产品已更新: https://test.com/product/46
+2025-11-14 18:36:57,205 - database - INFO - 产品已更新: https://test.com/product/47
+2025-11-14 18:36:57,247 - database - INFO - 产品已更新: https://test.com/product/48
+2025-11-14 18:36:57,286 - database - INFO - 产品已更新: https://test.com/product/49
+2025-11-14 18:36:57,318 - database - INFO - 产品已更新: https://test.com/product/50
+2025-11-14 18:36:57,355 - database - INFO - 产品已更新: https://test.com/product/51
+2025-11-14 18:36:57,396 - database - INFO - 产品已更新: https://test.com/product/52
+2025-11-14 18:36:57,436 - database - INFO - 产品已更新: https://test.com/product/53
+2025-11-14 18:36:57,485 - database - INFO - 产品已更新: https://test.com/product/54
+2025-11-14 18:36:57,559 - database - INFO - 产品已更新: https://test.com/product/55
+2025-11-14 18:36:57,605 - database - INFO - 产品已更新: https://test.com/product/56
+2025-11-14 18:36:57,642 - database - INFO - 产品已更新: https://test.com/product/57
+2025-11-14 18:36:57,683 - database - INFO - 产品已更新: https://test.com/product/58
+2025-11-14 18:36:57,722 - database - INFO - 产品已更新: https://test.com/product/59
+2025-11-14 18:36:57,766 - database - INFO - 产品已更新: https://test.com/product/60
+2025-11-14 18:36:57,812 - database - INFO - 产品已更新: https://test.com/product/61
+2025-11-14 18:36:57,858 - database - INFO - 产品已更新: https://test.com/product/62
+2025-11-14 18:36:57,901 - database - INFO - 产品已更新: https://test.com/product/63
+2025-11-14 18:36:57,940 - database - INFO - 产品已更新: https://test.com/product/64
+2025-11-14 18:36:57,979 - database - INFO - 产品已更新: https://test.com/product/65
+2025-11-14 18:36:58,013 - database - INFO - 产品已更新: https://test.com/product/66
+2025-11-14 18:36:58,050 - database - INFO - 产品已更新: https://test.com/product/67
+2025-11-14 18:36:58,081 - database - INFO - 产品已更新: https://test.com/product/68
+2025-11-14 18:36:58,121 - database - INFO - 产品已更新: https://test.com/product/69
+2025-11-14 18:36:58,155 - database - INFO - 产品已更新: https://test.com/product/70
+2025-11-14 18:36:58,189 - database - INFO - 产品已更新: https://test.com/product/71
+2025-11-14 18:36:58,220 - database - INFO - 产品已更新: https://test.com/product/72
+2025-11-14 18:36:58,254 - database - INFO - 产品已更新: https://test.com/product/73
+2025-11-14 18:36:58,293 - database - INFO - 产品已更新: https://test.com/product/74
+2025-11-14 18:36:58,327 - database - INFO - 产品已更新: https://test.com/product/75
+2025-11-14 18:36:58,390 - database - INFO - 产品已更新: https://test.com/product/76
+2025-11-14 18:36:58,421 - database - INFO - 产品已更新: https://test.com/product/77
+2025-11-14 18:36:58,451 - database - INFO - 产品已更新: https://test.com/product/78
+2025-11-14 18:36:58,485 - database - INFO - 产品已更新: https://test.com/product/79
+2025-11-14 18:36:58,516 - database - INFO - 产品已更新: https://test.com/product/80
+2025-11-14 18:36:58,579 - database - INFO - 产品已更新: https://test.com/product/81
+2025-11-14 18:36:58,617 - database - INFO - 产品已更新: https://test.com/product/82
+2025-11-14 18:36:58,662 - database - INFO - 产品已更新: https://test.com/product/83
+2025-11-14 18:36:58,707 - database - INFO - 产品已更新: https://test.com/product/84
+2025-11-14 18:36:58,759 - database - INFO - 产品已更新: https://test.com/product/85
+2025-11-14 18:36:58,804 - database - INFO - 产品已更新: https://test.com/product/86
+2025-11-14 18:36:58,843 - database - INFO - 产品已更新: https://test.com/product/87
+2025-11-14 18:36:58,887 - database - INFO - 产品已更新: https://test.com/product/88
+2025-11-14 18:36:58,924 - database - INFO - 产品已更新: https://test.com/product/89
+2025-11-14 18:36:58,975 - database - INFO - 产品已更新: https://test.com/product/90
+2025-11-14 18:36:59,025 - database - INFO - 产品已更新: https://test.com/product/91
+2025-11-14 18:36:59,079 - database - INFO - 产品已更新: https://test.com/product/92
+2025-11-14 18:36:59,123 - database - INFO - 产品已更新: https://test.com/product/93
+2025-11-14 18:36:59,164 - database - INFO - 产品已更新: https://test.com/product/94
+2025-11-14 18:36:59,212 - database - INFO - 产品已更新: https://test.com/product/95
+2025-11-14 18:36:59,259 - database - INFO - 产品已更新: https://test.com/product/96
+2025-11-14 18:36:59,300 - database - INFO - 产品已更新: https://test.com/product/97
+2025-11-14 18:36:59,448 - database - INFO - 产品已更新: https://test.com/product/98
+2025-11-14 18:36:59,519 - database - INFO - 产品已更新: https://test.com/product/99
+2025-11-14 18:36:59,567 - database - INFO - 产品已更新: https://test.com/product/100
+2025-11-14 18:36:59,603 - database - INFO - 产品已更新: https://test.com/product/101
+2025-11-14 18:36:59,656 - database - INFO - 产品已更新: https://test.com/product/102
+2025-11-14 18:36:59,707 - database - INFO - 产品已更新: https://test.com/product/103
+2025-11-14 18:36:59,746 - database - INFO - 产品已更新: https://test.com/product/104
+2025-11-14 18:36:59,783 - database - INFO - 产品已更新: https://test.com/product/105
+2025-11-14 18:36:59,832 - database - INFO - 产品已更新: https://test.com/product/106
+2025-11-14 18:36:59,863 - database - INFO - 产品已更新: https://test.com/product/107
+2025-11-14 18:36:59,898 - database - INFO - 产品已更新: https://test.com/product/108
+2025-11-14 18:36:59,932 - database - INFO - 产品已更新: https://test.com/product/109
+2025-11-14 18:36:59,965 - database - INFO - 产品已更新: https://test.com/product/110
+2025-11-14 18:36:59,999 - database - INFO - 产品已更新: https://test.com/product/111
+2025-11-14 18:37:00,033 - database - INFO - 产品已更新: https://test.com/product/112
+2025-11-14 18:37:00,075 - database - INFO - 产品已更新: https://test.com/product/113
+2025-11-14 18:37:00,110 - database - INFO - 产品已更新: https://test.com/product/114
+2025-11-14 18:37:00,147 - database - INFO - 产品已更新: https://test.com/product/115
+2025-11-14 18:37:00,182 - database - INFO - 产品已更新: https://test.com/product/116
+2025-11-14 18:37:00,219 - database - INFO - 产品已更新: https://test.com/product/117
+2025-11-14 18:37:00,257 - database - INFO - 产品已更新: https://test.com/product/118
+2025-11-14 18:37:00,288 - database - INFO - 产品已更新: https://test.com/product/119
+2025-11-14 18:37:00,327 - database - INFO - 产品已更新: https://test.com/product/120
+2025-11-14 18:37:00,357 - database - INFO - 产品已更新: https://test.com/product/121
+2025-11-14 18:37:00,399 - database - INFO - 产品已更新: https://test.com/product/122
+2025-11-14 18:37:00,440 - database - INFO - 产品已更新: https://test.com/product/123
+2025-11-14 18:37:00,478 - database - INFO - 产品已更新: https://test.com/product/124
+2025-11-14 18:37:00,522 - database - INFO - 产品已更新: https://test.com/product/125
+2025-11-14 18:37:00,574 - database - INFO - 产品已更新: https://test.com/product/126
+2025-11-14 18:37:00,621 - database - INFO - 产品已更新: https://test.com/product/127
+2025-11-14 18:37:00,664 - database - INFO - 产品已更新: https://test.com/product/128
+2025-11-14 18:37:00,733 - database - INFO - 产品已更新: https://test.com/product/129
+2025-11-14 18:37:00,790 - database - INFO - 产品已更新: https://test.com/product/130
+2025-11-14 18:37:00,851 - database - INFO - 产品已更新: https://test.com/product/131
+2025-11-14 18:37:00,892 - database - INFO - 产品已更新: https://test.com/product/132
+2025-11-14 18:37:00,939 - database - INFO - 产品已更新: https://test.com/product/133
+2025-11-14 18:37:00,975 - database - INFO - 产品已更新: https://test.com/product/134
+2025-11-14 18:37:01,017 - database - INFO - 产品已更新: https://test.com/product/135
+2025-11-14 18:37:01,075 - database - INFO - 产品已更新: https://test.com/product/136
+2025-11-14 18:37:01,113 - database - INFO - 产品已更新: https://test.com/product/137
+2025-11-14 18:37:01,152 - database - INFO - 产品已更新: https://test.com/product/138
+2025-11-14 18:37:01,194 - database - INFO - 产品已更新: https://test.com/product/139
+2025-11-14 18:37:01,233 - database - INFO - 产品已更新: https://test.com/product/140
+2025-11-14 18:37:01,276 - database - INFO - 产品已更新: https://test.com/product/141
+2025-11-14 18:37:01,316 - database - INFO - 产品已更新: https://test.com/product/142
+2025-11-14 18:37:01,346 - database - INFO - 产品已更新: https://test.com/product/143
+2025-11-14 18:37:01,383 - database - INFO - 产品已更新: https://test.com/product/144
+2025-11-14 18:37:01,414 - database - INFO - 产品已更新: https://test.com/product/145
+2025-11-14 18:37:01,453 - database - INFO - 产品已更新: https://test.com/product/146
+2025-11-14 18:37:01,489 - database - INFO - 产品已更新: https://test.com/product/147
+2025-11-14 18:37:01,523 - database - INFO - 产品已更新: https://test.com/product/148
+2025-11-14 18:37:01,567 - database - INFO - 产品已更新: https://test.com/product/149
+2025-11-14 18:37:01,603 - database - INFO - 产品已更新: https://test.com/product/150
+2025-11-14 18:37:01,640 - database - INFO - 产品已更新: https://test.com/product/151
+2025-11-14 18:37:01,721 - database - INFO - 产品已更新: https://test.com/product/152
+2025-11-14 18:37:01,766 - database - INFO - 产品已更新: https://test.com/product/153
+2025-11-14 18:37:01,804 - database - INFO - 产品已更新: https://test.com/product/154
+2025-11-14 18:37:01,843 - database - INFO - 产品已更新: https://test.com/product/155
+2025-11-14 18:37:01,872 - database - INFO - 产品已更新: https://test.com/product/156
+2025-11-14 18:37:01,907 - database - INFO - 产品已更新: https://test.com/product/157
+2025-11-14 18:37:01,950 - database - INFO - 产品已更新: https://test.com/product/158
+2025-11-14 18:37:02,031 - database - INFO - 产品已更新: https://test.com/product/159
+2025-11-14 18:37:02,065 - database - INFO - 产品已更新: https://test.com/product/160
+2025-11-14 18:37:02,102 - database - INFO - 产品已更新: https://test.com/product/161
+2025-11-14 18:37:02,134 - database - INFO - 产品已更新: https://test.com/product/162
+2025-11-14 18:37:02,168 - database - INFO - 产品已更新: https://test.com/product/163
+2025-11-14 18:37:02,206 - database - INFO - 产品已更新: https://test.com/product/164
+2025-11-14 18:37:02,240 - database - INFO - 产品已更新: https://test.com/product/165
+2025-11-14 18:37:02,280 - database - INFO - 产品已更新: https://test.com/product/166
+2025-11-14 18:37:02,318 - database - INFO - 产品已更新: https://test.com/product/167
+2025-11-14 18:37:02,362 - database - INFO - 产品已更新: https://test.com/product/168
+2025-11-14 18:37:02,397 - database - INFO - 产品已更新: https://test.com/product/169
+2025-11-14 18:37:02,429 - database - INFO - 产品已更新: https://test.com/product/170
+2025-11-14 18:37:02,461 - database - INFO - 产品已更新: https://test.com/product/171
+2025-11-14 18:37:02,511 - database - INFO - 产品已更新: https://test.com/product/172
+2025-11-14 18:37:02,542 - database - INFO - 产品已更新: https://test.com/product/173
+2025-11-14 18:37:02,573 - database - INFO - 产品已更新: https://test.com/product/174
+2025-11-14 18:37:02,605 - database - INFO - 产品已更新: https://test.com/product/175
+2025-11-14 18:37:02,643 - database - INFO - 产品已更新: https://test.com/product/176
+2025-11-14 18:37:02,690 - database - INFO - 产品已更新: https://test.com/product/177
+2025-11-14 18:37:02,730 - database - INFO - 产品已更新: https://test.com/product/178
+2025-11-14 18:37:02,767 - database - INFO - 产品已更新: https://test.com/product/179
+2025-11-14 18:37:02,803 - database - INFO - 产品已更新: https://test.com/product/180
+2025-11-14 18:37:02,845 - database - INFO - 产品已更新: https://test.com/product/181
+2025-11-14 18:37:02,909 - database - INFO - 产品已更新: https://test.com/product/182
+2025-11-14 18:37:02,937 - database - INFO - 产品已更新: https://test.com/product/183
+2025-11-14 18:37:02,975 - database - INFO - 产品已更新: https://test.com/product/184
+2025-11-14 18:37:03,008 - database - INFO - 产品已更新: https://test.com/product/185
+2025-11-14 18:37:03,053 - database - INFO - 产品已更新: https://test.com/product/186
+2025-11-14 18:37:03,089 - database - INFO - 产品已更新: https://test.com/product/187
+2025-11-14 18:37:03,122 - database - INFO - 产品已更新: https://test.com/product/188
+2025-11-14 18:37:03,158 - database - INFO - 产品已更新: https://test.com/product/189
+2025-11-14 18:37:03,199 - database - INFO - 产品已更新: https://test.com/product/190
+2025-11-14 18:37:03,242 - database - INFO - 产品已更新: https://test.com/product/191
+2025-11-14 18:37:03,273 - database - INFO - 产品已更新: https://test.com/product/192
+2025-11-14 18:37:03,304 - database - INFO - 产品已更新: https://test.com/product/193
+2025-11-14 18:37:03,345 - database - INFO - 产品已更新: https://test.com/product/194
+2025-11-14 18:37:03,375 - database - INFO - 产品已更新: https://test.com/product/195
+2025-11-14 18:37:03,409 - database - INFO - 产品已更新: https://test.com/product/196
+2025-11-14 18:37:03,441 - database - INFO - 产品已更新: https://test.com/product/197
+2025-11-14 18:37:03,496 - database - INFO - 产品已更新: https://test.com/product/198
+2025-11-14 18:37:03,534 - database - INFO - 产品已更新: https://test.com/product/199
+2025-11-14 18:37:03,584 - database - INFO - 产品已更新: https://test.com/product/200
+2025-11-14 18:37:03,632 - database - INFO - 新产品已插入: ID 201
+2025-11-14 18:37:03,686 - database - INFO - 新产品已插入: ID 202
+2025-11-14 18:37:03,734 - database - INFO - 新产品已插入: ID 203
+2025-11-14 18:37:03,779 - database - INFO - 新产品已插入: ID 204
+2025-11-14 18:37:03,813 - database - INFO - 新产品已插入: ID 205
+2025-11-14 18:37:03,864 - database - INFO - 新产品已插入: ID 206
+2025-11-14 18:37:03,903 - database - INFO - 新产品已插入: ID 207
+2025-11-14 18:37:03,954 - database - INFO - 新产品已插入: ID 208
+2025-11-14 18:37:04,006 - database - INFO - 新产品已插入: ID 209
+2025-11-14 18:37:04,054 - database - INFO - 新产品已插入: ID 210
+2025-11-14 18:37:04,099 - database - INFO - 新产品已插入: ID 211
+2025-11-14 18:37:04,169 - database - INFO - 新产品已插入: ID 212
+2025-11-14 18:37:04,208 - database - INFO - 新产品已插入: ID 213
+2025-11-14 18:37:04,297 - database - INFO - 新产品已插入: ID 214
+2025-11-14 18:37:04,340 - database - INFO - 新产品已插入: ID 215
+2025-11-14 18:37:04,407 - database - INFO - 新产品已插入: ID 216
+2025-11-14 18:37:04,448 - database - INFO - 新产品已插入: ID 217
+2025-11-14 18:37:04,493 - database - INFO - 新产品已插入: ID 218
+2025-11-14 18:37:04,533 - database - INFO - 新产品已插入: ID 219
+2025-11-14 18:37:04,581 - database - INFO - 新产品已插入: ID 220
+2025-11-14 18:37:04,630 - database - INFO - 新产品已插入: ID 221
+2025-11-14 18:37:04,662 - database - INFO - 新产品已插入: ID 222
+2025-11-14 18:37:04,696 - database - INFO - 新产品已插入: ID 223
+2025-11-14 18:37:04,726 - database - INFO - 新产品已插入: ID 224
+2025-11-14 18:37:04,761 - database - INFO - 新产品已插入: ID 225
+2025-11-14 18:37:04,795 - database - INFO - 新产品已插入: ID 226
+2025-11-14 18:37:04,828 - database - INFO - 新产品已插入: ID 227
+2025-11-14 18:37:04,863 - database - INFO - 新产品已插入: ID 228
+2025-11-14 18:37:04,898 - database - INFO - 新产品已插入: ID 229
+2025-11-14 18:37:04,939 - database - INFO - 新产品已插入: ID 230
+2025-11-14 18:37:04,968 - database - INFO - 新产品已插入: ID 231
+2025-11-14 18:37:05,001 - database - INFO - 新产品已插入: ID 232
+2025-11-14 18:37:05,039 - database - INFO - 新产品已插入: ID 233
+2025-11-14 18:37:05,074 - database - INFO - 新产品已插入: ID 234
+2025-11-14 18:37:05,109 - database - INFO - 新产品已插入: ID 235
+2025-11-14 18:37:05,144 - database - INFO - 新产品已插入: ID 236
+2025-11-14 18:37:05,176 - database - INFO - 新产品已插入: ID 237
+2025-11-14 18:37:05,209 - database - INFO - 新产品已插入: ID 238
+2025-11-14 18:37:05,250 - database - INFO - 新产品已插入: ID 239
+2025-11-14 18:37:05,286 - database - INFO - 新产品已插入: ID 240
+2025-11-14 18:37:05,330 - database - INFO - 新产品已插入: ID 241
+2025-11-14 18:37:05,369 - database - INFO - 新产品已插入: ID 242
+2025-11-14 18:37:05,417 - database - INFO - 新产品已插入: ID 243
+2025-11-14 18:37:05,460 - database - INFO - 新产品已插入: ID 244
+2025-11-14 18:37:05,495 - database - INFO - 新产品已插入: ID 245
+2025-11-14 18:37:05,540 - database - INFO - 新产品已插入: ID 246
+2025-11-14 18:37:05,583 - database - INFO - 新产品已插入: ID 247
+2025-11-14 18:37:05,618 - database - INFO - 新产品已插入: ID 248
+2025-11-14 18:37:05,675 - database - INFO - 新产品已插入: ID 249
+2025-11-14 18:37:05,716 - database - INFO - 新产品已插入: ID 250
+2025-11-14 18:37:05,749 - database - INFO - 新产品已插入: ID 251
+2025-11-14 18:37:05,792 - database - INFO - 新产品已插入: ID 252
+2025-11-14 18:37:05,842 - database - INFO - 新产品已插入: ID 253
+2025-11-14 18:37:05,876 - database - INFO - 新产品已插入: ID 254
+2025-11-14 18:37:05,908 - database - INFO - 新产品已插入: ID 255
+2025-11-14 18:37:05,936 - database - INFO - 新产品已插入: ID 256
+2025-11-14 18:37:05,973 - database - INFO - 新产品已插入: ID 257
+2025-11-14 18:37:06,010 - database - INFO - 新产品已插入: ID 258
+2025-11-14 18:37:06,047 - database - INFO - 新产品已插入: ID 259
+2025-11-14 18:37:06,082 - database - INFO - 新产品已插入: ID 260
+2025-11-14 18:37:06,117 - database - INFO - 新产品已插入: ID 261
+2025-11-14 18:37:06,153 - database - INFO - 新产品已插入: ID 262
+2025-11-14 18:37:06,193 - database - INFO - 新产品已插入: ID 263
+2025-11-14 18:37:06,224 - database - INFO - 新产品已插入: ID 264
+2025-11-14 18:37:06,260 - database - INFO - 新产品已插入: ID 265
+2025-11-14 18:37:06,300 - database - INFO - 新产品已插入: ID 266
+2025-11-14 18:37:06,376 - database - INFO - 新产品已插入: ID 267
+2025-11-14 18:37:06,428 - database - INFO - 新产品已插入: ID 268
+2025-11-14 18:37:06,468 - database - INFO - 新产品已插入: ID 269
+2025-11-14 18:37:06,507 - database - INFO - 新产品已插入: ID 270
+2025-11-14 18:37:06,538 - database - INFO - 新产品已插入: ID 271
+2025-11-14 18:37:06,574 - database - INFO - 新产品已插入: ID 272
+2025-11-14 18:37:06,609 - database - INFO - 新产品已插入: ID 273
+2025-11-14 18:37:06,645 - database - INFO - 新产品已插入: ID 274
+2025-11-14 18:37:06,686 - database - INFO - 新产品已插入: ID 275
+2025-11-14 18:37:06,732 - database - INFO - 新产品已插入: ID 276
+2025-11-14 18:37:06,774 - database - INFO - 新产品已插入: ID 277
+2025-11-14 18:37:06,816 - database - INFO - 新产品已插入: ID 278
+2025-11-14 18:37:06,847 - database - INFO - 新产品已插入: ID 279
+2025-11-14 18:37:06,882 - database - INFO - 新产品已插入: ID 280
+2025-11-14 18:37:06,924 - database - INFO - 新产品已插入: ID 281
+2025-11-14 18:37:06,959 - database - INFO - 新产品已插入: ID 282
+2025-11-14 18:37:07,001 - database - INFO - 新产品已插入: ID 283
+2025-11-14 18:37:07,031 - database - INFO - 新产品已插入: ID 284
+2025-11-14 18:37:07,074 - database - INFO - 新产品已插入: ID 285
+2025-11-14 18:37:07,114 - database - INFO - 新产品已插入: ID 286
+2025-11-14 18:37:07,161 - database - INFO - 新产品已插入: ID 287
+2025-11-14 18:37:07,194 - database - INFO - 新产品已插入: ID 288
+2025-11-14 18:37:07,229 - database - INFO - 新产品已插入: ID 289
+2025-11-14 18:37:07,263 - database - INFO - 新产品已插入: ID 290
+2025-11-14 18:37:07,294 - database - INFO - 新产品已插入: ID 291
+2025-11-14 18:37:07,326 - database - INFO - 新产品已插入: ID 292
+2025-11-14 18:37:07,363 - database - INFO - 新产品已插入: ID 293
+2025-11-14 18:37:07,394 - database - INFO - 新产品已插入: ID 294
+2025-11-14 18:37:07,426 - database - INFO - 新产品已插入: ID 295
+2025-11-14 18:37:07,457 - database - INFO - 新产品已插入: ID 296
+2025-11-14 18:37:07,571 - database - INFO - 新产品已插入: ID 297
+2025-11-14 18:37:07,643 - database - INFO - 新产品已插入: ID 298
+2025-11-14 18:37:07,676 - database - INFO - 新产品已插入: ID 299
+2025-11-14 18:37:07,712 - database - INFO - 新产品已插入: ID 300
+2025-11-14 18:37:07,743 - database - INFO - 新产品已插入: ID 301
+2025-11-14 18:37:07,775 - database - INFO - 新产品已插入: ID 302
+2025-11-14 18:37:07,814 - database - INFO - 新产品已插入: ID 303
+2025-11-14 18:37:07,866 - database - INFO - 新产品已插入: ID 304
+2025-11-14 18:37:07,909 - database - INFO - 新产品已插入: ID 305
+2025-11-14 18:37:07,944 - database - INFO - 新产品已插入: ID 306
+2025-11-14 18:37:07,990 - database - INFO - 新产品已插入: ID 307
+2025-11-14 18:37:08,026 - database - INFO - 新产品已插入: ID 308
+2025-11-14 18:37:08,060 - database - INFO - 新产品已插入: ID 309
+2025-11-14 18:37:08,092 - database - INFO - 新产品已插入: ID 310
+2025-11-14 18:37:08,143 - database - INFO - 新产品已插入: ID 311
+2025-11-14 18:37:08,179 - database - INFO - 新产品已插入: ID 312
+2025-11-14 18:37:08,212 - database - INFO - 新产品已插入: ID 313
+2025-11-14 18:37:08,259 - database - INFO - 新产品已插入: ID 314
+2025-11-14 18:37:08,294 - database - INFO - 新产品已插入: ID 315
+2025-11-14 18:37:08,326 - database - INFO - 新产品已插入: ID 316
+2025-11-14 18:37:08,363 - database - INFO - 新产品已插入: ID 317
+2025-11-14 18:37:08,394 - database - INFO - 新产品已插入: ID 318
+2025-11-14 18:37:08,432 - database - INFO - 新产品已插入: ID 319
+2025-11-14 18:37:08,470 - database - INFO - 新产品已插入: ID 320
+2025-11-14 18:37:08,500 - database - INFO - 新产品已插入: ID 321
+2025-11-14 18:37:08,530 - database - INFO - 新产品已插入: ID 322
+2025-11-14 18:37:08,578 - database - INFO - 新产品已插入: ID 323
+2025-11-14 18:37:08,620 - database - INFO - 新产品已插入: ID 324
+2025-11-14 18:37:08,657 - database - INFO - 新产品已插入: ID 325
+2025-11-14 18:37:08,696 - database - INFO - 新产品已插入: ID 326
+2025-11-14 18:37:08,735 - database - INFO - 新产品已插入: ID 327
+2025-11-14 18:37:08,774 - database - INFO - 新产品已插入: ID 328
+2025-11-14 18:37:08,806 - database - INFO - 新产品已插入: ID 329
+2025-11-14 18:37:08,850 - database - INFO - 新产品已插入: ID 330
+2025-11-14 18:37:08,886 - database - INFO - 新产品已插入: ID 331
+2025-11-14 18:37:08,917 - database - INFO - 新产品已插入: ID 332
+2025-11-14 18:37:08,972 - database - INFO - 新产品已插入: ID 333
+2025-11-14 18:37:09,016 - database - INFO - 新产品已插入: ID 334
+2025-11-14 18:37:09,048 - database - INFO - 新产品已插入: ID 335
+2025-11-14 18:37:09,082 - database - INFO - 新产品已插入: ID 336
+2025-11-14 18:37:09,121 - database - INFO - 新产品已插入: ID 337
+2025-11-14 18:37:09,157 - database - INFO - 新产品已插入: ID 338
+2025-11-14 18:37:09,194 - database - INFO - 新产品已插入: ID 339
+2025-11-14 18:37:09,258 - database - INFO - 新产品已插入: ID 340
+2025-11-14 18:37:09,294 - database - INFO - 新产品已插入: ID 341
+2025-11-14 18:37:09,326 - database - INFO - 新产品已插入: ID 342
+2025-11-14 18:37:09,358 - database - INFO - 新产品已插入: ID 343
+2025-11-14 18:37:09,391 - database - INFO - 新产品已插入: ID 344
+2025-11-14 18:37:09,423 - database - INFO - 新产品已插入: ID 345
+2025-11-14 18:37:09,458 - database - INFO - 新产品已插入: ID 346
+2025-11-14 18:37:09,491 - database - INFO - 新产品已插入: ID 347
+2025-11-14 18:37:09,536 - database - INFO - 新产品已插入: ID 348
+2025-11-14 18:37:09,585 - database - INFO - 新产品已插入: ID 349
+2025-11-14 18:37:09,618 - database - INFO - 新产品已插入: ID 350
+2025-11-14 18:37:09,655 - database - INFO - 新产品已插入: ID 351
+2025-11-14 18:37:09,692 - database - INFO - 新产品已插入: ID 352
+2025-11-14 18:37:09,728 - database - INFO - 新产品已插入: ID 353
+2025-11-14 18:37:09,766 - database - INFO - 新产品已插入: ID 354
+2025-11-14 18:37:09,800 - database - INFO - 新产品已插入: ID 355
+2025-11-14 18:37:09,832 - database - INFO - 新产品已插入: ID 356
+2025-11-14 18:37:09,867 - database - INFO - 新产品已插入: ID 357
+2025-11-14 18:37:09,904 - database - INFO - 新产品已插入: ID 358
+2025-11-14 18:37:09,942 - database - INFO - 新产品已插入: ID 359
+2025-11-14 18:37:09,976 - database - INFO - 新产品已插入: ID 360
+2025-11-14 18:37:10,023 - database - INFO - 新产品已插入: ID 361
+2025-11-14 18:37:10,065 - database - INFO - 新产品已插入: ID 362
+2025-11-14 18:37:10,101 - database - INFO - 新产品已插入: ID 363
+2025-11-14 18:37:10,138 - database - INFO - 新产品已插入: ID 364
+2025-11-14 18:37:10,174 - database - INFO - 新产品已插入: ID 365
+2025-11-14 18:37:10,217 - database - INFO - 新产品已插入: ID 366
+2025-11-14 18:37:10,250 - database - INFO - 新产品已插入: ID 367
+2025-11-14 18:37:10,287 - database - INFO - 新产品已插入: ID 368
+2025-11-14 18:37:10,319 - database - INFO - 新产品已插入: ID 369
+2025-11-14 18:37:10,361 - database - INFO - 新产品已插入: ID 370
+2025-11-14 18:37:10,400 - database - INFO - 新产品已插入: ID 371
+2025-11-14 18:37:10,438 - database - INFO - 新产品已插入: ID 372
+2025-11-14 18:37:10,489 - database - INFO - 新产品已插入: ID 373
+2025-11-14 18:37:10,532 - database - INFO - 新产品已插入: ID 374
+2025-11-14 18:37:10,573 - database - INFO - 新产品已插入: ID 375
+2025-11-14 18:37:10,614 - database - INFO - 新产品已插入: ID 376
+2025-11-14 18:37:10,648 - database - INFO - 新产品已插入: ID 377
+2025-11-14 18:37:10,683 - database - INFO - 新产品已插入: ID 378
+2025-11-14 18:37:10,722 - database - INFO - 新产品已插入: ID 379
+2025-11-14 18:37:10,752 - database - INFO - 新产品已插入: ID 380
+2025-11-14 18:37:10,795 - database - INFO - 新产品已插入: ID 381
+2025-11-14 18:37:10,822 - database - INFO - 新产品已插入: ID 382
+2025-11-14 18:37:10,856 - database - INFO - 新产品已插入: ID 383
+2025-11-14 18:37:10,888 - database - INFO - 新产品已插入: ID 384
+2025-11-14 18:37:10,921 - database - INFO - 新产品已插入: ID 385
+2025-11-14 18:37:10,962 - database - INFO - 新产品已插入: ID 386
+2025-11-14 18:37:10,998 - database - INFO - 新产品已插入: ID 387
+2025-11-14 18:37:11,028 - database - INFO - 新产品已插入: ID 388
+2025-11-14 18:37:11,061 - database - INFO - 新产品已插入: ID 389
+2025-11-14 18:37:11,095 - database - INFO - 新产品已插入: ID 390
+2025-11-14 18:37:11,131 - database - INFO - 新产品已插入: ID 391
+2025-11-14 18:37:11,171 - database - INFO - 新产品已插入: ID 392
+2025-11-14 18:37:11,210 - database - INFO - 新产品已插入: ID 393
+2025-11-14 18:37:11,273 - database - INFO - 新产品已插入: ID 394
+2025-11-14 18:37:11,315 - database - INFO - 新产品已插入: ID 395
+2025-11-14 18:37:11,366 - database - INFO - 新产品已插入: ID 396
+2025-11-14 18:37:11,401 - database - INFO - 新产品已插入: ID 397
+2025-11-14 18:37:11,440 - database - INFO - 新产品已插入: ID 398
+2025-11-14 18:37:11,486 - database - INFO - 新产品已插入: ID 399
+2025-11-14 18:37:11,547 - database - INFO - 新产品已插入: ID 400
+2025-11-14 18:37:11,591 - database - INFO - 新产品已插入: ID 401
+2025-11-14 18:37:11,631 - database - INFO - 新产品已插入: ID 402
+2025-11-14 18:37:11,682 - database - INFO - 新产品已插入: ID 403
+2025-11-14 18:37:11,729 - database - INFO - 新产品已插入: ID 404
+2025-11-14 18:37:11,793 - database - INFO - 新产品已插入: ID 405
+2025-11-14 18:37:11,849 - database - INFO - 新产品已插入: ID 406
+2025-11-14 18:37:11,897 - database - INFO - 新产品已插入: ID 407
+2025-11-14 18:37:11,943 - database - INFO - 新产品已插入: ID 408
+2025-11-14 18:37:11,982 - database - INFO - 新产品已插入: ID 409
+2025-11-14 18:37:12,025 - database - INFO - 新产品已插入: ID 410
+2025-11-14 18:37:12,067 - database - INFO - 新产品已插入: ID 411
+2025-11-14 18:37:12,116 - database - INFO - 新产品已插入: ID 412
+2025-11-14 18:37:12,177 - database - INFO - 新产品已插入: ID 413
+2025-11-14 18:37:12,221 - database - INFO - 新产品已插入: ID 414
+2025-11-14 18:37:12,328 - database - INFO - 新产品已插入: ID 415
+2025-11-14 18:37:12,381 - database - INFO - 新产品已插入: ID 416
+2025-11-14 18:37:12,426 - database - INFO - 新产品已插入: ID 417
+2025-11-14 18:37:12,485 - database - INFO - 新产品已插入: ID 418
+2025-11-14 18:37:12,520 - database - INFO - 新产品已插入: ID 419
+2025-11-14 18:37:12,565 - database - INFO - 新产品已插入: ID 420
+2025-11-14 18:37:12,639 - database - INFO - 新产品已插入: ID 421
+2025-11-14 18:37:12,690 - database - INFO - 新产品已插入: ID 422
+2025-11-14 18:37:12,732 - database - INFO - 新产品已插入: ID 423
+2025-11-14 18:37:12,784 - database - INFO - 新产品已插入: ID 424
+2025-11-14 18:37:12,853 - database - INFO - 新产品已插入: ID 425
+2025-11-14 18:37:12,890 - database - INFO - 新产品已插入: ID 426
+2025-11-14 18:37:12,941 - database - INFO - 新产品已插入: ID 427
+2025-11-14 18:37:12,990 - database - INFO - 新产品已插入: ID 428
+2025-11-14 18:37:13,031 - database - INFO - 新产品已插入: ID 429
+2025-11-14 18:37:13,074 - database - INFO - 新产品已插入: ID 430
+2025-11-14 18:37:13,113 - database - INFO - 新产品已插入: ID 431
+2025-11-14 18:37:13,150 - database - INFO - 新产品已插入: ID 432
+2025-11-14 18:37:13,187 - database - INFO - 新产品已插入: ID 433
+2025-11-14 18:37:13,220 - database - INFO - 新产品已插入: ID 434
+2025-11-14 18:37:13,257 - database - INFO - 新产品已插入: ID 435
+2025-11-14 18:37:13,298 - database - INFO - 新产品已插入: ID 436
+2025-11-14 18:37:13,332 - database - INFO - 新产品已插入: ID 437
+2025-11-14 18:37:13,369 - database - INFO - 新产品已插入: ID 438
+2025-11-14 18:37:13,414 - database - INFO - 新产品已插入: ID 439
+2025-11-14 18:37:13,449 - database - INFO - 新产品已插入: ID 440
+2025-11-14 18:37:13,484 - database - INFO - 新产品已插入: ID 441
+2025-11-14 18:37:13,520 - database - INFO - 新产品已插入: ID 442
+2025-11-14 18:37:13,557 - database - INFO - 新产品已插入: ID 443
+2025-11-14 18:37:13,588 - database - INFO - 新产品已插入: ID 444
+2025-11-14 18:37:13,620 - database - INFO - 新产品已插入: ID 445
+2025-11-14 18:37:13,660 - database - INFO - 新产品已插入: ID 446
+2025-11-14 18:37:13,705 - database - INFO - 新产品已插入: ID 447
+2025-11-14 18:37:13,735 - database - INFO - 新产品已插入: ID 448
+2025-11-14 18:37:13,772 - database - INFO - 新产品已插入: ID 449
+2025-11-14 18:37:13,807 - database - INFO - 新产品已插入: ID 450
+2025-11-14 18:37:13,842 - database - INFO - 新产品已插入: ID 451
+2025-11-14 18:37:14,019 - database - INFO - 新产品已插入: ID 452
+2025-11-14 18:37:14,053 - database - INFO - 新产品已插入: ID 453
+2025-11-14 18:37:14,090 - database - INFO - 新产品已插入: ID 454
+2025-11-14 18:37:14,118 - database - INFO - 新产品已插入: ID 455
+2025-11-14 18:37:14,156 - database - INFO - 新产品已插入: ID 456
+2025-11-14 18:37:14,185 - database - INFO - 新产品已插入: ID 457
+2025-11-14 18:37:14,218 - database - INFO - 新产品已插入: ID 458
+2025-11-14 18:37:14,250 - database - INFO - 新产品已插入: ID 459
+2025-11-14 18:37:14,287 - database - INFO - 新产品已插入: ID 460
+2025-11-14 18:37:14,328 - database - INFO - 新产品已插入: ID 461
+2025-11-14 18:37:14,373 - database - INFO - 新产品已插入: ID 462
+2025-11-14 18:37:14,410 - database - INFO - 新产品已插入: ID 463
+2025-11-14 18:37:14,452 - database - INFO - 新产品已插入: ID 464
+2025-11-14 18:37:14,559 - database - INFO - 新产品已插入: ID 465
+2025-11-14 18:37:14,591 - database - INFO - 新产品已插入: ID 466
+2025-11-14 18:37:14,627 - database - INFO - 新产品已插入: ID 467
+2025-11-14 18:37:14,667 - database - INFO - 新产品已插入: ID 468
+2025-11-14 18:37:14,704 - database - INFO - 新产品已插入: ID 469
+2025-11-14 18:37:14,736 - database - INFO - 新产品已插入: ID 470
+2025-11-14 18:37:14,769 - database - INFO - 新产品已插入: ID 471
+2025-11-14 18:37:14,801 - database - INFO - 新产品已插入: ID 472
+2025-11-14 18:37:14,838 - database - INFO - 新产品已插入: ID 473
+2025-11-14 18:37:14,868 - database - INFO - 新产品已插入: ID 474
+2025-11-14 18:37:14,913 - database - INFO - 新产品已插入: ID 475
+2025-11-14 18:37:14,949 - database - INFO - 新产品已插入: ID 476
+2025-11-14 18:37:14,985 - database - INFO - 新产品已插入: ID 477
+2025-11-14 18:37:15,019 - database - INFO - 新产品已插入: ID 478
+2025-11-14 18:37:15,057 - database - INFO - 新产品已插入: ID 479
+2025-11-14 18:37:15,087 - database - INFO - 新产品已插入: ID 480
+2025-11-14 18:37:15,119 - database - INFO - 新产品已插入: ID 481
+2025-11-14 18:37:15,155 - database - INFO - 新产品已插入: ID 482
+2025-11-14 18:37:15,191 - database - INFO - 新产品已插入: ID 483
+2025-11-14 18:37:15,230 - database - INFO - 新产品已插入: ID 484
+2025-11-14 18:37:15,262 - database - INFO - 新产品已插入: ID 485
+2025-11-14 18:37:15,295 - database - INFO - 新产品已插入: ID 486
+2025-11-14 18:37:15,332 - database - INFO - 新产品已插入: ID 487
+2025-11-14 18:37:15,364 - database - INFO - 新产品已插入: ID 488
+2025-11-14 18:37:15,400 - database - INFO - 新产品已插入: ID 489
+2025-11-14 18:37:15,440 - database - INFO - 新产品已插入: ID 490
+2025-11-14 18:37:15,479 - database - INFO - 新产品已插入: ID 491
+2025-11-14 18:37:15,514 - database - INFO - 新产品已插入: ID 492
+2025-11-14 18:37:15,547 - database - INFO - 新产品已插入: ID 493
+2025-11-14 18:37:15,581 - database - INFO - 新产品已插入: ID 494
+2025-11-14 18:37:15,632 - database - INFO - 新产品已插入: ID 495
+2025-11-14 18:37:15,672 - database - INFO - 新产品已插入: ID 496
+2025-11-14 18:37:15,707 - database - INFO - 新产品已插入: ID 497
+2025-11-14 18:37:15,745 - database - INFO - 新产品已插入: ID 498
+2025-11-14 18:37:15,782 - database - INFO - 新产品已插入: ID 499
+2025-11-14 18:37:15,815 - database - INFO - 新产品已插入: ID 500
+2025-11-14 18:37:15,852 - database - INFO - 新产品已插入: ID 501
+2025-11-14 18:37:15,887 - database - INFO - 新产品已插入: ID 502
+2025-11-14 18:37:15,921 - database - INFO - 新产品已插入: ID 503
+2025-11-14 18:37:15,952 - database - INFO - 新产品已插入: ID 504
+2025-11-14 18:37:15,988 - database - INFO - 新产品已插入: ID 505
+2025-11-14 18:37:16,024 - database - INFO - 新产品已插入: ID 506
+2025-11-14 18:37:16,067 - database - INFO - 新产品已插入: ID 507
+2025-11-14 18:37:16,109 - database - INFO - 新产品已插入: ID 508
+2025-11-14 18:37:16,184 - database - INFO - 新产品已插入: ID 509
+2025-11-14 18:37:16,222 - database - INFO - 新产品已插入: ID 510
+2025-11-14 18:37:16,267 - database - INFO - 新产品已插入: ID 511
+2025-11-14 18:37:16,313 - database - INFO - 新产品已插入: ID 512
+2025-11-14 18:37:16,351 - database - INFO - 新产品已插入: ID 513
+2025-11-14 18:37:16,397 - database - INFO - 新产品已插入: ID 514
+2025-11-14 18:37:16,440 - database - INFO - 新产品已插入: ID 515
+2025-11-14 18:37:16,480 - database - INFO - 新产品已插入: ID 516
+2025-11-14 18:37:16,566 - database - INFO - 新产品已插入: ID 517
+2025-11-14 18:37:16,606 - database - INFO - 新产品已插入: ID 518
+2025-11-14 18:37:16,644 - database - INFO - 新产品已插入: ID 519
+2025-11-14 18:37:16,687 - database - INFO - 新产品已插入: ID 520
+2025-11-14 18:37:16,723 - database - INFO - 新产品已插入: ID 521
+2025-11-14 18:37:16,770 - database - INFO - 新产品已插入: ID 522
+2025-11-14 18:37:16,810 - database - INFO - 新产品已插入: ID 523
+2025-11-14 18:37:16,857 - database - INFO - 新产品已插入: ID 524
+2025-11-14 18:37:16,901 - database - INFO - 新产品已插入: ID 525
+2025-11-14 18:37:16,950 - database - INFO - 新产品已插入: ID 526
+2025-11-14 18:37:16,999 - database - INFO - 新产品已插入: ID 527
+2025-11-14 18:37:17,050 - database - INFO - 新产品已插入: ID 528
+2025-11-14 18:37:17,105 - database - INFO - 新产品已插入: ID 529
+2025-11-14 18:37:17,140 - database - INFO - 新产品已插入: ID 530
+2025-11-14 18:37:17,186 - database - INFO - 新产品已插入: ID 531
+2025-11-14 18:37:17,230 - database - INFO - 新产品已插入: ID 532
+2025-11-14 18:37:17,279 - database - INFO - 新产品已插入: ID 533
+2025-11-14 18:37:17,327 - database - INFO - 新产品已插入: ID 534
+2025-11-14 18:37:17,386 - database - INFO - 新产品已插入: ID 535
+2025-11-14 18:37:17,427 - database - INFO - 新产品已插入: ID 536
+2025-11-14 18:37:17,474 - database - INFO - 新产品已插入: ID 537
+2025-11-14 18:37:17,520 - database - INFO - 新产品已插入: ID 538
+2025-11-14 18:37:17,571 - database - INFO - 新产品已插入: ID 539
+2025-11-14 18:37:17,625 - database - INFO - 新产品已插入: ID 540
+2025-11-14 18:37:17,664 - database - INFO - 新产品已插入: ID 541
+2025-11-14 18:37:17,713 - database - INFO - 新产品已插入: ID 542
+2025-11-14 18:37:17,753 - database - INFO - 新产品已插入: ID 543
+2025-11-14 18:37:17,812 - database - INFO - 新产品已插入: ID 544
+2025-11-14 18:37:17,862 - database - INFO - 新产品已插入: ID 545
+2025-11-14 18:37:17,912 - database - INFO - 新产品已插入: ID 546
+2025-11-14 18:37:17,961 - database - INFO - 新产品已插入: ID 547
+2025-11-14 18:37:18,013 - database - INFO - 新产品已插入: ID 548
+2025-11-14 18:37:18,060 - database - INFO - 新产品已插入: ID 549
+2025-11-14 18:37:18,122 - database - INFO - 新产品已插入: ID 550
+2025-11-14 18:37:18,154 - database - INFO - 新产品已插入: ID 551
+2025-11-14 18:37:18,194 - database - INFO - 新产品已插入: ID 552
+2025-11-14 18:37:18,231 - database - INFO - 新产品已插入: ID 553
+2025-11-14 18:37:18,275 - database - INFO - 新产品已插入: ID 554
+2025-11-14 18:37:18,305 - database - INFO - 新产品已插入: ID 555
+2025-11-14 18:37:18,341 - database - INFO - 新产品已插入: ID 556
+2025-11-14 18:37:18,393 - database - INFO - 新产品已插入: ID 557
+2025-11-14 18:37:18,436 - database - INFO - 新产品已插入: ID 558
+2025-11-14 18:37:18,474 - database - INFO - 新产品已插入: ID 559
+2025-11-14 18:37:18,565 - database - INFO - 新产品已插入: ID 560
+2025-11-14 18:37:18,607 - database - INFO - 新产品已插入: ID 561
+2025-11-14 18:37:18,646 - database - INFO - 新产品已插入: ID 562
+2025-11-14 18:37:18,694 - database - INFO - 新产品已插入: ID 563
+2025-11-14 18:37:18,738 - database - INFO - 新产品已插入: ID 564
+2025-11-14 18:37:18,778 - database - INFO - 新产品已插入: ID 565
+2025-11-14 18:37:18,817 - database - INFO - 新产品已插入: ID 566
+2025-11-14 18:37:18,849 - database - INFO - 新产品已插入: ID 567
+2025-11-14 18:37:18,882 - database - INFO - 新产品已插入: ID 568
+2025-11-14 18:37:18,924 - database - INFO - 新产品已插入: ID 569
+2025-11-14 18:37:18,958 - database - INFO - 新产品已插入: ID 570
+2025-11-14 18:37:18,992 - database - INFO - 新产品已插入: ID 571
+2025-11-14 18:37:19,024 - database - INFO - 新产品已插入: ID 572
+2025-11-14 18:37:19,058 - database - INFO - 新产品已插入: ID 573
+2025-11-14 18:37:19,101 - database - INFO - 新产品已插入: ID 574
+2025-11-14 18:37:19,140 - database - INFO - 新产品已插入: ID 575
+2025-11-14 18:37:19,176 - database - INFO - 新产品已插入: ID 576
+2025-11-14 18:37:19,220 - database - INFO - 新产品已插入: ID 577
+2025-11-14 18:37:19,266 - database - INFO - 新产品已插入: ID 578
+2025-11-14 18:37:19,304 - database - INFO - 新产品已插入: ID 579
+2025-11-14 18:37:19,336 - database - INFO - 新产品已插入: ID 580
+2025-11-14 18:37:19,372 - database - INFO - 新产品已插入: ID 581
+2025-11-14 18:37:19,412 - database - INFO - 新产品已插入: ID 582
+2025-11-14 18:37:19,450 - database - INFO - 新产品已插入: ID 583
+2025-11-14 18:37:19,486 - database - INFO - 新产品已插入: ID 584
+2025-11-14 18:37:19,521 - database - INFO - 新产品已插入: ID 585
+2025-11-14 18:37:19,556 - database - INFO - 新产品已插入: ID 586
+2025-11-14 18:37:19,587 - database - INFO - 新产品已插入: ID 587
+2025-11-14 18:37:19,621 - database - INFO - 新产品已插入: ID 588
+2025-11-14 18:37:19,656 - database - INFO - 新产品已插入: ID 589
+2025-11-14 18:37:19,686 - database - INFO - 新产品已插入: ID 590
+2025-11-14 18:37:19,727 - database - INFO - 新产品已插入: ID 591
+2025-11-14 18:37:19,762 - database - INFO - 新产品已插入: ID 592
+2025-11-14 18:37:19,797 - database - INFO - 新产品已插入: ID 593
+2025-11-14 18:37:19,833 - database - INFO - 新产品已插入: ID 594
+2025-11-14 18:37:19,868 - database - INFO - 新产品已插入: ID 595
+2025-11-14 18:37:19,898 - database - INFO - 新产品已插入: ID 596
+2025-11-14 18:37:19,933 - database - INFO - 新产品已插入: ID 597
+2025-11-14 18:37:19,967 - database - INFO - 新产品已插入: ID 598
+2025-11-14 18:37:20,004 - database - INFO - 新产品已插入: ID 599
+2025-11-14 18:37:20,038 - database - INFO - 新产品已插入: ID 600
+2025-11-14 18:37:20,075 - database - INFO - 新产品已插入: ID 601
+2025-11-14 18:37:20,112 - database - INFO - 新产品已插入: ID 602
+2025-11-14 18:37:20,152 - database - INFO - 新产品已插入: ID 603
+2025-11-14 18:37:20,191 - database - INFO - 新产品已插入: ID 604
+2025-11-14 18:37:20,224 - database - INFO - 新产品已插入: ID 605
+2025-11-14 18:37:20,256 - database - INFO - 新产品已插入: ID 606
+2025-11-14 18:37:20,299 - database - INFO - 新产品已插入: ID 607
+2025-11-14 18:37:20,333 - database - INFO - 新产品已插入: ID 608
+2025-11-14 18:37:20,375 - database - INFO - 新产品已插入: ID 609
+2025-11-14 18:37:20,416 - database - INFO - 新产品已插入: ID 610
+2025-11-14 18:37:20,459 - database - INFO - 新产品已插入: ID 611
+2025-11-14 18:37:20,505 - database - INFO - 新产品已插入: ID 612
+2025-11-14 18:37:20,542 - database - INFO - 新产品已插入: ID 613
+2025-11-14 18:37:20,585 - database - INFO - 新产品已插入: ID 614
+2025-11-14 18:37:20,622 - database - INFO - 新产品已插入: ID 615
+2025-11-14 18:37:20,660 - database - INFO - 新产品已插入: ID 616
+2025-11-14 18:37:20,711 - database - INFO - 新产品已插入: ID 617
+2025-11-14 18:37:20,760 - database - INFO - 新产品已插入: ID 618
+2025-11-14 18:37:20,798 - database - INFO - 新产品已插入: ID 619
+2025-11-14 18:37:20,835 - database - INFO - 新产品已插入: ID 620
+2025-11-14 18:37:20,869 - database - INFO - 新产品已插入: ID 621
+2025-11-14 18:37:20,905 - database - INFO - 新产品已插入: ID 622
+2025-11-14 18:37:20,937 - database - INFO - 新产品已插入: ID 623
+2025-11-14 18:37:20,977 - database - INFO - 新产品已插入: ID 624
+2025-11-14 18:37:21,012 - database - INFO - 新产品已插入: ID 625
+2025-11-14 18:37:21,045 - database - INFO - 新产品已插入: ID 626
+2025-11-14 18:37:21,079 - database - INFO - 新产品已插入: ID 627
+2025-11-14 18:37:21,111 - database - INFO - 新产品已插入: ID 628
+2025-11-14 18:37:21,143 - database - INFO - 新产品已插入: ID 629
+2025-11-14 18:37:21,186 - database - INFO - 新产品已插入: ID 630
+2025-11-14 18:37:21,233 - database - INFO - 新产品已插入: ID 631
+2025-11-14 18:37:21,267 - database - INFO - 新产品已插入: ID 632
+2025-11-14 18:37:21,299 - database - INFO - 新产品已插入: ID 633
+2025-11-14 18:37:21,336 - database - INFO - 新产品已插入: ID 634
+2025-11-14 18:37:21,372 - database - INFO - 新产品已插入: ID 635
+2025-11-14 18:37:21,415 - database - INFO - 新产品已插入: ID 636
+2025-11-14 18:37:21,456 - database - INFO - 新产品已插入: ID 637
+2025-11-14 18:37:21,487 - database - INFO - 新产品已插入: ID 638
+2025-11-14 18:37:21,541 - database - INFO - 新产品已插入: ID 639
+2025-11-14 18:37:21,585 - database - INFO - 新产品已插入: ID 640
+2025-11-14 18:37:21,633 - database - INFO - 新产品已插入: ID 641
+2025-11-14 18:37:21,679 - database - INFO - 新产品已插入: ID 642
+2025-11-14 18:37:21,721 - database - INFO - 新产品已插入: ID 643
+2025-11-14 18:37:21,838 - database - INFO - 新产品已插入: ID 644
+2025-11-14 18:37:21,879 - database - INFO - 新产品已插入: ID 645
+2025-11-14 18:37:21,938 - database - INFO - 新产品已插入: ID 646
+2025-11-14 18:37:21,993 - database - INFO - 新产品已插入: ID 647
+2025-11-14 18:37:22,035 - database - INFO - 新产品已插入: ID 648
+2025-11-14 18:37:22,070 - database - INFO - 新产品已插入: ID 649
+2025-11-14 18:37:22,105 - database - INFO - 新产品已插入: ID 650
+2025-11-14 18:37:22,145 - database - INFO - 新产品已插入: ID 651
+2025-11-14 18:37:22,187 - database - INFO - 新产品已插入: ID 652
+2025-11-14 18:37:22,225 - database - INFO - 新产品已插入: ID 653
+2025-11-14 18:37:22,258 - database - INFO - 新产品已插入: ID 654
+2025-11-14 18:37:22,291 - database - INFO - 新产品已插入: ID 655
+2025-11-14 18:37:22,322 - database - INFO - 新产品已插入: ID 656
+2025-11-14 18:37:22,356 - database - INFO - 新产品已插入: ID 657
+2025-11-14 18:37:22,390 - database - INFO - 新产品已插入: ID 658
+2025-11-14 18:37:22,419 - database - INFO - 新产品已插入: ID 659
+2025-11-14 18:37:22,459 - database - INFO - 新产品已插入: ID 660
+2025-11-14 18:37:22,497 - database - INFO - 新产品已插入: ID 661
+2025-11-14 18:37:22,531 - database - INFO - 新产品已插入: ID 662
+2025-11-14 18:37:22,593 - database - INFO - 新产品已插入: ID 663
+2025-11-14 18:37:22,622 - database - INFO - 新产品已插入: ID 664
+2025-11-14 18:37:22,652 - database - INFO - 新产品已插入: ID 665
+2025-11-14 18:37:22,685 - database - INFO - 新产品已插入: ID 666
+2025-11-14 18:37:22,724 - database - INFO - 新产品已插入: ID 667
+2025-11-14 18:37:22,761 - database - INFO - 新产品已插入: ID 668
+2025-11-14 18:37:22,804 - database - INFO - 新产品已插入: ID 669
+2025-11-14 18:37:22,836 - database - INFO - 新产品已插入: ID 670
+2025-11-14 18:37:22,870 - database - INFO - 新产品已插入: ID 671
+2025-11-14 18:37:22,907 - database - INFO - 新产品已插入: ID 672
+2025-11-14 18:37:22,945 - database - INFO - 新产品已插入: ID 673
+2025-11-14 18:37:22,980 - database - INFO - 新产品已插入: ID 674
+2025-11-14 18:37:23,018 - database - INFO - 新产品已插入: ID 675
+2025-11-14 18:37:23,072 - database - INFO - 新产品已插入: ID 676
+2025-11-14 18:37:23,114 - database - INFO - 新产品已插入: ID 677
+2025-11-14 18:37:23,160 - database - INFO - 新产品已插入: ID 678
+2025-11-14 18:37:23,197 - database - INFO - 新产品已插入: ID 679
+2025-11-14 18:37:23,239 - database - INFO - 新产品已插入: ID 680
+2025-11-14 18:37:23,283 - database - INFO - 新产品已插入: ID 681
+2025-11-14 18:37:23,323 - database - INFO - 新产品已插入: ID 682
+2025-11-14 18:37:23,357 - database - INFO - 新产品已插入: ID 683
+2025-11-14 18:37:23,387 - database - INFO - 新产品已插入: ID 684
+2025-11-14 18:37:23,422 - database - INFO - 新产品已插入: ID 685
+2025-11-14 18:37:23,458 - database - INFO - 新产品已插入: ID 686
+2025-11-14 18:37:23,493 - database - INFO - 新产品已插入: ID 687
+2025-11-14 18:37:23,526 - database - INFO - 新产品已插入: ID 688
+2025-11-14 18:37:23,564 - database - INFO - 新产品已插入: ID 689
+2025-11-14 18:37:23,593 - database - INFO - 新产品已插入: ID 690
+2025-11-14 18:37:23,625 - database - INFO - 新产品已插入: ID 691
+2025-11-14 18:37:23,658 - database - INFO - 新产品已插入: ID 692
+2025-11-14 18:37:23,695 - database - INFO - 新产品已插入: ID 693
+2025-11-14 18:37:23,729 - database - INFO - 新产品已插入: ID 694
+2025-11-14 18:37:23,764 - database - INFO - 新产品已插入: ID 695
+2025-11-14 18:37:23,794 - database - INFO - 新产品已插入: ID 696
+2025-11-14 18:37:23,830 - database - INFO - 新产品已插入: ID 697
+2025-11-14 18:37:23,861 - database - INFO - 新产品已插入: ID 698
+2025-11-14 18:37:23,892 - database - INFO - 新产品已插入: ID 699
+2025-11-14 18:37:23,925 - database - INFO - 新产品已插入: ID 700
+2025-11-14 18:37:23,959 - database - INFO - 新产品已插入: ID 701
+2025-11-14 18:37:23,991 - database - INFO - 新产品已插入: ID 702
+2025-11-14 18:37:24,026 - database - INFO - 新产品已插入: ID 703
+2025-11-14 18:37:24,067 - database - INFO - 新产品已插入: ID 704
+2025-11-14 18:37:24,107 - database - INFO - 新产品已插入: ID 705
+2025-11-14 18:37:24,149 - database - INFO - 新产品已插入: ID 706
+2025-11-14 18:37:24,182 - database - INFO - 新产品已插入: ID 707
+2025-11-14 18:37:24,251 - database - INFO - 新产品已插入: ID 708
+2025-11-14 18:37:24,289 - database - INFO - 新产品已插入: ID 709
+2025-11-14 18:37:24,316 - database - INFO - 新产品已插入: ID 710
+2025-11-14 18:37:24,355 - database - INFO - 新产品已插入: ID 711
+2025-11-14 18:37:24,404 - database - INFO - 新产品已插入: ID 712
+2025-11-14 18:37:24,447 - database - INFO - 新产品已插入: ID 713
+2025-11-14 18:37:24,484 - database - INFO - 新产品已插入: ID 714
+2025-11-14 18:37:24,519 - database - INFO - 新产品已插入: ID 715
+2025-11-14 18:37:24,554 - database - INFO - 新产品已插入: ID 716
+2025-11-14 18:37:24,594 - database - INFO - 新产品已插入: ID 717
+2025-11-14 18:37:24,630 - database - INFO - 新产品已插入: ID 718
+2025-11-14 18:37:24,664 - database - INFO - 新产品已插入: ID 719
+2025-11-14 18:37:24,698 - database - INFO - 新产品已插入: ID 720
+2025-11-14 18:37:24,729 - database - INFO - 新产品已插入: ID 721
+2025-11-14 18:37:24,757 - database - INFO - 新产品已插入: ID 722
+2025-11-14 18:37:24,789 - database - INFO - 新产品已插入: ID 723
+2025-11-14 18:37:24,822 - database - INFO - 新产品已插入: ID 724
+2025-11-14 18:37:24,849 - database - INFO - 新产品已插入: ID 725
+2025-11-14 18:37:24,880 - database - INFO - 新产品已插入: ID 726
+2025-11-14 18:37:24,912 - database - INFO - 新产品已插入: ID 727
+2025-11-14 18:37:24,949 - database - INFO - 新产品已插入: ID 728
+2025-11-14 18:37:24,991 - database - INFO - 新产品已插入: ID 729
+2025-11-14 18:37:25,028 - database - INFO - 新产品已插入: ID 730
+2025-11-14 18:37:25,067 - database - INFO - 新产品已插入: ID 731
+2025-11-14 18:37:25,104 - database - INFO - 新产品已插入: ID 732
+2025-11-14 18:37:25,135 - database - INFO - 新产品已插入: ID 733
+2025-11-14 18:37:25,171 - database - INFO - 新产品已插入: ID 734
+2025-11-14 18:37:25,207 - database - INFO - 新产品已插入: ID 735
+2025-11-14 18:37:25,262 - database - INFO - 新产品已插入: ID 736
+2025-11-14 18:37:25,298 - database - INFO - 新产品已插入: ID 737
+2025-11-14 18:37:25,332 - database - INFO - 新产品已插入: ID 738
+2025-11-14 18:37:25,364 - database - INFO - 新产品已插入: ID 739
+2025-11-14 18:37:25,398 - database - INFO - 新产品已插入: ID 740
+2025-11-14 18:37:25,437 - database - INFO - 新产品已插入: ID 741
+2025-11-14 18:37:25,470 - database - INFO - 新产品已插入: ID 742
+2025-11-14 18:37:25,514 - database - INFO - 新产品已插入: ID 743
+2025-11-14 18:37:25,547 - database - INFO - 新产品已插入: ID 744
+2025-11-14 18:37:25,587 - database - INFO - 新产品已插入: ID 745
+2025-11-14 18:37:25,624 - database - INFO - 新产品已插入: ID 746
+2025-11-14 18:37:25,657 - database - INFO - 新产品已插入: ID 747
+2025-11-14 18:37:25,699 - database - INFO - 新产品已插入: ID 748
+2025-11-14 18:37:25,735 - database - INFO - 新产品已插入: ID 749
+2025-11-14 18:37:25,769 - database - INFO - 新产品已插入: ID 750
+2025-11-14 18:37:25,815 - database - INFO - 新产品已插入: ID 751
+2025-11-14 18:37:25,848 - database - INFO - 新产品已插入: ID 752
+2025-11-14 18:37:25,891 - database - INFO - 新产品已插入: ID 753
+2025-11-14 18:37:25,922 - database - INFO - 新产品已插入: ID 754
+2025-11-14 18:37:25,978 - database - INFO - 新产品已插入: ID 755
+2025-11-14 18:37:26,019 - database - INFO - 新产品已插入: ID 756
+2025-11-14 18:37:26,057 - database - INFO - 新产品已插入: ID 757
+2025-11-14 18:37:26,091 - database - INFO - 新产品已插入: ID 758
+2025-11-14 18:37:26,128 - database - INFO - 新产品已插入: ID 759
+2025-11-14 18:37:26,158 - database - INFO - 新产品已插入: ID 760
+2025-11-14 18:37:26,186 - database - INFO - 新产品已插入: ID 761
+2025-11-14 18:37:26,220 - database - INFO - 新产品已插入: ID 762
+2025-11-14 18:37:26,261 - database - INFO - 新产品已插入: ID 763
+2025-11-14 18:37:26,303 - database - INFO - 新产品已插入: ID 764
+2025-11-14 18:37:26,337 - database - INFO - 新产品已插入: ID 765
+2025-11-14 18:37:26,370 - database - INFO - 新产品已插入: ID 766
+2025-11-14 18:37:26,406 - database - INFO - 新产品已插入: ID 767
+2025-11-14 18:37:26,435 - database - INFO - 新产品已插入: ID 768
+2025-11-14 18:37:26,465 - database - INFO - 新产品已插入: ID 769
+2025-11-14 18:37:26,498 - database - INFO - 新产品已插入: ID 770
+2025-11-14 18:37:26,526 - database - INFO - 新产品已插入: ID 771
+2025-11-14 18:37:26,556 - database - INFO - 新产品已插入: ID 772
+2025-11-14 18:37:26,591 - database - INFO - 新产品已插入: ID 773
+2025-11-14 18:37:26,632 - database - INFO - 新产品已插入: ID 774
+2025-11-14 18:37:26,680 - database - INFO - 新产品已插入: ID 775
+2025-11-14 18:37:26,722 - database - INFO - 新产品已插入: ID 776
+2025-11-14 18:37:26,786 - database - INFO - 新产品已插入: ID 777
+2025-11-14 18:37:26,832 - database - INFO - 新产品已插入: ID 778
+2025-11-14 18:37:26,890 - database - INFO - 新产品已插入: ID 779
+2025-11-14 18:37:26,950 - database - INFO - 新产品已插入: ID 780
+2025-11-14 18:37:26,996 - database - INFO - 新产品已插入: ID 781
+2025-11-14 18:37:27,043 - database - INFO - 新产品已插入: ID 782
+2025-11-14 18:37:27,084 - database - INFO - 新产品已插入: ID 783
+2025-11-14 18:37:27,149 - database - INFO - 新产品已插入: ID 784
+2025-11-14 18:37:27,193 - database - INFO - 新产品已插入: ID 785
+2025-11-14 18:37:27,246 - database - INFO - 新产品已插入: ID 786
+2025-11-14 18:37:27,286 - database - INFO - 新产品已插入: ID 787
+2025-11-14 18:37:27,326 - database - INFO - 新产品已插入: ID 788
+2025-11-14 18:37:27,400 - database - INFO - 新产品已插入: ID 789
+2025-11-14 18:37:27,436 - database - INFO - 新产品已插入: ID 790
+2025-11-14 18:37:27,472 - database - INFO - 新产品已插入: ID 791
+2025-11-14 18:37:27,508 - database - INFO - 新产品已插入: ID 792
+2025-11-14 18:37:27,547 - database - INFO - 新产品已插入: ID 793
+2025-11-14 18:37:27,583 - database - INFO - 新产品已插入: ID 794
+2025-11-14 18:37:27,623 - database - INFO - 新产品已插入: ID 795
+2025-11-14 18:37:27,658 - database - INFO - 新产品已插入: ID 796
+2025-11-14 18:37:27,694 - database - INFO - 新产品已插入: ID 797
+2025-11-14 18:37:27,736 - database - INFO - 新产品已插入: ID 798
+2025-11-14 18:37:27,771 - database - INFO - 新产品已插入: ID 799
+2025-11-14 18:37:27,808 - database - INFO - 新产品已插入: ID 800
+2025-11-14 18:37:27,845 - database - INFO - 新产品已插入: ID 801
+2025-11-14 18:37:27,879 - database - INFO - 新产品已插入: ID 802
+2025-11-14 18:37:27,914 - database - INFO - 新产品已插入: ID 803
+2025-11-14 18:37:27,950 - database - INFO - 新产品已插入: ID 804
+2025-11-14 18:37:27,997 - database - INFO - 新产品已插入: ID 805
+2025-11-14 18:37:28,049 - database - INFO - 新产品已插入: ID 806
+2025-11-14 18:37:28,104 - database - INFO - 新产品已插入: ID 807
+2025-11-14 18:37:28,134 - database - INFO - 新产品已插入: ID 808
+2025-11-14 18:37:28,164 - database - INFO - 新产品已插入: ID 809
+2025-11-14 18:37:28,224 - database - INFO - 新产品已插入: ID 810
+2025-11-14 18:37:28,261 - database - INFO - 新产品已插入: ID 811
+2025-11-14 18:37:28,305 - database - INFO - 新产品已插入: ID 812
+2025-11-14 18:37:28,343 - database - INFO - 新产品已插入: ID 813
+2025-11-14 18:37:28,382 - database - INFO - 新产品已插入: ID 814
+2025-11-14 18:37:28,431 - database - INFO - 新产品已插入: ID 815
+2025-11-14 18:37:28,487 - database - INFO - 新产品已插入: ID 816
+2025-11-14 18:37:28,524 - database - INFO - 新产品已插入: ID 817
+2025-11-14 18:37:28,558 - database - INFO - 新产品已插入: ID 818
+2025-11-14 18:37:28,615 - database - INFO - 新产品已插入: ID 819
+2025-11-14 18:37:28,657 - database - INFO - 新产品已插入: ID 820
+2025-11-14 18:37:28,703 - database - INFO - 新产品已插入: ID 821
+2025-11-14 18:37:28,753 - database - INFO - 新产品已插入: ID 822
+2025-11-14 18:37:28,789 - database - INFO - 新产品已插入: ID 823
+2025-11-14 18:37:28,823 - database - INFO - 新产品已插入: ID 824
+2025-11-14 18:37:28,856 - database - INFO - 新产品已插入: ID 825
+2025-11-14 18:37:28,911 - database - INFO - 新产品已插入: ID 826
+2025-11-14 18:37:28,952 - database - INFO - 新产品已插入: ID 827
+2025-11-14 18:37:29,002 - database - INFO - 新产品已插入: ID 828
+2025-11-14 18:37:29,046 - database - INFO - 新产品已插入: ID 829
+2025-11-14 18:37:29,084 - database - INFO - 新产品已插入: ID 830
+2025-11-14 18:37:29,134 - database - INFO - 新产品已插入: ID 831
+2025-11-14 18:37:29,196 - database - INFO - 新产品已插入: ID 832
+2025-11-14 18:37:29,241 - database - INFO - 新产品已插入: ID 833
+2025-11-14 18:37:29,282 - database - INFO - 新产品已插入: ID 834
+2025-11-14 18:37:29,313 - database - INFO - 新产品已插入: ID 835
+2025-11-14 18:37:29,346 - database - INFO - 新产品已插入: ID 836
+2025-11-14 18:37:29,380 - database - INFO - 新产品已插入: ID 837
+2025-11-14 18:37:29,433 - database - INFO - 新产品已插入: ID 838
+2025-11-14 18:37:29,488 - database - INFO - 新产品已插入: ID 839
+2025-11-14 18:37:29,530 - database - INFO - 新产品已插入: ID 840
+2025-11-14 18:37:29,568 - database - INFO - 新产品已插入: ID 841
+2025-11-14 18:37:29,624 - database - INFO - 新产品已插入: ID 842
+2025-11-14 18:37:29,659 - database - INFO - 新产品已插入: ID 843
+2025-11-14 18:37:29,706 - database - INFO - 新产品已插入: ID 844
+2025-11-14 18:37:29,741 - database - INFO - 新产品已插入: ID 845
+2025-11-14 18:37:29,793 - database - INFO - 新产品已插入: ID 846
+2025-11-14 18:37:29,838 - database - INFO - 新产品已插入: ID 847
+2025-11-14 18:37:29,872 - database - INFO - 新产品已插入: ID 848
+2025-11-14 18:37:29,923 - database - INFO - 新产品已插入: ID 849
+2025-11-14 18:37:30,016 - database - INFO - 新产品已插入: ID 850
+2025-11-14 18:37:30,068 - database - INFO - 新产品已插入: ID 851
+2025-11-14 18:37:30,097 - database - INFO - 新产品已插入: ID 852
+2025-11-14 18:37:30,144 - database - INFO - 新产品已插入: ID 853
+2025-11-14 18:37:30,189 - database - INFO - 新产品已插入: ID 854
+2025-11-14 18:37:30,234 - database - INFO - 新产品已插入: ID 855
+2025-11-14 18:37:30,302 - database - INFO - 新产品已插入: ID 856
+2025-11-14 18:37:30,337 - database - INFO - 新产品已插入: ID 857
+2025-11-14 18:37:30,380 - database - INFO - 新产品已插入: ID 858
+2025-11-14 18:37:30,420 - database - INFO - 新产品已插入: ID 859
+2025-11-14 18:37:30,463 - database - INFO - 新产品已插入: ID 860
+2025-11-14 18:37:30,519 - database - INFO - 新产品已插入: ID 861
+2025-11-14 18:37:30,558 - database - INFO - 新产品已插入: ID 862
+2025-11-14 18:37:30,603 - database - INFO - 新产品已插入: ID 863
+2025-11-14 18:37:30,643 - database - INFO - 新产品已插入: ID 864
+2025-11-14 18:37:30,689 - database - INFO - 新产品已插入: ID 865
+2025-11-14 18:37:30,728 - database - INFO - 新产品已插入: ID 866
+2025-11-14 18:37:30,775 - database - INFO - 新产品已插入: ID 867
+2025-11-14 18:37:30,822 - database - INFO - 新产品已插入: ID 868
+2025-11-14 18:37:30,896 - database - INFO - 新产品已插入: ID 869
+2025-11-14 18:37:30,936 - database - INFO - 新产品已插入: ID 870
+2025-11-14 18:37:30,975 - database - INFO - 新产品已插入: ID 871
+2025-11-14 18:37:31,083 - database - INFO - 新产品已插入: ID 872
+2025-11-14 18:37:31,118 - database - INFO - 新产品已插入: ID 873
+2025-11-14 18:37:31,152 - database - INFO - 新产品已插入: ID 874
+2025-11-14 18:37:31,198 - database - INFO - 新产品已插入: ID 875
+2025-11-14 18:37:31,255 - database - INFO - 新产品已插入: ID 876
+2025-11-14 18:37:31,304 - database - INFO - 新产品已插入: ID 877
+2025-11-14 18:37:31,373 - database - INFO - 新产品已插入: ID 878
+2025-11-14 18:37:31,418 - database - INFO - 新产品已插入: ID 879
+2025-11-14 18:37:31,459 - database - INFO - 新产品已插入: ID 880
+2025-11-14 18:37:31,498 - database - INFO - 新产品已插入: ID 881
+2025-11-14 18:37:31,555 - database - INFO - 新产品已插入: ID 882
+2025-11-14 18:37:31,664 - database - INFO - 新产品已插入: ID 883
+2025-11-14 18:37:31,708 - database - INFO - 新产品已插入: ID 884
+2025-11-14 18:37:31,787 - database - INFO - 新产品已插入: ID 885
+2025-11-14 18:37:31,841 - database - INFO - 新产品已插入: ID 886
+2025-11-14 18:37:31,884 - database - INFO - 新产品已插入: ID 887
+2025-11-14 18:37:31,943 - database - INFO - 新产品已插入: ID 888
+2025-11-14 18:37:31,971 - database - INFO - 新产品已插入: ID 889
+2025-11-14 18:37:32,018 - database - INFO - 新产品已插入: ID 890
+2025-11-14 18:37:32,060 - database - INFO - 新产品已插入: ID 891
+2025-11-14 18:37:32,143 - database - INFO - 新产品已插入: ID 892
+2025-11-14 18:37:32,177 - database - INFO - 新产品已插入: ID 893
+2025-11-14 18:37:32,211 - database - INFO - 新产品已插入: ID 894
+2025-11-14 18:37:32,245 - database - INFO - 新产品已插入: ID 895
+2025-11-14 18:37:32,278 - database - INFO - 新产品已插入: ID 896
+2025-11-14 18:37:32,313 - database - INFO - 新产品已插入: ID 897
+2025-11-14 18:37:32,341 - database - INFO - 新产品已插入: ID 898
+2025-11-14 18:37:32,378 - database - INFO - 新产品已插入: ID 899
+2025-11-14 18:37:32,466 - database - INFO - 新产品已插入: ID 900
+2025-11-14 18:37:32,509 - database - INFO - 新产品已插入: ID 901
+2025-11-14 18:37:32,554 - database - INFO - 新产品已插入: ID 902
+2025-11-14 18:37:32,606 - database - INFO - 新产品已插入: ID 903
+2025-11-14 18:37:32,641 - database - INFO - 新产品已插入: ID 904
+2025-11-14 18:37:32,692 - database - INFO - 新产品已插入: ID 905
+2025-11-14 18:37:32,726 - database - INFO - 新产品已插入: ID 906
+2025-11-14 18:37:32,765 - database - INFO - 新产品已插入: ID 907
+2025-11-14 18:37:32,801 - database - INFO - 新产品已插入: ID 908
+2025-11-14 18:37:32,852 - database - INFO - 新产品已插入: ID 909
+2025-11-14 18:37:32,885 - database - INFO - 新产品已插入: ID 910
+2025-11-14 18:37:32,919 - database - INFO - 新产品已插入: ID 911
+2025-11-14 18:37:32,958 - database - INFO - 新产品已插入: ID 912
+2025-11-14 18:37:33,008 - database - INFO - 新产品已插入: ID 913
+2025-11-14 18:37:33,048 - database - INFO - 新产品已插入: ID 914
+2025-11-14 18:37:33,089 - database - INFO - 新产品已插入: ID 915
+2025-11-14 18:37:33,148 - database - INFO - 新产品已插入: ID 916
+2025-11-14 18:37:33,191 - database - INFO - 新产品已插入: ID 917
+2025-11-14 18:37:33,229 - database - INFO - 新产品已插入: ID 918
+2025-11-14 18:37:33,292 - database - INFO - 新产品已插入: ID 919
+2025-11-14 18:37:33,364 - database - INFO - 新产品已插入: ID 920
+2025-11-14 18:37:33,400 - database - INFO - 新产品已插入: ID 921
+2025-11-14 18:37:33,432 - database - INFO - 新产品已插入: ID 922
+2025-11-14 18:37:33,466 - database - INFO - 新产品已插入: ID 923
+2025-11-14 18:37:33,505 - database - INFO - 新产品已插入: ID 924
+2025-11-14 18:37:33,534 - database - INFO - 新产品已插入: ID 925
+2025-11-14 18:37:33,589 - database - INFO - 新产品已插入: ID 926
+2025-11-14 18:37:33,667 - database - INFO - 新产品已插入: ID 927
+2025-11-14 18:37:33,709 - database - INFO - 新产品已插入: ID 928
+2025-11-14 18:37:33,761 - database - INFO - 新产品已插入: ID 929
+2025-11-14 18:37:33,820 - database - INFO - 新产品已插入: ID 930
+2025-11-14 18:37:33,870 - database - INFO - 新产品已插入: ID 931
+2025-11-14 18:37:33,930 - database - INFO - 新产品已插入: ID 932
+2025-11-14 18:37:33,984 - database - INFO - 新产品已插入: ID 933
+2025-11-14 18:37:34,072 - database - INFO - 新产品已插入: ID 934
+2025-11-14 18:37:34,112 - database - INFO - 新产品已插入: ID 935
+2025-11-14 18:37:34,148 - database - INFO - 新产品已插入: ID 936
+2025-11-14 18:37:34,182 - database - INFO - 新产品已插入: ID 937
+2025-11-14 18:37:34,223 - database - INFO - 新产品已插入: ID 938
+2025-11-14 18:37:34,264 - database - INFO - 新产品已插入: ID 939
+2025-11-14 18:37:34,326 - database - INFO - 新产品已插入: ID 940
+2025-11-14 18:37:34,427 - database - INFO - 新产品已插入: ID 941
+2025-11-14 18:37:34,479 - database - INFO - 新产品已插入: ID 942
+2025-11-14 18:37:34,519 - database - INFO - 新产品已插入: ID 943
+2025-11-14 18:37:34,565 - database - INFO - 新产品已插入: ID 944
+2025-11-14 18:37:34,615 - database - INFO - 新产品已插入: ID 945
+2025-11-14 18:37:34,661 - database - INFO - 新产品已插入: ID 946
+2025-11-14 18:37:34,742 - database - INFO - 新产品已插入: ID 947
+2025-11-14 18:37:34,770 - database - INFO - 新产品已插入: ID 948
+2025-11-14 18:37:34,807 - database - INFO - 新产品已插入: ID 949
+2025-11-14 18:37:34,842 - database - INFO - 新产品已插入: ID 950
+2025-11-14 18:37:34,882 - database - INFO - 新产品已插入: ID 951
+2025-11-14 18:37:34,940 - database - INFO - 新产品已插入: ID 952
+2025-11-14 18:37:34,987 - database - INFO - 新产品已插入: ID 953
+2025-11-14 18:37:35,041 - database - INFO - 新产品已插入: ID 954
+2025-11-14 18:37:35,093 - database - INFO - 新产品已插入: ID 955
+2025-11-14 18:37:35,139 - database - INFO - 新产品已插入: ID 956
+2025-11-14 18:37:35,188 - database - INFO - 新产品已插入: ID 957
+2025-11-14 18:37:35,234 - database - INFO - 新产品已插入: ID 958
+2025-11-14 18:37:35,265 - database - INFO - 新产品已插入: ID 959
+2025-11-14 18:37:35,309 - database - INFO - 新产品已插入: ID 960
+2025-11-14 18:37:35,355 - database - INFO - 新产品已插入: ID 961
+2025-11-14 18:37:35,400 - database - INFO - 新产品已插入: ID 962
+2025-11-14 18:37:35,440 - database - INFO - 新产品已插入: ID 963
+2025-11-14 18:37:35,476 - database - INFO - 新产品已插入: ID 964
+2025-11-14 18:37:35,513 - database - INFO - 新产品已插入: ID 965
+2025-11-14 18:37:35,547 - database - INFO - 新产品已插入: ID 966
+2025-11-14 18:37:35,589 - database - INFO - 新产品已插入: ID 967
+2025-11-14 18:37:35,677 - database - INFO - 新产品已插入: ID 968
+2025-11-14 18:37:35,744 - database - INFO - 新产品已插入: ID 969
+2025-11-14 18:37:35,795 - database - INFO - 新产品已插入: ID 970
+2025-11-14 18:37:35,867 - database - INFO - 新产品已插入: ID 971
+2025-11-14 18:37:35,902 - database - INFO - 新产品已插入: ID 972
+2025-11-14 18:37:35,946 - database - INFO - 新产品已插入: ID 973
+2025-11-14 18:37:35,993 - database - INFO - 新产品已插入: ID 974
+2025-11-14 18:37:36,059 - database - INFO - 新产品已插入: ID 975
+2025-11-14 18:37:36,108 - database - INFO - 新产品已插入: ID 976
+2025-11-14 18:37:36,160 - database - INFO - 新产品已插入: ID 977
+2025-11-14 18:37:36,222 - database - INFO - 新产品已插入: ID 978
+2025-11-14 18:37:36,280 - database - INFO - 新产品已插入: ID 979
+2025-11-14 18:37:36,319 - database - INFO - 新产品已插入: ID 980
+2025-11-14 18:37:36,357 - database - INFO - 新产品已插入: ID 981
+2025-11-14 18:37:36,390 - database - INFO - 新产品已插入: ID 982
+2025-11-14 18:37:36,421 - database - INFO - 新产品已插入: ID 983
+2025-11-14 18:37:36,472 - database - INFO - 新产品已插入: ID 984
+2025-11-14 18:37:36,518 - database - INFO - 新产品已插入: ID 985
+2025-11-14 18:37:36,565 - database - INFO - 新产品已插入: ID 986
+2025-11-14 18:37:36,597 - database - INFO - 新产品已插入: ID 987
+2025-11-14 18:37:36,626 - database - INFO - 新产品已插入: ID 988
+2025-11-14 18:37:36,671 - database - INFO - 新产品已插入: ID 989
+2025-11-14 18:37:36,701 - database - INFO - 新产品已插入: ID 990
+2025-11-14 18:37:36,732 - database - INFO - 新产品已插入: ID 991
+2025-11-14 18:37:36,774 - database - INFO - 新产品已插入: ID 992
+2025-11-14 18:37:36,831 - database - INFO - 新产品已插入: ID 993
+2025-11-14 18:37:36,871 - database - INFO - 新产品已插入: ID 994
+2025-11-14 18:37:36,978 - database - INFO - 新产品已插入: ID 995
+2025-11-14 18:37:37,033 - database - INFO - 新产品已插入: ID 996
+2025-11-14 18:37:37,074 - database - INFO - 新产品已插入: ID 997
+2025-11-14 18:37:37,104 - database - INFO - 新产品已插入: ID 998
+2025-11-14 18:37:37,148 - database - INFO - 新产品已插入: ID 999
+2025-11-14 18:37:37,199 - database - INFO - 新产品已插入: ID 1000
+2025-11-14 18:37:37,199 - __main__ - INFO - 插入 1000 条数据用时: 41.82s, 速率: 23.9 records/s
+2025-11-14 18:37:37,199 - __main__ - INFO - 生成 5000 条测试数据...
+2025-11-14 18:37:37,292 - database - INFO - 产品已更新: https://test.com/product/1
+2025-11-14 18:37:37,331 - database - INFO - 产品已更新: https://test.com/product/2
+2025-11-14 18:37:37,366 - database - INFO - 产品已更新: https://test.com/product/3
+2025-11-14 18:37:37,414 - database - INFO - 产品已更新: https://test.com/product/4
+2025-11-14 18:37:37,450 - database - INFO - 产品已更新: https://test.com/product/5
+2025-11-14 18:37:37,498 - database - INFO - 产品已更新: https://test.com/product/6
+2025-11-14 18:37:37,558 - database - INFO - 产品已更新: https://test.com/product/7
+2025-11-14 18:37:37,601 - database - INFO - 产品已更新: https://test.com/product/8
+2025-11-14 18:37:37,642 - database - INFO - 产品已更新: https://test.com/product/9
+2025-11-14 18:37:37,677 - database - INFO - 产品已更新: https://test.com/product/10
+2025-11-14 18:37:37,708 - database - INFO - 产品已更新: https://test.com/product/11
+2025-11-14 18:37:37,761 - database - INFO - 产品已更新: https://test.com/product/12
+2025-11-14 18:37:37,824 - database - INFO - 产品已更新: https://test.com/product/13
+2025-11-14 18:37:37,898 - database - INFO - 产品已更新: https://test.com/product/14
+2025-11-14 18:37:37,971 - database - INFO - 产品已更新: https://test.com/product/15
+2025-11-14 18:37:38,017 - database - INFO - 产品已更新: https://test.com/product/16
+2025-11-14 18:37:38,064 - database - INFO - 产品已更新: https://test.com/product/17
+2025-11-14 18:37:38,099 - database - INFO - 产品已更新: https://test.com/product/18
+2025-11-14 18:37:38,146 - database - INFO - 产品已更新: https://test.com/product/19
+2025-11-14 18:37:38,190 - database - INFO - 产品已更新: https://test.com/product/20
+2025-11-14 18:37:38,230 - database - INFO - 产品已更新: https://test.com/product/21
+2025-11-14 18:37:38,265 - database - INFO - 产品已更新: https://test.com/product/22
+2025-11-14 18:37:38,312 - database - INFO - 产品已更新: https://test.com/product/23
+2025-11-14 18:37:38,358 - database - INFO - 产品已更新: https://test.com/product/24
+2025-11-14 18:37:38,417 - database - INFO - 产品已更新: https://test.com/product/25
+2025-11-14 18:37:38,474 - database - INFO - 产品已更新: https://test.com/product/26
+2025-11-14 18:37:38,519 - database - INFO - 产品已更新: https://test.com/product/27
+2025-11-14 18:37:38,563 - database - INFO - 产品已更新: https://test.com/product/28
+2025-11-14 18:37:38,598 - database - INFO - 产品已更新: https://test.com/product/29
+2025-11-14 18:37:38,641 - database - INFO - 产品已更新: https://test.com/product/30
+2025-11-14 18:37:38,682 - database - INFO - 产品已更新: https://test.com/product/31
+2025-11-14 18:37:38,723 - database - INFO - 产品已更新: https://test.com/product/32
+2025-11-14 18:37:38,820 - database - INFO - 产品已更新: https://test.com/product/33
+2025-11-14 18:37:38,858 - database - INFO - 产品已更新: https://test.com/product/34
+2025-11-14 18:37:38,905 - database - INFO - 产品已更新: https://test.com/product/35
+2025-11-14 18:37:38,952 - database - INFO - 产品已更新: https://test.com/product/36
+2025-11-14 18:37:38,991 - database - INFO - 产品已更新: https://test.com/product/37
+2025-11-14 18:37:39,026 - database - INFO - 产品已更新: https://test.com/product/38
+2025-11-14 18:37:39,068 - database - INFO - 产品已更新: https://test.com/product/39
+2025-11-14 18:37:39,108 - database - INFO - 产品已更新: https://test.com/product/40
+2025-11-14 18:37:39,170 - database - INFO - 产品已更新: https://test.com/product/41
+2025-11-14 18:37:39,302 - database - INFO - 产品已更新: https://test.com/product/42
+2025-11-14 18:37:39,339 - database - INFO - 产品已更新: https://test.com/product/43
+2025-11-14 18:37:39,408 - database - INFO - 产品已更新: https://test.com/product/44
+2025-11-14 18:37:39,461 - database - INFO - 产品已更新: https://test.com/product/45
+2025-11-14 18:37:39,501 - database - INFO - 产品已更新: https://test.com/product/46
+2025-11-14 18:37:39,546 - database - INFO - 产品已更新: https://test.com/product/47
+2025-11-14 18:37:39,602 - database - INFO - 产品已更新: https://test.com/product/48
+2025-11-14 18:37:39,668 - database - INFO - 产品已更新: https://test.com/product/49
+2025-11-14 18:37:39,717 - database - INFO - 产品已更新: https://test.com/product/50
+2025-11-14 18:37:39,787 - database - INFO - 产品已更新: https://test.com/product/51
+2025-11-14 18:37:39,820 - database - INFO - 产品已更新: https://test.com/product/52
+2025-11-14 18:37:39,868 - database - INFO - 产品已更新: https://test.com/product/53
+2025-11-14 18:37:39,905 - database - INFO - 产品已更新: https://test.com/product/54
+2025-11-14 18:37:39,951 - database - INFO - 产品已更新: https://test.com/product/55
+2025-11-14 18:37:40,017 - database - INFO - 产品已更新: https://test.com/product/56
+2025-11-14 18:37:40,073 - database - INFO - 产品已更新: https://test.com/product/57
+2025-11-14 18:37:40,119 - database - INFO - 产品已更新: https://test.com/product/58
+2025-11-14 18:37:40,173 - database - INFO - 产品已更新: https://test.com/product/59
+2025-11-14 18:37:40,252 - database - INFO - 产品已更新: https://test.com/product/60
+2025-11-14 18:37:40,282 - database - INFO - 产品已更新: https://test.com/product/61
+2025-11-14 18:37:40,324 - database - INFO - 产品已更新: https://test.com/product/62
+2025-11-14 18:37:40,356 - database - INFO - 产品已更新: https://test.com/product/63
+2025-11-14 18:37:40,406 - database - INFO - 产品已更新: https://test.com/product/64
+2025-11-14 18:37:40,443 - database - INFO - 产品已更新: https://test.com/product/65
+2025-11-14 18:37:40,476 - database - INFO - 产品已更新: https://test.com/product/66
+2025-11-14 18:37:40,514 - database - INFO - 产品已更新: https://test.com/product/67
+2025-11-14 18:37:40,555 - database - INFO - 产品已更新: https://test.com/product/68
+2025-11-14 18:37:40,606 - database - INFO - 产品已更新: https://test.com/product/69
+2025-11-14 18:37:40,647 - database - INFO - 产品已更新: https://test.com/product/70
+2025-11-14 18:37:40,685 - database - INFO - 产品已更新: https://test.com/product/71
+2025-11-14 18:37:40,728 - database - INFO - 产品已更新: https://test.com/product/72
+2025-11-14 18:37:40,780 - database - INFO - 产品已更新: https://test.com/product/73
+2025-11-14 18:37:40,815 - database - INFO - 产品已更新: https://test.com/product/74
+2025-11-14 18:37:40,869 - database - INFO - 产品已更新: https://test.com/product/75
+2025-11-14 18:37:40,908 - database - INFO - 产品已更新: https://test.com/product/76
+2025-11-14 18:37:40,966 - database - INFO - 产品已更新: https://test.com/product/77
+2025-11-14 18:37:40,998 - database - INFO - 产品已更新: https://test.com/product/78
+2025-11-14 18:37:41,033 - database - INFO - 产品已更新: https://test.com/product/79
+2025-11-14 18:37:41,069 - database - INFO - 产品已更新: https://test.com/product/80
+2025-11-14 18:37:41,122 - database - INFO - 产品已更新: https://test.com/product/81
+2025-11-14 18:37:41,160 - database - INFO - 产品已更新: https://test.com/product/82
+2025-11-14 18:37:41,223 - database - INFO - 产品已更新: https://test.com/product/83
+2025-11-14 18:37:41,278 - database - INFO - 产品已更新: https://test.com/product/84
+2025-11-14 18:37:41,325 - database - INFO - 产品已更新: https://test.com/product/85
+2025-11-14 18:37:41,368 - database - INFO - 产品已更新: https://test.com/product/86
+2025-11-14 18:37:41,412 - database - INFO - 产品已更新: https://test.com/product/87
+2025-11-14 18:37:41,449 - database - INFO - 产品已更新: https://test.com/product/88
+2025-11-14 18:37:41,517 - database - INFO - 产品已更新: https://test.com/product/89
+2025-11-14 18:37:41,580 - database - INFO - 产品已更新: https://test.com/product/90
+2025-11-14 18:37:41,646 - database - INFO - 产品已更新: https://test.com/product/91
+2025-11-14 18:37:41,685 - database - INFO - 产品已更新: https://test.com/product/92
+2025-11-14 18:37:41,725 - database - INFO - 产品已更新: https://test.com/product/93
+2025-11-14 18:37:41,753 - database - INFO - 产品已更新: https://test.com/product/94
+2025-11-14 18:37:41,789 - database - INFO - 产品已更新: https://test.com/product/95
+2025-11-14 18:37:41,830 - database - INFO - 产品已更新: https://test.com/product/96
+2025-11-14 18:37:41,866 - database - INFO - 产品已更新: https://test.com/product/97
+2025-11-14 18:37:41,910 - database - INFO - 产品已更新: https://test.com/product/98
+2025-11-14 18:37:41,950 - database - INFO - 产品已更新: https://test.com/product/99
+2025-11-14 18:37:42,011 - database - INFO - 产品已更新: https://test.com/product/100
+2025-11-14 18:37:42,052 - database - INFO - 产品已更新: https://test.com/product/101
+2025-11-14 18:37:42,102 - database - INFO - 产品已更新: https://test.com/product/102
+2025-11-14 18:37:42,144 - database - INFO - 产品已更新: https://test.com/product/103
+2025-11-14 18:37:42,204 - database - INFO - 产品已更新: https://test.com/product/104
+2025-11-14 18:37:42,237 - database - INFO - 产品已更新: https://test.com/product/105
+2025-11-14 18:37:42,269 - database - INFO - 产品已更新: https://test.com/product/106
+2025-11-14 18:37:42,301 - database - INFO - 产品已更新: https://test.com/product/107
+2025-11-14 18:37:42,359 - database - INFO - 产品已更新: https://test.com/product/108
+2025-11-14 18:37:42,389 - database - INFO - 产品已更新: https://test.com/product/109
+2025-11-14 18:37:42,421 - database - INFO - 产品已更新: https://test.com/product/110
+2025-11-14 18:37:42,457 - database - INFO - 产品已更新: https://test.com/product/111
+2025-11-14 18:37:42,493 - database - INFO - 产品已更新: https://test.com/product/112
+2025-11-14 18:37:42,528 - database - INFO - 产品已更新: https://test.com/product/113
+2025-11-14 18:37:42,581 - database - INFO - 产品已更新: https://test.com/product/114
+2025-11-14 18:37:42,634 - database - INFO - 产品已更新: https://test.com/product/115
+2025-11-14 18:37:42,669 - database - INFO - 产品已更新: https://test.com/product/116
+2025-11-14 18:37:42,705 - database - INFO - 产品已更新: https://test.com/product/117
+2025-11-14 18:37:42,748 - database - INFO - 产品已更新: https://test.com/product/118
+2025-11-14 18:37:42,782 - database - INFO - 产品已更新: https://test.com/product/119
+2025-11-14 18:37:42,831 - database - INFO - 产品已更新: https://test.com/product/120
+2025-11-14 18:37:42,885 - database - INFO - 产品已更新: https://test.com/product/121
+2025-11-14 18:37:42,927 - database - INFO - 产品已更新: https://test.com/product/122
+2025-11-14 18:37:42,999 - database - INFO - 产品已更新: https://test.com/product/123
+2025-11-14 18:37:43,037 - database - INFO - 产品已更新: https://test.com/product/124
+2025-11-14 18:37:43,069 - database - INFO - 产品已更新: https://test.com/product/125
+2025-11-14 18:37:43,119 - database - INFO - 产品已更新: https://test.com/product/126
+2025-11-14 18:37:43,165 - database - INFO - 产品已更新: https://test.com/product/127
+2025-11-14 18:37:43,206 - database - INFO - 产品已更新: https://test.com/product/128
+2025-11-14 18:37:43,276 - database - INFO - 产品已更新: https://test.com/product/129
+2025-11-14 18:37:43,335 - database - INFO - 产品已更新: https://test.com/product/130
+2025-11-14 18:37:43,384 - database - INFO - 产品已更新: https://test.com/product/131
+2025-11-14 18:37:43,417 - database - INFO - 产品已更新: https://test.com/product/132
+2025-11-14 18:37:43,453 - database - INFO - 产品已更新: https://test.com/product/133
+2025-11-14 18:37:43,489 - database - INFO - 产品已更新: https://test.com/product/134
+2025-11-14 18:37:43,528 - database - INFO - 产品已更新: https://test.com/product/135
+2025-11-14 18:37:43,563 - database - INFO - 产品已更新: https://test.com/product/136
+2025-11-14 18:37:43,612 - database - INFO - 产品已更新: https://test.com/product/137
+2025-11-14 18:37:43,657 - database - INFO - 产品已更新: https://test.com/product/138
+2025-11-14 18:37:43,692 - database - INFO - 产品已更新: https://test.com/product/139
+2025-11-14 18:37:43,733 - database - INFO - 产品已更新: https://test.com/product/140
+2025-11-14 18:37:43,769 - database - INFO - 产品已更新: https://test.com/product/141
+2025-11-14 18:37:43,810 - database - INFO - 产品已更新: https://test.com/product/142
+2025-11-14 18:37:43,867 - database - INFO - 产品已更新: https://test.com/product/143
+2025-11-14 18:37:43,928 - database - INFO - 产品已更新: https://test.com/product/144
+2025-11-14 18:37:43,963 - database - INFO - 产品已更新: https://test.com/product/145
+2025-11-14 18:37:44,000 - database - INFO - 产品已更新: https://test.com/product/146
+2025-11-14 18:37:44,048 - database - INFO - 产品已更新: https://test.com/product/147
+2025-11-14 18:37:44,104 - database - INFO - 产品已更新: https://test.com/product/148
+2025-11-14 18:37:44,146 - database - INFO - 产品已更新: https://test.com/product/149
+2025-11-14 18:37:44,257 - database - INFO - 产品已更新: https://test.com/product/150
+2025-11-14 18:37:44,298 - database - INFO - 产品已更新: https://test.com/product/151
+2025-11-14 18:37:44,339 - database - INFO - 产品已更新: https://test.com/product/152
+2025-11-14 18:37:44,371 - database - INFO - 产品已更新: https://test.com/product/153
+2025-11-14 18:37:44,630 - database - INFO - 产品已更新: https://test.com/product/154
+2025-11-14 18:37:44,663 - database - INFO - 产品已更新: https://test.com/product/155
+2025-11-14 18:37:44,707 - database - INFO - 产品已更新: https://test.com/product/156
+2025-11-14 18:37:44,765 - database - INFO - 产品已更新: https://test.com/product/157
+2025-11-14 18:37:44,796 - database - INFO - 产品已更新: https://test.com/product/158
+2025-11-14 18:37:44,839 - database - INFO - 产品已更新: https://test.com/product/159
+2025-11-14 18:37:44,879 - database - INFO - 产品已更新: https://test.com/product/160
+2025-11-14 18:37:44,917 - database - INFO - 产品已更新: https://test.com/product/161
+2025-11-14 18:37:44,950 - database - INFO - 产品已更新: https://test.com/product/162
+2025-11-14 18:37:44,987 - database - INFO - 产品已更新: https://test.com/product/163
+2025-11-14 18:37:45,033 - database - INFO - 产品已更新: https://test.com/product/164
+2025-11-14 18:37:45,078 - database - INFO - 产品已更新: https://test.com/product/165
+2025-11-14 18:37:45,143 - database - INFO - 产品已更新: https://test.com/product/166
+2025-11-14 18:37:45,214 - database - INFO - 产品已更新: https://test.com/product/167
+2025-11-14 18:37:45,249 - database - INFO - 产品已更新: https://test.com/product/168
+2025-11-14 18:37:45,303 - database - INFO - 产品已更新: https://test.com/product/169
+2025-11-14 18:37:45,344 - database - INFO - 产品已更新: https://test.com/product/170
+2025-11-14 18:37:45,403 - database - INFO - 产品已更新: https://test.com/product/171
+2025-11-14 18:37:45,474 - database - INFO - 产品已更新: https://test.com/product/172
+2025-11-14 18:37:45,546 - database - INFO - 产品已更新: https://test.com/product/173
+2025-11-14 18:37:45,598 - database - INFO - 产品已更新: https://test.com/product/174
+2025-11-14 18:37:45,632 - database - INFO - 产品已更新: https://test.com/product/175
+2025-11-14 18:37:45,673 - database - INFO - 产品已更新: https://test.com/product/176
+2025-11-14 18:37:45,707 - database - INFO - 产品已更新: https://test.com/product/177
+2025-11-14 18:37:45,744 - database - INFO - 产品已更新: https://test.com/product/178
+2025-11-14 18:37:45,780 - database - INFO - 产品已更新: https://test.com/product/179
+2025-11-14 18:37:45,835 - database - INFO - 产品已更新: https://test.com/product/180
+2025-11-14 18:37:45,887 - database - INFO - 产品已更新: https://test.com/product/181
+2025-11-14 18:37:45,946 - database - INFO - 产品已更新: https://test.com/product/182
+2025-11-14 18:37:45,996 - database - INFO - 产品已更新: https://test.com/product/183
+2025-11-14 18:37:46,032 - database - INFO - 产品已更新: https://test.com/product/184
+2025-11-14 18:37:46,070 - database - INFO - 产品已更新: https://test.com/product/185
+2025-11-14 18:37:46,104 - database - INFO - 产品已更新: https://test.com/product/186
+2025-11-14 18:37:46,147 - database - INFO - 产品已更新: https://test.com/product/187
+2025-11-14 18:37:46,197 - database - INFO - 产品已更新: https://test.com/product/188
+2025-11-14 18:37:46,235 - database - INFO - 产品已更新: https://test.com/product/189
+2025-11-14 18:37:46,291 - database - INFO - 产品已更新: https://test.com/product/190
+2025-11-14 18:37:46,346 - database - INFO - 产品已更新: https://test.com/product/191
+2025-11-14 18:37:46,392 - database - INFO - 产品已更新: https://test.com/product/192
+2025-11-14 18:37:46,432 - database - INFO - 产品已更新: https://test.com/product/193
+2025-11-14 18:37:46,469 - database - INFO - 产品已更新: https://test.com/product/194
+2025-11-14 18:37:46,516 - database - INFO - 产品已更新: https://test.com/product/195
+2025-11-14 18:37:46,554 - database - INFO - 产品已更新: https://test.com/product/196
+2025-11-14 18:37:46,620 - database - INFO - 产品已更新: https://test.com/product/197
+2025-11-14 18:37:46,662 - database - INFO - 产品已更新: https://test.com/product/198
+2025-11-14 18:37:46,702 - database - INFO - 产品已更新: https://test.com/product/199
+2025-11-14 18:37:46,744 - database - INFO - 产品已更新: https://test.com/product/200
+2025-11-14 18:37:46,810 - database - INFO - 产品已更新: https://test.com/product/201
+2025-11-14 18:37:46,861 - database - INFO - 产品已更新: https://test.com/product/202
+2025-11-14 18:37:46,891 - database - INFO - 产品已更新: https://test.com/product/203
+2025-11-14 18:37:46,950 - database - INFO - 产品已更新: https://test.com/product/204
+2025-11-14 18:37:46,997 - database - INFO - 产品已更新: https://test.com/product/205
+2025-11-14 18:37:47,031 - database - INFO - 产品已更新: https://test.com/product/206
+2025-11-14 18:37:47,070 - database - INFO - 产品已更新: https://test.com/product/207
+2025-11-14 18:37:47,107 - database - INFO - 产品已更新: https://test.com/product/208
+2025-11-14 18:37:47,141 - database - INFO - 产品已更新: https://test.com/product/209
+2025-11-14 18:37:47,214 - database - INFO - 产品已更新: https://test.com/product/210
+2025-11-14 18:37:47,262 - database - INFO - 产品已更新: https://test.com/product/211
+2025-11-14 18:37:47,291 - database - INFO - 产品已更新: https://test.com/product/212
+2025-11-14 18:37:47,323 - database - INFO - 产品已更新: https://test.com/product/213
+2025-11-14 18:37:47,351 - database - INFO - 产品已更新: https://test.com/product/214
+2025-11-14 18:37:47,385 - database - INFO - 产品已更新: https://test.com/product/215
+2025-11-14 18:37:47,425 - database - INFO - 产品已更新: https://test.com/product/216
+2025-11-14 18:37:47,466 - database - INFO - 产品已更新: https://test.com/product/217
+2025-11-14 18:37:47,499 - database - INFO - 产品已更新: https://test.com/product/218
+2025-11-14 18:37:47,536 - database - INFO - 产品已更新: https://test.com/product/219
+2025-11-14 18:37:47,574 - database - INFO - 产品已更新: https://test.com/product/220
+2025-11-14 18:37:47,606 - database - INFO - 产品已更新: https://test.com/product/221
+2025-11-14 18:37:47,644 - database - INFO - 产品已更新: https://test.com/product/222
+2025-11-14 18:37:47,708 - database - INFO - 产品已更新: https://test.com/product/223
+2025-11-14 18:37:47,756 - database - INFO - 产品已更新: https://test.com/product/224
+2025-11-14 18:37:47,797 - database - INFO - 产品已更新: https://test.com/product/225
+2025-11-14 18:37:47,840 - database - INFO - 产品已更新: https://test.com/product/226
+2025-11-14 18:37:47,876 - database - INFO - 产品已更新: https://test.com/product/227
+2025-11-14 18:37:47,915 - database - INFO - 产品已更新: https://test.com/product/228
+2025-11-14 18:37:47,943 - database - INFO - 产品已更新: https://test.com/product/229
+2025-11-14 18:37:47,977 - database - INFO - 产品已更新: https://test.com/product/230
+2025-11-14 18:37:48,009 - database - INFO - 产品已更新: https://test.com/product/231
+2025-11-14 18:37:48,074 - database - INFO - 产品已更新: https://test.com/product/232
+2025-11-14 18:37:48,115 - database - INFO - 产品已更新: https://test.com/product/233
+2025-11-14 18:37:48,148 - database - INFO - 产品已更新: https://test.com/product/234
+2025-11-14 18:37:48,196 - database - INFO - 产品已更新: https://test.com/product/235
+2025-11-14 18:37:48,252 - database - INFO - 产品已更新: https://test.com/product/236
+2025-11-14 18:37:48,318 - database - INFO - 产品已更新: https://test.com/product/237
+2025-11-14 18:37:48,363 - database - INFO - 产品已更新: https://test.com/product/238
+2025-11-14 18:37:48,403 - database - INFO - 产品已更新: https://test.com/product/239
+2025-11-14 18:37:48,442 - database - INFO - 产品已更新: https://test.com/product/240
+2025-11-14 18:37:48,497 - database - INFO - 产品已更新: https://test.com/product/241
+2025-11-14 18:37:48,529 - database - INFO - 产品已更新: https://test.com/product/242
+2025-11-14 18:37:48,564 - database - INFO - 产品已更新: https://test.com/product/243
+2025-11-14 18:37:48,598 - database - INFO - 产品已更新: https://test.com/product/244
+2025-11-14 18:37:48,642 - database - INFO - 产品已更新: https://test.com/product/245
+2025-11-14 18:37:48,701 - database - INFO - 产品已更新: https://test.com/product/246
+2025-11-14 18:37:48,749 - database - INFO - 产品已更新: https://test.com/product/247
+2025-11-14 18:37:48,786 - database - INFO - 产品已更新: https://test.com/product/248
+2025-11-14 18:37:48,825 - database - INFO - 产品已更新: https://test.com/product/249
+2025-11-14 18:37:48,872 - database - INFO - 产品已更新: https://test.com/product/250
+2025-11-14 18:37:48,911 - database - INFO - 产品已更新: https://test.com/product/251
+2025-11-14 18:37:48,958 - database - INFO - 产品已更新: https://test.com/product/252
+2025-11-14 18:37:48,997 - database - INFO - 产品已更新: https://test.com/product/253
+2025-11-14 18:37:49,035 - database - INFO - 产品已更新: https://test.com/product/254
+2025-11-14 18:37:49,118 - database - INFO - 产品已更新: https://test.com/product/255
+2025-11-14 18:37:49,156 - database - INFO - 产品已更新: https://test.com/product/256
+2025-11-14 18:37:49,197 - database - INFO - 产品已更新: https://test.com/product/257
+2025-11-14 18:37:49,241 - database - INFO - 产品已更新: https://test.com/product/258
+2025-11-14 18:37:49,272 - database - INFO - 产品已更新: https://test.com/product/259
+2025-11-14 18:37:49,306 - database - INFO - 产品已更新: https://test.com/product/260
+2025-11-14 18:37:49,342 - database - INFO - 产品已更新: https://test.com/product/261
+2025-11-14 18:37:49,390 - database - INFO - 产品已更新: https://test.com/product/262
+2025-11-14 18:37:49,425 - database - INFO - 产品已更新: https://test.com/product/263
+2025-11-14 18:37:49,460 - database - INFO - 产品已更新: https://test.com/product/264
+2025-11-14 18:37:49,499 - database - INFO - 产品已更新: https://test.com/product/265
+2025-11-14 18:37:49,539 - database - INFO - 产品已更新: https://test.com/product/266
+2025-11-14 18:37:49,575 - database - INFO - 产品已更新: https://test.com/product/267
+2025-11-14 18:37:49,607 - database - INFO - 产品已更新: https://test.com/product/268
+2025-11-14 18:37:49,640 - database - INFO - 产品已更新: https://test.com/product/269
+2025-11-14 18:37:49,684 - database - INFO - 产品已更新: https://test.com/product/270
+2025-11-14 18:37:49,718 - database - INFO - 产品已更新: https://test.com/product/271
+2025-11-14 18:37:49,749 - database - INFO - 产品已更新: https://test.com/product/272
+2025-11-14 18:37:49,782 - database - INFO - 产品已更新: https://test.com/product/273
+2025-11-14 18:37:49,828 - database - INFO - 产品已更新: https://test.com/product/274
+2025-11-14 18:37:49,863 - database - INFO - 产品已更新: https://test.com/product/275
+2025-11-14 18:37:49,906 - database - INFO - 产品已更新: https://test.com/product/276
+2025-11-14 18:37:49,945 - database - INFO - 产品已更新: https://test.com/product/277
+2025-11-14 18:37:49,983 - database - INFO - 产品已更新: https://test.com/product/278
+2025-11-14 18:37:50,032 - database - INFO - 产品已更新: https://test.com/product/279
+2025-11-14 18:37:50,067 - database - INFO - 产品已更新: https://test.com/product/280
+2025-11-14 18:37:50,112 - database - INFO - 产品已更新: https://test.com/product/281
+2025-11-14 18:37:50,187 - database - INFO - 产品已更新: https://test.com/product/282
+2025-11-14 18:37:50,221 - database - INFO - 产品已更新: https://test.com/product/283
+2025-11-14 18:37:50,270 - database - INFO - 产品已更新: https://test.com/product/284
+2025-11-14 18:37:50,307 - database - INFO - 产品已更新: https://test.com/product/285
+2025-11-14 18:37:50,361 - database - INFO - 产品已更新: https://test.com/product/286
+2025-11-14 18:37:50,424 - database - INFO - 产品已更新: https://test.com/product/287
+2025-11-14 18:37:50,456 - database - INFO - 产品已更新: https://test.com/product/288
+2025-11-14 18:37:50,505 - database - INFO - 产品已更新: https://test.com/product/289
+2025-11-14 18:37:50,558 - database - INFO - 产品已更新: https://test.com/product/290
+2025-11-14 18:37:50,612 - database - INFO - 产品已更新: https://test.com/product/291
+2025-11-14 18:37:50,663 - database - INFO - 产品已更新: https://test.com/product/292
+2025-11-14 18:37:50,720 - database - INFO - 产品已更新: https://test.com/product/293
+2025-11-14 18:37:50,784 - database - INFO - 产品已更新: https://test.com/product/294
+2025-11-14 18:37:50,828 - database - INFO - 产品已更新: https://test.com/product/295
+2025-11-14 18:37:50,871 - database - INFO - 产品已更新: https://test.com/product/296
+2025-11-14 18:37:50,928 - database - INFO - 产品已更新: https://test.com/product/297
+2025-11-14 18:37:50,966 - database - INFO - 产品已更新: https://test.com/product/298
+2025-11-14 18:37:51,004 - database - INFO - 产品已更新: https://test.com/product/299
+2025-11-14 18:37:51,042 - database - INFO - 产品已更新: https://test.com/product/300
+2025-11-14 18:37:51,085 - database - INFO - 产品已更新: https://test.com/product/301
+2025-11-14 18:37:51,138 - database - INFO - 产品已更新: https://test.com/product/302
+2025-11-14 18:37:51,192 - database - INFO - 产品已更新: https://test.com/product/303
+2025-11-14 18:37:51,233 - database - INFO - 产品已更新: https://test.com/product/304
+2025-11-14 18:37:51,277 - database - INFO - 产品已更新: https://test.com/product/305
+2025-11-14 18:37:51,406 - database - INFO - 产品已更新: https://test.com/product/306
+2025-11-14 18:37:51,464 - database - INFO - 产品已更新: https://test.com/product/307
+2025-11-14 18:37:51,503 - database - INFO - 产品已更新: https://test.com/product/308
+2025-11-14 18:37:51,555 - database - INFO - 产品已更新: https://test.com/product/309
+2025-11-14 18:37:51,603 - database - INFO - 产品已更新: https://test.com/product/310
+2025-11-14 18:37:51,661 - database - INFO - 产品已更新: https://test.com/product/311
+2025-11-14 18:37:51,713 - database - INFO - 产品已更新: https://test.com/product/312
+2025-11-14 18:37:51,764 - database - INFO - 产品已更新: https://test.com/product/313
+2025-11-14 18:37:51,803 - database - INFO - 产品已更新: https://test.com/product/314
+2025-11-14 18:37:51,846 - database - INFO - 产品已更新: https://test.com/product/315
+2025-11-14 18:37:51,918 - database - INFO - 产品已更新: https://test.com/product/316
+2025-11-14 18:37:51,972 - database - INFO - 产品已更新: https://test.com/product/317
+2025-11-14 18:37:52,020 - database - INFO - 产品已更新: https://test.com/product/318
+2025-11-14 18:37:52,070 - database - INFO - 产品已更新: https://test.com/product/319
+2025-11-14 18:37:52,122 - database - INFO - 产品已更新: https://test.com/product/320
+2025-11-14 18:37:52,180 - database - INFO - 产品已更新: https://test.com/product/321
+2025-11-14 18:37:52,261 - database - INFO - 产品已更新: https://test.com/product/322
+2025-11-14 18:37:52,303 - database - INFO - 产品已更新: https://test.com/product/323
+2025-11-14 18:37:52,355 - database - INFO - 产品已更新: https://test.com/product/324
+2025-11-14 18:37:52,438 - database - INFO - 产品已更新: https://test.com/product/325
+2025-11-14 18:37:52,481 - database - INFO - 产品已更新: https://test.com/product/326
+2025-11-14 18:37:52,539 - database - INFO - 产品已更新: https://test.com/product/327
+2025-11-14 18:37:52,580 - database - INFO - 产品已更新: https://test.com/product/328
+2025-11-14 18:37:52,621 - database - INFO - 产品已更新: https://test.com/product/329
+2025-11-14 18:37:52,675 - database - INFO - 产品已更新: https://test.com/product/330
+2025-11-14 18:37:52,727 - database - INFO - 产品已更新: https://test.com/product/331
+2025-11-14 18:37:52,767 - database - INFO - 产品已更新: https://test.com/product/332
+2025-11-14 18:37:52,823 - database - INFO - 产品已更新: https://test.com/product/333
+2025-11-14 18:37:52,883 - database - INFO - 产品已更新: https://test.com/product/334
+2025-11-14 18:37:52,939 - database - INFO - 产品已更新: https://test.com/product/335
+2025-11-14 18:37:52,995 - database - INFO - 产品已更新: https://test.com/product/336
+2025-11-14 18:37:53,083 - database - INFO - 产品已更新: https://test.com/product/337
+2025-11-14 18:37:53,133 - database - INFO - 产品已更新: https://test.com/product/338
+2025-11-14 18:37:53,167 - database - INFO - 产品已更新: https://test.com/product/339
+2025-11-14 18:37:53,211 - database - INFO - 产品已更新: https://test.com/product/340
+2025-11-14 18:37:53,249 - database - INFO - 产品已更新: https://test.com/product/341
+2025-11-14 18:37:53,324 - database - INFO - 产品已更新: https://test.com/product/342
+2025-11-14 18:37:53,367 - database - INFO - 产品已更新: https://test.com/product/343
+2025-11-14 18:37:53,401 - database - INFO - 产品已更新: https://test.com/product/344
+2025-11-14 18:37:53,443 - database - INFO - 产品已更新: https://test.com/product/345
+2025-11-14 18:37:53,484 - database - INFO - 产品已更新: https://test.com/product/346
+2025-11-14 18:37:53,542 - database - INFO - 产品已更新: https://test.com/product/347
+2025-11-14 18:37:53,587 - database - INFO - 产品已更新: https://test.com/product/348
+2025-11-14 18:37:53,631 - database - INFO - 产品已更新: https://test.com/product/349
+2025-11-14 18:37:53,700 - database - INFO - 产品已更新: https://test.com/product/350
+2025-11-14 18:37:53,743 - database - INFO - 产品已更新: https://test.com/product/351
+2025-11-14 18:37:53,784 - database - INFO - 产品已更新: https://test.com/product/352
+2025-11-14 18:37:53,825 - database - INFO - 产品已更新: https://test.com/product/353
+2025-11-14 18:37:53,871 - database - INFO - 产品已更新: https://test.com/product/354
+2025-11-14 18:37:53,923 - database - INFO - 产品已更新: https://test.com/product/355
+2025-11-14 18:37:53,981 - database - INFO - 产品已更新: https://test.com/product/356
+2025-11-14 18:37:54,051 - database - INFO - 产品已更新: https://test.com/product/357
+2025-11-14 18:37:54,103 - database - INFO - 产品已更新: https://test.com/product/358
+2025-11-14 18:37:54,147 - database - INFO - 产品已更新: https://test.com/product/359
+2025-11-14 18:37:54,204 - database - INFO - 产品已更新: https://test.com/product/360
+2025-11-14 18:37:54,252 - database - INFO - 产品已更新: https://test.com/product/361
+2025-11-14 18:37:54,329 - database - INFO - 产品已更新: https://test.com/product/362
+2025-11-14 18:37:54,379 - database - INFO - 产品已更新: https://test.com/product/363
+2025-11-14 18:37:54,430 - database - INFO - 产品已更新: https://test.com/product/364
+2025-11-14 18:37:54,480 - database - INFO - 产品已更新: https://test.com/product/365
+2025-11-14 18:37:54,529 - database - INFO - 产品已更新: https://test.com/product/366
+2025-11-14 18:37:54,568 - database - INFO - 产品已更新: https://test.com/product/367
+2025-11-14 18:37:54,611 - database - INFO - 产品已更新: https://test.com/product/368
+2025-11-14 18:37:54,652 - database - INFO - 产品已更新: https://test.com/product/369
+2025-11-14 18:37:54,695 - database - INFO - 产品已更新: https://test.com/product/370
+2025-11-14 18:37:54,727 - database - INFO - 产品已更新: https://test.com/product/371
+2025-11-14 18:37:54,760 - database - INFO - 产品已更新: https://test.com/product/372
+2025-11-14 18:37:54,793 - database - INFO - 产品已更新: https://test.com/product/373
+2025-11-14 18:37:54,831 - database - INFO - 产品已更新: https://test.com/product/374
+2025-11-14 18:37:54,870 - database - INFO - 产品已更新: https://test.com/product/375
+2025-11-14 18:37:54,903 - database - INFO - 产品已更新: https://test.com/product/376
+2025-11-14 18:37:54,942 - database - INFO - 产品已更新: https://test.com/product/377
+2025-11-14 18:37:54,971 - database - INFO - 产品已更新: https://test.com/product/378
+2025-11-14 18:37:55,007 - database - INFO - 产品已更新: https://test.com/product/379
+2025-11-14 18:37:55,050 - database - INFO - 产品已更新: https://test.com/product/380
+2025-11-14 18:37:55,086 - database - INFO - 产品已更新: https://test.com/product/381
+2025-11-14 18:37:55,122 - database - INFO - 产品已更新: https://test.com/product/382
+2025-11-14 18:37:55,154 - database - INFO - 产品已更新: https://test.com/product/383
+2025-11-14 18:37:55,186 - database - INFO - 产品已更新: https://test.com/product/384
+2025-11-14 18:37:55,225 - database - INFO - 产品已更新: https://test.com/product/385
+2025-11-14 18:37:55,271 - database - INFO - 产品已更新: https://test.com/product/386
+2025-11-14 18:37:55,318 - database - INFO - 产品已更新: https://test.com/product/387
+2025-11-14 18:37:55,366 - database - INFO - 产品已更新: https://test.com/product/388
+2025-11-14 18:37:55,399 - database - INFO - 产品已更新: https://test.com/product/389
+2025-11-14 18:37:55,444 - database - INFO - 产品已更新: https://test.com/product/390
+2025-11-14 18:37:55,478 - database - INFO - 产品已更新: https://test.com/product/391
+2025-11-14 18:37:55,508 - database - INFO - 产品已更新: https://test.com/product/392
+2025-11-14 18:37:55,543 - database - INFO - 产品已更新: https://test.com/product/393
+2025-11-14 18:37:55,579 - database - INFO - 产品已更新: https://test.com/product/394
+2025-11-14 18:37:55,615 - database - INFO - 产品已更新: https://test.com/product/395
+2025-11-14 18:37:55,647 - database - INFO - 产品已更新: https://test.com/product/396
+2025-11-14 18:37:55,685 - database - INFO - 产品已更新: https://test.com/product/397
+2025-11-14 18:37:55,735 - database - INFO - 产品已更新: https://test.com/product/398
+2025-11-14 18:37:55,769 - database - INFO - 产品已更新: https://test.com/product/399
+2025-11-14 18:37:55,799 - database - INFO - 产品已更新: https://test.com/product/400
+2025-11-14 18:37:55,840 - database - INFO - 产品已更新: https://test.com/product/401
+2025-11-14 18:37:55,882 - database - INFO - 产品已更新: https://test.com/product/402
+2025-11-14 18:37:55,916 - database - INFO - 产品已更新: https://test.com/product/403
+2025-11-14 18:37:55,949 - database - INFO - 产品已更新: https://test.com/product/404
+2025-11-14 18:37:56,001 - database - INFO - 产品已更新: https://test.com/product/405
+2025-11-14 18:37:56,033 - database - INFO - 产品已更新: https://test.com/product/406
+2025-11-14 18:37:56,063 - database - INFO - 产品已更新: https://test.com/product/407
+2025-11-14 18:37:56,093 - database - INFO - 产品已更新: https://test.com/product/408
+2025-11-14 18:37:56,133 - database - INFO - 产品已更新: https://test.com/product/409
+2025-11-14 18:37:56,170 - database - INFO - 产品已更新: https://test.com/product/410
+2025-11-14 18:37:56,209 - database - INFO - 产品已更新: https://test.com/product/411
+2025-11-14 18:37:56,254 - database - INFO - 产品已更新: https://test.com/product/412
+2025-11-14 18:37:56,293 - database - INFO - 产品已更新: https://test.com/product/413
+2025-11-14 18:37:56,334 - database - INFO - 产品已更新: https://test.com/product/414
+2025-11-14 18:37:56,380 - database - INFO - 产品已更新: https://test.com/product/415
+2025-11-14 18:37:56,424 - database - INFO - 产品已更新: https://test.com/product/416
+2025-11-14 18:37:56,459 - database - INFO - 产品已更新: https://test.com/product/417
+2025-11-14 18:37:56,510 - database - INFO - 产品已更新: https://test.com/product/418
+2025-11-14 18:37:56,555 - database - INFO - 产品已更新: https://test.com/product/419
+2025-11-14 18:37:56,657 - database - INFO - 产品已更新: https://test.com/product/420
+2025-11-14 18:37:56,703 - database - INFO - 产品已更新: https://test.com/product/421
+2025-11-14 18:37:56,763 - database - INFO - 产品已更新: https://test.com/product/422
+2025-11-14 18:37:56,800 - database - INFO - 产品已更新: https://test.com/product/423
+2025-11-14 18:37:56,841 - database - INFO - 产品已更新: https://test.com/product/424
+2025-11-14 18:37:56,885 - database - INFO - 产品已更新: https://test.com/product/425
+2025-11-14 18:37:56,932 - database - INFO - 产品已更新: https://test.com/product/426
+2025-11-14 18:37:56,969 - database - INFO - 产品已更新: https://test.com/product/427
+2025-11-14 18:37:57,008 - database - INFO - 产品已更新: https://test.com/product/428
+2025-11-14 18:37:57,043 - database - INFO - 产品已更新: https://test.com/product/429
+2025-11-14 18:37:57,076 - database - INFO - 产品已更新: https://test.com/product/430
+2025-11-14 18:37:57,116 - database - INFO - 产品已更新: https://test.com/product/431
+2025-11-14 18:37:57,162 - database - INFO - 产品已更新: https://test.com/product/432
+2025-11-14 18:37:57,239 - database - INFO - 产品已更新: https://test.com/product/433
+2025-11-14 18:37:57,273 - database - INFO - 产品已更新: https://test.com/product/434
+2025-11-14 18:37:57,304 - database - INFO - 产品已更新: https://test.com/product/435
+2025-11-14 18:37:57,341 - database - INFO - 产品已更新: https://test.com/product/436
+2025-11-14 18:37:57,387 - database - INFO - 产品已更新: https://test.com/product/437
+2025-11-14 18:37:57,417 - database - INFO - 产品已更新: https://test.com/product/438
+2025-11-14 18:37:57,452 - database - INFO - 产品已更新: https://test.com/product/439
+2025-11-14 18:37:57,506 - database - INFO - 产品已更新: https://test.com/product/440
+2025-11-14 18:37:57,539 - database - INFO - 产品已更新: https://test.com/product/441
+2025-11-14 18:37:57,577 - database - INFO - 产品已更新: https://test.com/product/442
+2025-11-14 18:37:57,608 - database - INFO - 产品已更新: https://test.com/product/443
+2025-11-14 18:37:57,642 - database - INFO - 产品已更新: https://test.com/product/444
+2025-11-14 18:37:57,691 - database - INFO - 产品已更新: https://test.com/product/445
+2025-11-14 18:37:57,719 - database - INFO - 产品已更新: https://test.com/product/446
+2025-11-14 18:37:57,758 - database - INFO - 产品已更新: https://test.com/product/447
+2025-11-14 18:37:57,789 - database - INFO - 产品已更新: https://test.com/product/448
+2025-11-14 18:37:57,830 - database - INFO - 产品已更新: https://test.com/product/449
+2025-11-14 18:37:57,872 - database - INFO - 产品已更新: https://test.com/product/450
+2025-11-14 18:37:57,916 - database - INFO - 产品已更新: https://test.com/product/451
+2025-11-14 18:37:57,962 - database - INFO - 产品已更新: https://test.com/product/452
+2025-11-14 18:37:58,003 - database - INFO - 产品已更新: https://test.com/product/453
+2025-11-14 18:37:58,044 - database - INFO - 产品已更新: https://test.com/product/454
+2025-11-14 18:37:58,093 - database - INFO - 产品已更新: https://test.com/product/455
+2025-11-14 18:37:58,132 - database - INFO - 产品已更新: https://test.com/product/456
+2025-11-14 18:37:58,176 - database - INFO - 产品已更新: https://test.com/product/457
+2025-11-14 18:37:58,212 - database - INFO - 产品已更新: https://test.com/product/458
+2025-11-14 18:37:58,268 - database - INFO - 产品已更新: https://test.com/product/459
+2025-11-14 18:37:58,301 - database - INFO - 产品已更新: https://test.com/product/460
+2025-11-14 18:37:58,403 - database - INFO - 产品已更新: https://test.com/product/461
+2025-11-14 18:37:58,461 - database - INFO - 产品已更新: https://test.com/product/462
+2025-11-14 18:37:58,498 - database - INFO - 产品已更新: https://test.com/product/463
+2025-11-14 18:37:58,535 - database - INFO - 产品已更新: https://test.com/product/464
+2025-11-14 18:37:58,562 - database - INFO - 产品已更新: https://test.com/product/465
+2025-11-14 18:37:58,613 - database - INFO - 产品已更新: https://test.com/product/466
+2025-11-14 18:37:58,650 - database - INFO - 产品已更新: https://test.com/product/467
+2025-11-14 18:37:58,703 - database - INFO - 产品已更新: https://test.com/product/468
+2025-11-14 18:37:58,757 - database - INFO - 产品已更新: https://test.com/product/469
+2025-11-14 18:37:58,790 - database - INFO - 产品已更新: https://test.com/product/470
+2025-11-14 18:37:58,819 - database - INFO - 产品已更新: https://test.com/product/471
+2025-11-14 18:37:58,862 - database - INFO - 产品已更新: https://test.com/product/472
+2025-11-14 18:37:58,900 - database - INFO - 产品已更新: https://test.com/product/473
+2025-11-14 18:37:58,964 - database - INFO - 产品已更新: https://test.com/product/474
+2025-11-14 18:37:59,000 - database - INFO - 产品已更新: https://test.com/product/475
+2025-11-14 18:37:59,047 - database - INFO - 产品已更新: https://test.com/product/476
+2025-11-14 18:37:59,094 - database - INFO - 产品已更新: https://test.com/product/477
+2025-11-14 18:37:59,130 - database - INFO - 产品已更新: https://test.com/product/478
+2025-11-14 18:37:59,172 - database - INFO - 产品已更新: https://test.com/product/479
+2025-11-14 18:37:59,215 - database - INFO - 产品已更新: https://test.com/product/480
+2025-11-14 18:37:59,247 - database - INFO - 产品已更新: https://test.com/product/481
+2025-11-14 18:37:59,288 - database - INFO - 产品已更新: https://test.com/product/482
+2025-11-14 18:37:59,335 - database - INFO - 产品已更新: https://test.com/product/483
+2025-11-14 18:37:59,369 - database - INFO - 产品已更新: https://test.com/product/484
+2025-11-14 18:37:59,403 - database - INFO - 产品已更新: https://test.com/product/485
+2025-11-14 18:37:59,448 - database - INFO - 产品已更新: https://test.com/product/486
+2025-11-14 18:37:59,487 - database - INFO - 产品已更新: https://test.com/product/487
+2025-11-14 18:37:59,544 - database - INFO - 产品已更新: https://test.com/product/488
+2025-11-14 18:37:59,579 - database - INFO - 产品已更新: https://test.com/product/489
+2025-11-14 18:37:59,639 - database - INFO - 产品已更新: https://test.com/product/490
+2025-11-14 18:37:59,680 - database - INFO - 产品已更新: https://test.com/product/491
+2025-11-14 18:37:59,723 - database - INFO - 产品已更新: https://test.com/product/492
+2025-11-14 18:37:59,773 - database - INFO - 产品已更新: https://test.com/product/493
+2025-11-14 18:37:59,815 - database - INFO - 产品已更新: https://test.com/product/494
+2025-11-14 18:37:59,853 - database - INFO - 产品已更新: https://test.com/product/495
+2025-11-14 18:37:59,901 - database - INFO - 产品已更新: https://test.com/product/496
+2025-11-14 18:37:59,942 - database - INFO - 产品已更新: https://test.com/product/497
+2025-11-14 18:37:59,978 - database - INFO - 产品已更新: https://test.com/product/498
+2025-11-14 18:38:00,014 - database - INFO - 产品已更新: https://test.com/product/499
+2025-11-14 18:38:00,075 - database - INFO - 产品已更新: https://test.com/product/500
+2025-11-14 18:38:00,108 - database - INFO - 产品已更新: https://test.com/product/501
+2025-11-14 18:38:00,150 - database - INFO - 产品已更新: https://test.com/product/502
+2025-11-14 18:38:00,179 - database - INFO - 产品已更新: https://test.com/product/503
+2025-11-14 18:38:00,221 - database - INFO - 产品已更新: https://test.com/product/504
+2025-11-14 18:38:00,257 - database - INFO - 产品已更新: https://test.com/product/505
+2025-11-14 18:38:00,297 - database - INFO - 产品已更新: https://test.com/product/506
+2025-11-14 18:38:00,332 - database - INFO - 产品已更新: https://test.com/product/507
+2025-11-14 18:38:00,377 - database - INFO - 产品已更新: https://test.com/product/508
+2025-11-14 18:38:00,408 - database - INFO - 产品已更新: https://test.com/product/509
+2025-11-14 18:38:00,440 - database - INFO - 产品已更新: https://test.com/product/510
+2025-11-14 18:38:00,475 - database - INFO - 产品已更新: https://test.com/product/511
+2025-11-14 18:38:00,517 - database - INFO - 产品已更新: https://test.com/product/512
+2025-11-14 18:38:00,560 - database - INFO - 产品已更新: https://test.com/product/513
+2025-11-14 18:38:00,593 - database - INFO - 产品已更新: https://test.com/product/514
+2025-11-14 18:38:00,627 - database - INFO - 产品已更新: https://test.com/product/515
+2025-11-14 18:38:00,667 - database - INFO - 产品已更新: https://test.com/product/516
+2025-11-14 18:38:00,713 - database - INFO - 产品已更新: https://test.com/product/517
+2025-11-14 18:38:00,753 - database - INFO - 产品已更新: https://test.com/product/518
+2025-11-14 18:38:00,782 - database - INFO - 产品已更新: https://test.com/product/519
+2025-11-14 18:38:00,821 - database - INFO - 产品已更新: https://test.com/product/520
+2025-11-14 18:38:00,894 - database - INFO - 产品已更新: https://test.com/product/521
+2025-11-14 18:38:00,929 - database - INFO - 产品已更新: https://test.com/product/522
+2025-11-14 18:38:00,975 - database - INFO - 产品已更新: https://test.com/product/523
+2025-11-14 18:38:01,011 - database - INFO - 产品已更新: https://test.com/product/524
+2025-11-14 18:38:01,053 - database - INFO - 产品已更新: https://test.com/product/525
+2025-11-14 18:38:01,087 - database - INFO - 产品已更新: https://test.com/product/526
+2025-11-14 18:38:01,123 - database - INFO - 产品已更新: https://test.com/product/527
+2025-11-14 18:38:01,157 - database - INFO - 产品已更新: https://test.com/product/528
+2025-11-14 18:38:01,192 - database - INFO - 产品已更新: https://test.com/product/529
+2025-11-14 18:38:01,229 - database - INFO - 产品已更新: https://test.com/product/530
+2025-11-14 18:38:01,269 - database - INFO - 产品已更新: https://test.com/product/531
+2025-11-14 18:38:01,327 - database - INFO - 产品已更新: https://test.com/product/532
+2025-11-14 18:38:01,375 - database - INFO - 产品已更新: https://test.com/product/533
+2025-11-14 18:38:01,414 - database - INFO - 产品已更新: https://test.com/product/534
+2025-11-14 18:38:01,456 - database - INFO - 产品已更新: https://test.com/product/535
+2025-11-14 18:38:01,487 - database - INFO - 产品已更新: https://test.com/product/536
+2025-11-14 18:38:01,519 - database - INFO - 产品已更新: https://test.com/product/537
+2025-11-14 18:38:01,555 - database - INFO - 产品已更新: https://test.com/product/538
+2025-11-14 18:38:01,602 - database - INFO - 产品已更新: https://test.com/product/539
+2025-11-14 18:38:01,643 - database - INFO - 产品已更新: https://test.com/product/540
+2025-11-14 18:38:01,679 - database - INFO - 产品已更新: https://test.com/product/541
+2025-11-14 18:38:01,728 - database - INFO - 产品已更新: https://test.com/product/542
+2025-11-14 18:38:01,771 - database - INFO - 产品已更新: https://test.com/product/543
+2025-11-14 18:38:01,807 - database - INFO - 产品已更新: https://test.com/product/544
+2025-11-14 18:38:01,839 - database - INFO - 产品已更新: https://test.com/product/545
+2025-11-14 18:38:01,873 - database - INFO - 产品已更新: https://test.com/product/546
+2025-11-14 18:38:01,919 - database - INFO - 产品已更新: https://test.com/product/547
+2025-11-14 18:38:01,971 - database - INFO - 产品已更新: https://test.com/product/548
+2025-11-14 18:38:02,012 - database - INFO - 产品已更新: https://test.com/product/549
+2025-11-14 18:38:02,051 - database - INFO - 产品已更新: https://test.com/product/550
+2025-11-14 18:38:02,086 - database - INFO - 产品已更新: https://test.com/product/551
+2025-11-14 18:38:02,123 - database - INFO - 产品已更新: https://test.com/product/552
+2025-11-14 18:38:02,162 - database - INFO - 产品已更新: https://test.com/product/553
+2025-11-14 18:38:02,243 - database - INFO - 产品已更新: https://test.com/product/554
+2025-11-14 18:38:02,285 - database - INFO - 产品已更新: https://test.com/product/555
+2025-11-14 18:38:02,318 - database - INFO - 产品已更新: https://test.com/product/556
+2025-11-14 18:38:02,359 - database - INFO - 产品已更新: https://test.com/product/557
+2025-11-14 18:38:02,396 - database - INFO - 产品已更新: https://test.com/product/558
+2025-11-14 18:38:02,429 - database - INFO - 产品已更新: https://test.com/product/559
+2025-11-14 18:38:02,467 - database - INFO - 产品已更新: https://test.com/product/560
+2025-11-14 18:38:02,508 - database - INFO - 产品已更新: https://test.com/product/561
+2025-11-14 18:38:02,556 - database - INFO - 产品已更新: https://test.com/product/562
+2025-11-14 18:38:02,600 - database - INFO - 产品已更新: https://test.com/product/563
+2025-11-14 18:38:02,646 - database - INFO - 产品已更新: https://test.com/product/564
+2025-11-14 18:38:02,679 - database - INFO - 产品已更新: https://test.com/product/565
+2025-11-14 18:38:02,714 - database - INFO - 产品已更新: https://test.com/product/566
+2025-11-14 18:38:02,747 - database - INFO - 产品已更新: https://test.com/product/567
+2025-11-14 18:38:02,776 - database - INFO - 产品已更新: https://test.com/product/568
+2025-11-14 18:38:02,837 - database - INFO - 产品已更新: https://test.com/product/569
+2025-11-14 18:38:02,905 - database - INFO - 产品已更新: https://test.com/product/570
+2025-11-14 18:38:02,944 - database - INFO - 产品已更新: https://test.com/product/571
+2025-11-14 18:38:02,988 - database - INFO - 产品已更新: https://test.com/product/572
+2025-11-14 18:38:03,038 - database - INFO - 产品已更新: https://test.com/product/573
+2025-11-14 18:38:03,107 - database - INFO - 产品已更新: https://test.com/product/574
+2025-11-14 18:38:03,172 - database - INFO - 产品已更新: https://test.com/product/575
+2025-11-14 18:38:03,231 - database - INFO - 产品已更新: https://test.com/product/576
+2025-11-14 18:38:03,271 - database - INFO - 产品已更新: https://test.com/product/577
+2025-11-14 18:38:03,307 - database - INFO - 产品已更新: https://test.com/product/578
+2025-11-14 18:38:03,349 - database - INFO - 产品已更新: https://test.com/product/579
+2025-11-14 18:38:03,396 - database - INFO - 产品已更新: https://test.com/product/580
+2025-11-14 18:38:03,433 - database - INFO - 产品已更新: https://test.com/product/581
+2025-11-14 18:38:03,468 - database - INFO - 产品已更新: https://test.com/product/582
+2025-11-14 18:38:03,517 - database - INFO - 产品已更新: https://test.com/product/583
+2025-11-14 18:38:03,550 - database - INFO - 产品已更新: https://test.com/product/584
+2025-11-14 18:38:03,626 - database - INFO - 产品已更新: https://test.com/product/585
+2025-11-14 18:38:03,662 - database - INFO - 产品已更新: https://test.com/product/586
+2025-11-14 18:38:03,706 - database - INFO - 产品已更新: https://test.com/product/587
+2025-11-14 18:38:03,752 - database - INFO - 产品已更新: https://test.com/product/588
+2025-11-14 18:38:03,793 - database - INFO - 产品已更新: https://test.com/product/589
+2025-11-14 18:38:03,821 - database - INFO - 产品已更新: https://test.com/product/590
+2025-11-14 18:38:03,861 - database - INFO - 产品已更新: https://test.com/product/591
+2025-11-14 18:38:03,918 - database - INFO - 产品已更新: https://test.com/product/592
+2025-11-14 18:38:03,957 - database - INFO - 产品已更新: https://test.com/product/593
+2025-11-14 18:38:04,022 - database - INFO - 产品已更新: https://test.com/product/594
+2025-11-14 18:38:04,079 - database - INFO - 产品已更新: https://test.com/product/595
+2025-11-14 18:38:04,121 - database - INFO - 产品已更新: https://test.com/product/596
+2025-11-14 18:38:04,170 - database - INFO - 产品已更新: https://test.com/product/597
+2025-11-14 18:38:04,222 - database - INFO - 产品已更新: https://test.com/product/598
+2025-11-14 18:38:04,303 - database - INFO - 产品已更新: https://test.com/product/599
+2025-11-14 18:38:04,336 - database - INFO - 产品已更新: https://test.com/product/600
+2025-11-14 18:38:04,374 - database - INFO - 产品已更新: https://test.com/product/601
+2025-11-14 18:38:04,409 - database - INFO - 产品已更新: https://test.com/product/602
+2025-11-14 18:38:04,473 - database - INFO - 产品已更新: https://test.com/product/603
+2025-11-14 18:38:04,518 - database - INFO - 产品已更新: https://test.com/product/604
+2025-11-14 18:38:04,563 - database - INFO - 产品已更新: https://test.com/product/605
+2025-11-14 18:38:04,619 - database - INFO - 产品已更新: https://test.com/product/606
+2025-11-14 18:38:04,698 - database - INFO - 产品已更新: https://test.com/product/607
+2025-11-14 18:38:04,742 - database - INFO - 产品已更新: https://test.com/product/608
+2025-11-14 18:38:04,805 - database - INFO - 产品已更新: https://test.com/product/609
+2025-11-14 18:38:04,851 - database - INFO - 产品已更新: https://test.com/product/610
+2025-11-14 18:38:04,889 - database - INFO - 产品已更新: https://test.com/product/611
+2025-11-14 18:38:04,970 - database - INFO - 产品已更新: https://test.com/product/612
+2025-11-14 18:38:05,015 - database - INFO - 产品已更新: https://test.com/product/613
+2025-11-14 18:38:05,050 - database - INFO - 产品已更新: https://test.com/product/614
+2025-11-14 18:38:05,095 - database - INFO - 产品已更新: https://test.com/product/615
+2025-11-14 18:38:05,145 - database - INFO - 产品已更新: https://test.com/product/616
+2025-11-14 18:38:05,208 - database - INFO - 产品已更新: https://test.com/product/617
+2025-11-14 18:38:05,301 - database - INFO - 产品已更新: https://test.com/product/618
+2025-11-14 18:38:05,354 - database - INFO - 产品已更新: https://test.com/product/619
+2025-11-14 18:38:05,425 - database - INFO - 产品已更新: https://test.com/product/620
+2025-11-14 18:38:05,474 - database - INFO - 产品已更新: https://test.com/product/621
+2025-11-14 18:38:05,524 - database - INFO - 产品已更新: https://test.com/product/622
+2025-11-14 18:38:05,581 - database - INFO - 产品已更新: https://test.com/product/623
+2025-11-14 18:38:05,637 - database - INFO - 产品已更新: https://test.com/product/624
+2025-11-14 18:38:05,705 - database - INFO - 产品已更新: https://test.com/product/625
+2025-11-14 18:38:05,772 - database - INFO - 产品已更新: https://test.com/product/626
+2025-11-14 18:38:05,829 - database - INFO - 产品已更新: https://test.com/product/627
+2025-11-14 18:38:05,875 - database - INFO - 产品已更新: https://test.com/product/628
+2025-11-14 18:38:05,935 - database - INFO - 产品已更新: https://test.com/product/629
+2025-11-14 18:38:06,008 - database - INFO - 产品已更新: https://test.com/product/630
+2025-11-14 18:38:06,055 - database - INFO - 产品已更新: https://test.com/product/631
+2025-11-14 18:38:06,116 - database - INFO - 产品已更新: https://test.com/product/632
+2025-11-14 18:38:06,172 - database - INFO - 产品已更新: https://test.com/product/633
+2025-11-14 18:38:06,221 - database - INFO - 产品已更新: https://test.com/product/634
+2025-11-14 18:38:06,299 - database - INFO - 产品已更新: https://test.com/product/635
+2025-11-14 18:38:06,340 - database - INFO - 产品已更新: https://test.com/product/636
+2025-11-14 18:38:06,380 - database - INFO - 产品已更新: https://test.com/product/637
+2025-11-14 18:38:06,433 - database - INFO - 产品已更新: https://test.com/product/638
+2025-11-14 18:38:06,511 - database - INFO - 产品已更新: https://test.com/product/639
+2025-11-14 18:38:06,558 - database - INFO - 产品已更新: https://test.com/product/640
+2025-11-14 18:38:06,642 - database - INFO - 产品已更新: https://test.com/product/641
+2025-11-14 18:38:06,674 - database - INFO - 产品已更新: https://test.com/product/642
+2025-11-14 18:38:06,706 - database - INFO - 产品已更新: https://test.com/product/643
+2025-11-14 18:38:06,769 - database - INFO - 产品已更新: https://test.com/product/644
+2025-11-14 18:38:06,803 - database - INFO - 产品已更新: https://test.com/product/645
+2025-11-14 18:38:06,840 - database - INFO - 产品已更新: https://test.com/product/646
+2025-11-14 18:38:06,878 - database - INFO - 产品已更新: https://test.com/product/647
+2025-11-14 18:38:06,909 - database - INFO - 产品已更新: https://test.com/product/648
+2025-11-14 18:38:06,954 - database - INFO - 产品已更新: https://test.com/product/649
+2025-11-14 18:38:06,987 - database - INFO - 产品已更新: https://test.com/product/650
+2025-11-14 18:38:07,032 - database - INFO - 产品已更新: https://test.com/product/651
+2025-11-14 18:38:07,077 - database - INFO - 产品已更新: https://test.com/product/652
+2025-11-14 18:38:07,145 - database - INFO - 产品已更新: https://test.com/product/653
+2025-11-14 18:38:07,184 - database - INFO - 产品已更新: https://test.com/product/654
+2025-11-14 18:38:07,230 - database - INFO - 产品已更新: https://test.com/product/655
+2025-11-14 18:38:07,287 - database - INFO - 产品已更新: https://test.com/product/656
+2025-11-14 18:38:07,346 - database - INFO - 产品已更新: https://test.com/product/657
+2025-11-14 18:38:07,395 - database - INFO - 产品已更新: https://test.com/product/658
+2025-11-14 18:38:07,435 - database - INFO - 产品已更新: https://test.com/product/659
+2025-11-14 18:38:07,471 - database - INFO - 产品已更新: https://test.com/product/660
+2025-11-14 18:38:07,547 - database - INFO - 产品已更新: https://test.com/product/661
+2025-11-14 18:38:07,592 - database - INFO - 产品已更新: https://test.com/product/662
+2025-11-14 18:38:07,640 - database - INFO - 产品已更新: https://test.com/product/663
+2025-11-14 18:38:07,699 - database - INFO - 产品已更新: https://test.com/product/664
+2025-11-14 18:38:07,736 - database - INFO - 产品已更新: https://test.com/product/665
+2025-11-14 18:38:07,804 - database - INFO - 产品已更新: https://test.com/product/666
+2025-11-14 18:38:07,840 - database - INFO - 产品已更新: https://test.com/product/667
+2025-11-14 18:38:07,897 - database - INFO - 产品已更新: https://test.com/product/668
+2025-11-14 18:38:07,933 - database - INFO - 产品已更新: https://test.com/product/669
+2025-11-14 18:38:07,977 - database - INFO - 产品已更新: https://test.com/product/670
+2025-11-14 18:38:08,018 - database - INFO - 产品已更新: https://test.com/product/671
+2025-11-14 18:38:08,061 - database - INFO - 产品已更新: https://test.com/product/672
+2025-11-14 18:38:08,101 - database - INFO - 产品已更新: https://test.com/product/673
+2025-11-14 18:38:08,136 - database - INFO - 产品已更新: https://test.com/product/674
+2025-11-14 18:38:08,189 - database - INFO - 产品已更新: https://test.com/product/675
+2025-11-14 18:38:08,245 - database - INFO - 产品已更新: https://test.com/product/676
+2025-11-14 18:38:08,304 - database - INFO - 产品已更新: https://test.com/product/677
+2025-11-14 18:38:08,351 - database - INFO - 产品已更新: https://test.com/product/678
+2025-11-14 18:38:08,414 - database - INFO - 产品已更新: https://test.com/product/679
+2025-11-14 18:38:08,467 - database - INFO - 产品已更新: https://test.com/product/680
+2025-11-14 18:38:08,515 - database - INFO - 产品已更新: https://test.com/product/681
+2025-11-14 18:38:08,545 - database - INFO - 产品已更新: https://test.com/product/682
+2025-11-14 18:38:08,591 - database - INFO - 产品已更新: https://test.com/product/683
+2025-11-14 18:38:08,627 - database - INFO - 产品已更新: https://test.com/product/684
+2025-11-14 18:38:08,688 - database - INFO - 产品已更新: https://test.com/product/685
+2025-11-14 18:38:08,725 - database - INFO - 产品已更新: https://test.com/product/686
+2025-11-14 18:38:08,756 - database - INFO - 产品已更新: https://test.com/product/687
+2025-11-14 18:38:08,798 - database - INFO - 产品已更新: https://test.com/product/688
+2025-11-14 18:38:08,835 - database - INFO - 产品已更新: https://test.com/product/689
+2025-11-14 18:38:08,893 - database - INFO - 产品已更新: https://test.com/product/690
+2025-11-14 18:38:08,945 - database - INFO - 产品已更新: https://test.com/product/691
+2025-11-14 18:38:08,979 - database - INFO - 产品已更新: https://test.com/product/692
+2025-11-14 18:38:09,043 - database - INFO - 产品已更新: https://test.com/product/693
+2025-11-14 18:38:09,079 - database - INFO - 产品已更新: https://test.com/product/694
+2025-11-14 18:38:09,118 - database - INFO - 产品已更新: https://test.com/product/695
+2025-11-14 18:38:09,167 - database - INFO - 产品已更新: https://test.com/product/696
+2025-11-14 18:38:09,216 - database - INFO - 产品已更新: https://test.com/product/697
+2025-11-14 18:38:09,261 - database - INFO - 产品已更新: https://test.com/product/698
+2025-11-14 18:38:09,320 - database - INFO - 产品已更新: https://test.com/product/699
+2025-11-14 18:38:09,354 - database - INFO - 产品已更新: https://test.com/product/700
+2025-11-14 18:38:09,400 - database - INFO - 产品已更新: https://test.com/product/701
+2025-11-14 18:38:09,446 - database - INFO - 产品已更新: https://test.com/product/702
+2025-11-14 18:38:09,506 - database - INFO - 产品已更新: https://test.com/product/703
+2025-11-14 18:38:09,548 - database - INFO - 产品已更新: https://test.com/product/704
+2025-11-14 18:38:09,582 - database - INFO - 产品已更新: https://test.com/product/705
+2025-11-14 18:38:09,614 - database - INFO - 产品已更新: https://test.com/product/706
+2025-11-14 18:38:09,660 - database - INFO - 产品已更新: https://test.com/product/707
+2025-11-14 18:38:09,698 - database - INFO - 产品已更新: https://test.com/product/708
+2025-11-14 18:38:09,730 - database - INFO - 产品已更新: https://test.com/product/709
+2025-11-14 18:38:09,766 - database - INFO - 产品已更新: https://test.com/product/710
+2025-11-14 18:38:09,804 - database - INFO - 产品已更新: https://test.com/product/711
+2025-11-14 18:38:09,846 - database - INFO - 产品已更新: https://test.com/product/712
+2025-11-14 18:38:09,891 - database - INFO - 产品已更新: https://test.com/product/713
+2025-11-14 18:38:09,925 - database - INFO - 产品已更新: https://test.com/product/714
+2025-11-14 18:38:09,958 - database - INFO - 产品已更新: https://test.com/product/715
+2025-11-14 18:38:09,994 - database - INFO - 产品已更新: https://test.com/product/716
+2025-11-14 18:38:10,028 - database - INFO - 产品已更新: https://test.com/product/717
+2025-11-14 18:38:10,060 - database - INFO - 产品已更新: https://test.com/product/718
+2025-11-14 18:38:10,098 - database - INFO - 产品已更新: https://test.com/product/719
+2025-11-14 18:38:10,127 - database - INFO - 产品已更新: https://test.com/product/720
+2025-11-14 18:38:10,163 - database - INFO - 产品已更新: https://test.com/product/721
+2025-11-14 18:38:10,203 - database - INFO - 产品已更新: https://test.com/product/722
+2025-11-14 18:38:10,249 - database - INFO - 产品已更新: https://test.com/product/723
+2025-11-14 18:38:10,286 - database - INFO - 产品已更新: https://test.com/product/724
+2025-11-14 18:38:10,313 - database - INFO - 产品已更新: https://test.com/product/725
+2025-11-14 18:38:10,347 - database - INFO - 产品已更新: https://test.com/product/726
+2025-11-14 18:38:10,383 - database - INFO - 产品已更新: https://test.com/product/727
+2025-11-14 18:38:10,417 - database - INFO - 产品已更新: https://test.com/product/728
+2025-11-14 18:38:10,451 - database - INFO - 产品已更新: https://test.com/product/729
+2025-11-14 18:38:10,491 - database - INFO - 产品已更新: https://test.com/product/730
+2025-11-14 18:38:10,522 - database - INFO - 产品已更新: https://test.com/product/731
+2025-11-14 18:38:10,567 - database - INFO - 产品已更新: https://test.com/product/732
+2025-11-14 18:38:10,618 - database - INFO - 产品已更新: https://test.com/product/733
+2025-11-14 18:38:10,669 - database - INFO - 产品已更新: https://test.com/product/734
+2025-11-14 18:38:10,707 - database - INFO - 产品已更新: https://test.com/product/735
+2025-11-14 18:38:10,770 - database - INFO - 产品已更新: https://test.com/product/736
+2025-11-14 18:38:10,810 - database - INFO - 产品已更新: https://test.com/product/737
+2025-11-14 18:38:10,847 - database - INFO - 产品已更新: https://test.com/product/738
+2025-11-14 18:38:10,908 - database - INFO - 产品已更新: https://test.com/product/739
+2025-11-14 18:38:10,948 - database - INFO - 产品已更新: https://test.com/product/740
+2025-11-14 18:38:10,988 - database - INFO - 产品已更新: https://test.com/product/741
+2025-11-14 18:38:11,026 - database - INFO - 产品已更新: https://test.com/product/742
+2025-11-14 18:38:11,077 - database - INFO - 产品已更新: https://test.com/product/743
+2025-11-14 18:38:11,119 - database - INFO - 产品已更新: https://test.com/product/744
+2025-11-14 18:38:11,167 - database - INFO - 产品已更新: https://test.com/product/745
+2025-11-14 18:38:11,201 - database - INFO - 产品已更新: https://test.com/product/746
+2025-11-14 18:38:11,234 - database - INFO - 产品已更新: https://test.com/product/747
+2025-11-14 18:38:11,275 - database - INFO - 产品已更新: https://test.com/product/748
+2025-11-14 18:38:11,331 - database - INFO - 产品已更新: https://test.com/product/749
+2025-11-14 18:38:11,367 - database - INFO - 产品已更新: https://test.com/product/750
+2025-11-14 18:38:11,408 - database - INFO - 产品已更新: https://test.com/product/751
+2025-11-14 18:38:11,446 - database - INFO - 产品已更新: https://test.com/product/752
+2025-11-14 18:38:11,487 - database - INFO - 产品已更新: https://test.com/product/753
+2025-11-14 18:38:11,529 - database - INFO - 产品已更新: https://test.com/product/754
+2025-11-14 18:38:11,574 - database - INFO - 产品已更新: https://test.com/product/755
+2025-11-14 18:38:11,623 - database - INFO - 产品已更新: https://test.com/product/756
+2025-11-14 18:38:11,661 - database - INFO - 产品已更新: https://test.com/product/757
+2025-11-14 18:38:11,697 - database - INFO - 产品已更新: https://test.com/product/758
+2025-11-14 18:38:11,745 - database - INFO - 产品已更新: https://test.com/product/759
+2025-11-14 18:38:11,802 - database - INFO - 产品已更新: https://test.com/product/760
+2025-11-14 18:38:11,837 - database - INFO - 产品已更新: https://test.com/product/761
+2025-11-14 18:38:11,885 - database - INFO - 产品已更新: https://test.com/product/762
+2025-11-14 18:38:11,929 - database - INFO - 产品已更新: https://test.com/product/763
+2025-11-14 18:38:11,978 - database - INFO - 产品已更新: https://test.com/product/764
+2025-11-14 18:38:12,017 - database - INFO - 产品已更新: https://test.com/product/765
+2025-11-14 18:38:12,074 - database - INFO - 产品已更新: https://test.com/product/766
+2025-11-14 18:38:12,175 - database - INFO - 产品已更新: https://test.com/product/767
+2025-11-14 18:38:12,222 - database - INFO - 产品已更新: https://test.com/product/768
+2025-11-14 18:38:12,250 - database - INFO - 产品已更新: https://test.com/product/769
+2025-11-14 18:38:12,287 - database - INFO - 产品已更新: https://test.com/product/770
+2025-11-14 18:38:12,319 - database - INFO - 产品已更新: https://test.com/product/771
+2025-11-14 18:38:12,368 - database - INFO - 产品已更新: https://test.com/product/772
+2025-11-14 18:38:12,410 - database - INFO - 产品已更新: https://test.com/product/773
+2025-11-14 18:38:12,452 - database - INFO - 产品已更新: https://test.com/product/774
+2025-11-14 18:38:12,490 - database - INFO - 产品已更新: https://test.com/product/775
+2025-11-14 18:38:12,525 - database - INFO - 产品已更新: https://test.com/product/776
+2025-11-14 18:38:12,566 - database - INFO - 产品已更新: https://test.com/product/777
+2025-11-14 18:38:12,610 - database - INFO - 产品已更新: https://test.com/product/778
+2025-11-14 18:38:12,651 - database - INFO - 产品已更新: https://test.com/product/779
+2025-11-14 18:38:12,686 - database - INFO - 产品已更新: https://test.com/product/780
+2025-11-14 18:38:12,717 - database - INFO - 产品已更新: https://test.com/product/781
+2025-11-14 18:38:12,745 - database - INFO - 产品已更新: https://test.com/product/782
+2025-11-14 18:38:12,781 - database - INFO - 产品已更新: https://test.com/product/783
+2025-11-14 18:38:12,823 - database - INFO - 产品已更新: https://test.com/product/784
+2025-11-14 18:38:12,864 - database - INFO - 产品已更新: https://test.com/product/785
+2025-11-14 18:38:12,901 - database - INFO - 产品已更新: https://test.com/product/786
+2025-11-14 18:38:12,939 - database - INFO - 产品已更新: https://test.com/product/787
+2025-11-14 18:38:12,973 - database - INFO - 产品已更新: https://test.com/product/788
+2025-11-14 18:38:13,013 - database - INFO - 产品已更新: https://test.com/product/789
+2025-11-14 18:38:13,054 - database - INFO - 产品已更新: https://test.com/product/790
+2025-11-14 18:38:13,091 - database - INFO - 产品已更新: https://test.com/product/791
+2025-11-14 18:38:13,136 - database - INFO - 产品已更新: https://test.com/product/792
+2025-11-14 18:38:13,168 - database - INFO - 产品已更新: https://test.com/product/793
+2025-11-14 18:38:13,205 - database - INFO - 产品已更新: https://test.com/product/794
+2025-11-14 18:38:13,245 - database - INFO - 产品已更新: https://test.com/product/795
+2025-11-14 18:38:13,279 - database - INFO - 产品已更新: https://test.com/product/796
+2025-11-14 18:38:13,329 - database - INFO - 产品已更新: https://test.com/product/797
+2025-11-14 18:38:13,361 - database - INFO - 产品已更新: https://test.com/product/798
+2025-11-14 18:38:13,397 - database - INFO - 产品已更新: https://test.com/product/799
+2025-11-14 18:38:13,426 - database - INFO - 产品已更新: https://test.com/product/800
+2025-11-14 18:38:13,455 - database - INFO - 产品已更新: https://test.com/product/801
+2025-11-14 18:38:13,487 - database - INFO - 产品已更新: https://test.com/product/802
+2025-11-14 18:38:13,524 - database - INFO - 产品已更新: https://test.com/product/803
+2025-11-14 18:38:13,553 - database - INFO - 产品已更新: https://test.com/product/804
+2025-11-14 18:38:13,593 - database - INFO - 产品已更新: https://test.com/product/805
+2025-11-14 18:38:13,654 - database - INFO - 产品已更新: https://test.com/product/806
+2025-11-14 18:38:13,684 - database - INFO - 产品已更新: https://test.com/product/807
+2025-11-14 18:38:13,716 - database - INFO - 产品已更新: https://test.com/product/808
+2025-11-14 18:38:13,752 - database - INFO - 产品已更新: https://test.com/product/809
+2025-11-14 18:38:13,786 - database - INFO - 产品已更新: https://test.com/product/810
+2025-11-14 18:38:13,822 - database - INFO - 产品已更新: https://test.com/product/811
+2025-11-14 18:38:13,856 - database - INFO - 产品已更新: https://test.com/product/812
+2025-11-14 18:38:13,905 - database - INFO - 产品已更新: https://test.com/product/813
+2025-11-14 18:38:13,944 - database - INFO - 产品已更新: https://test.com/product/814
+2025-11-14 18:38:14,061 - database - INFO - 产品已更新: https://test.com/product/815
+2025-11-14 18:38:14,098 - database - INFO - 产品已更新: https://test.com/product/816
+2025-11-14 18:38:14,135 - database - INFO - 产品已更新: https://test.com/product/817
+2025-11-14 18:38:14,173 - database - INFO - 产品已更新: https://test.com/product/818
+2025-11-14 18:38:14,213 - database - INFO - 产品已更新: https://test.com/product/819
+2025-11-14 18:38:14,249 - database - INFO - 产品已更新: https://test.com/product/820
+2025-11-14 18:38:14,311 - database - INFO - 产品已更新: https://test.com/product/821
+2025-11-14 18:38:14,354 - database - INFO - 产品已更新: https://test.com/product/822
+2025-11-14 18:38:14,396 - database - INFO - 产品已更新: https://test.com/product/823
+2025-11-14 18:38:14,434 - database - INFO - 产品已更新: https://test.com/product/824
+2025-11-14 18:38:14,469 - database - INFO - 产品已更新: https://test.com/product/825
+2025-11-14 18:38:14,501 - database - INFO - 产品已更新: https://test.com/product/826
+2025-11-14 18:38:14,547 - database - INFO - 产品已更新: https://test.com/product/827
+2025-11-14 18:38:14,586 - database - INFO - 产品已更新: https://test.com/product/828
+2025-11-14 18:38:14,626 - database - INFO - 产品已更新: https://test.com/product/829
+2025-11-14 18:38:14,664 - database - INFO - 产品已更新: https://test.com/product/830
+2025-11-14 18:38:14,702 - database - INFO - 产品已更新: https://test.com/product/831
+2025-11-14 18:38:14,741 - database - INFO - 产品已更新: https://test.com/product/832
+2025-11-14 18:38:14,769 - database - INFO - 产品已更新: https://test.com/product/833
+2025-11-14 18:38:14,811 - database - INFO - 产品已更新: https://test.com/product/834
+2025-11-14 18:38:14,858 - database - INFO - 产品已更新: https://test.com/product/835
+2025-11-14 18:38:14,888 - database - INFO - 产品已更新: https://test.com/product/836
+2025-11-14 18:38:14,917 - database - INFO - 产品已更新: https://test.com/product/837
+2025-11-14 18:38:14,953 - database - INFO - 产品已更新: https://test.com/product/838
+2025-11-14 18:38:14,985 - database - INFO - 产品已更新: https://test.com/product/839
+2025-11-14 18:38:15,025 - database - INFO - 产品已更新: https://test.com/product/840
+2025-11-14 18:38:15,061 - database - INFO - 产品已更新: https://test.com/product/841
+2025-11-14 18:38:15,108 - database - INFO - 产品已更新: https://test.com/product/842
+2025-11-14 18:38:15,142 - database - INFO - 产品已更新: https://test.com/product/843
+2025-11-14 18:38:15,171 - database - INFO - 产品已更新: https://test.com/product/844
+2025-11-14 18:38:15,217 - database - INFO - 产品已更新: https://test.com/product/845
+2025-11-14 18:38:15,280 - database - INFO - 产品已更新: https://test.com/product/846
+2025-11-14 18:38:15,323 - database - INFO - 产品已更新: https://test.com/product/847
+2025-11-14 18:38:15,364 - database - INFO - 产品已更新: https://test.com/product/848
+2025-11-14 18:38:15,396 - database - INFO - 产品已更新: https://test.com/product/849
+2025-11-14 18:38:15,434 - database - INFO - 产品已更新: https://test.com/product/850
+2025-11-14 18:38:15,480 - database - INFO - 产品已更新: https://test.com/product/851
+2025-11-14 18:38:15,531 - database - INFO - 产品已更新: https://test.com/product/852
+2025-11-14 18:38:15,582 - database - INFO - 产品已更新: https://test.com/product/853
+2025-11-14 18:38:15,619 - database - INFO - 产品已更新: https://test.com/product/854
+2025-11-14 18:38:15,667 - database - INFO - 产品已更新: https://test.com/product/855
+2025-11-14 18:38:15,701 - database - INFO - 产品已更新: https://test.com/product/856
+2025-11-14 18:38:15,748 - database - INFO - 产品已更新: https://test.com/product/857
+2025-11-14 18:38:15,820 - database - INFO - 产品已更新: https://test.com/product/858
+2025-11-14 18:38:15,857 - database - INFO - 产品已更新: https://test.com/product/859
+2025-11-14 18:38:15,892 - database - INFO - 产品已更新: https://test.com/product/860
+2025-11-14 18:38:15,933 - database - INFO - 产品已更新: https://test.com/product/861
+2025-11-14 18:38:15,975 - database - INFO - 产品已更新: https://test.com/product/862
+2025-11-14 18:38:16,012 - database - INFO - 产品已更新: https://test.com/product/863
+2025-11-14 18:38:16,069 - database - INFO - 产品已更新: https://test.com/product/864
+2025-11-14 18:38:16,107 - database - INFO - 产品已更新: https://test.com/product/865
+2025-11-14 18:38:16,144 - database - INFO - 产品已更新: https://test.com/product/866
+2025-11-14 18:38:16,177 - database - INFO - 产品已更新: https://test.com/product/867
+2025-11-14 18:38:16,211 - database - INFO - 产品已更新: https://test.com/product/868
+2025-11-14 18:38:16,254 - database - INFO - 产品已更新: https://test.com/product/869
+2025-11-14 18:38:16,304 - database - INFO - 产品已更新: https://test.com/product/870
+2025-11-14 18:38:16,340 - database - INFO - 产品已更新: https://test.com/product/871
+2025-11-14 18:38:16,380 - database - INFO - 产品已更新: https://test.com/product/872
+2025-11-14 18:38:16,419 - database - INFO - 产品已更新: https://test.com/product/873
+2025-11-14 18:38:16,462 - database - INFO - 产品已更新: https://test.com/product/874
+2025-11-14 18:38:16,497 - database - INFO - 产品已更新: https://test.com/product/875
+2025-11-14 18:38:16,526 - database - INFO - 产品已更新: https://test.com/product/876
+2025-11-14 18:38:16,559 - database - INFO - 产品已更新: https://test.com/product/877
+2025-11-14 18:38:16,598 - database - INFO - 产品已更新: https://test.com/product/878
+2025-11-14 18:38:16,630 - database - INFO - 产品已更新: https://test.com/product/879
+2025-11-14 18:38:16,670 - database - INFO - 产品已更新: https://test.com/product/880
+2025-11-14 18:38:16,715 - database - INFO - 产品已更新: https://test.com/product/881
+2025-11-14 18:38:16,756 - database - INFO - 产品已更新: https://test.com/product/882
+2025-11-14 18:38:16,796 - database - INFO - 产品已更新: https://test.com/product/883
+2025-11-14 18:38:16,827 - database - INFO - 产品已更新: https://test.com/product/884
+2025-11-14 18:38:16,878 - database - INFO - 产品已更新: https://test.com/product/885
+2025-11-14 18:38:16,907 - database - INFO - 产品已更新: https://test.com/product/886
+2025-11-14 18:38:16,939 - database - INFO - 产品已更新: https://test.com/product/887
+2025-11-14 18:38:16,973 - database - INFO - 产品已更新: https://test.com/product/888
+2025-11-14 18:38:17,006 - database - INFO - 产品已更新: https://test.com/product/889
+2025-11-14 18:38:17,044 - database - INFO - 产品已更新: https://test.com/product/890
+2025-11-14 18:38:17,102 - database - INFO - 产品已更新: https://test.com/product/891
+2025-11-14 18:38:17,138 - database - INFO - 产品已更新: https://test.com/product/892
+2025-11-14 18:38:17,175 - database - INFO - 产品已更新: https://test.com/product/893
+2025-11-14 18:38:17,209 - database - INFO - 产品已更新: https://test.com/product/894
+2025-11-14 18:38:17,250 - database - INFO - 产品已更新: https://test.com/product/895
+2025-11-14 18:38:17,286 - database - INFO - 产品已更新: https://test.com/product/896
+2025-11-14 18:38:17,341 - database - INFO - 产品已更新: https://test.com/product/897
+2025-11-14 18:38:17,375 - database - INFO - 产品已更新: https://test.com/product/898
+2025-11-14 18:38:17,415 - database - INFO - 产品已更新: https://test.com/product/899
+2025-11-14 18:38:17,455 - database - INFO - 产品已更新: https://test.com/product/900
+2025-11-14 18:38:17,497 - database - INFO - 产品已更新: https://test.com/product/901
+2025-11-14 18:38:17,532 - database - INFO - 产品已更新: https://test.com/product/902
+2025-11-14 18:38:17,564 - database - INFO - 产品已更新: https://test.com/product/903
+2025-11-14 18:38:17,607 - database - INFO - 产品已更新: https://test.com/product/904
+2025-11-14 18:38:17,644 - database - INFO - 产品已更新: https://test.com/product/905
+2025-11-14 18:38:17,693 - database - INFO - 产品已更新: https://test.com/product/906
+2025-11-14 18:38:17,755 - database - INFO - 产品已更新: https://test.com/product/907
+2025-11-14 18:38:17,798 - database - INFO - 产品已更新: https://test.com/product/908
+2025-11-14 18:38:17,842 - database - INFO - 产品已更新: https://test.com/product/909
+2025-11-14 18:38:17,880 - database - INFO - 产品已更新: https://test.com/product/910
+2025-11-14 18:38:17,915 - database - INFO - 产品已更新: https://test.com/product/911
+2025-11-14 18:38:17,943 - database - INFO - 产品已更新: https://test.com/product/912
+2025-11-14 18:38:18,004 - database - INFO - 产品已更新: https://test.com/product/913
+2025-11-14 18:38:18,038 - database - INFO - 产品已更新: https://test.com/product/914
+2025-11-14 18:38:18,071 - database - INFO - 产品已更新: https://test.com/product/915
+2025-11-14 18:38:18,110 - database - INFO - 产品已更新: https://test.com/product/916
+2025-11-14 18:38:18,194 - database - INFO - 产品已更新: https://test.com/product/917
+2025-11-14 18:38:18,243 - database - INFO - 产品已更新: https://test.com/product/918
+2025-11-14 18:38:18,295 - database - INFO - 产品已更新: https://test.com/product/919
+2025-11-14 18:38:18,337 - database - INFO - 产品已更新: https://test.com/product/920
+2025-11-14 18:38:18,383 - database - INFO - 产品已更新: https://test.com/product/921
+2025-11-14 18:38:18,423 - database - INFO - 产品已更新: https://test.com/product/922
+2025-11-14 18:38:18,454 - database - INFO - 产品已更新: https://test.com/product/923
+2025-11-14 18:38:18,487 - database - INFO - 产品已更新: https://test.com/product/924
+2025-11-14 18:38:18,524 - database - INFO - 产品已更新: https://test.com/product/925
+2025-11-14 18:38:18,554 - database - INFO - 产品已更新: https://test.com/product/926
+2025-11-14 18:38:18,587 - database - INFO - 产品已更新: https://test.com/product/927
+2025-11-14 18:38:18,625 - database - INFO - 产品已更新: https://test.com/product/928
+2025-11-14 18:38:18,665 - database - INFO - 产品已更新: https://test.com/product/929
+2025-11-14 18:38:18,703 - database - INFO - 产品已更新: https://test.com/product/930
+2025-11-14 18:38:18,735 - database - INFO - 产品已更新: https://test.com/product/931
+2025-11-14 18:38:18,766 - database - INFO - 产品已更新: https://test.com/product/932
+2025-11-14 18:38:18,799 - database - INFO - 产品已更新: https://test.com/product/933
+2025-11-14 18:38:18,830 - database - INFO - 产品已更新: https://test.com/product/934
+2025-11-14 18:38:18,871 - database - INFO - 产品已更新: https://test.com/product/935
+2025-11-14 18:38:18,907 - database - INFO - 产品已更新: https://test.com/product/936
+2025-11-14 18:38:18,946 - database - INFO - 产品已更新: https://test.com/product/937
+2025-11-14 18:38:18,984 - database - INFO - 产品已更新: https://test.com/product/938
+2025-11-14 18:38:19,027 - database - INFO - 产品已更新: https://test.com/product/939
+2025-11-14 18:38:19,058 - database - INFO - 产品已更新: https://test.com/product/940
+2025-11-14 18:38:19,086 - database - INFO - 产品已更新: https://test.com/product/941
+2025-11-14 18:38:19,116 - database - INFO - 产品已更新: https://test.com/product/942
+2025-11-14 18:38:19,150 - database - INFO - 产品已更新: https://test.com/product/943
+2025-11-14 18:38:19,180 - database - INFO - 产品已更新: https://test.com/product/944
+2025-11-14 18:38:19,211 - database - INFO - 产品已更新: https://test.com/product/945
+2025-11-14 18:38:19,248 - database - INFO - 产品已更新: https://test.com/product/946
+2025-11-14 18:38:19,298 - database - INFO - 产品已更新: https://test.com/product/947
+2025-11-14 18:38:19,335 - database - INFO - 产品已更新: https://test.com/product/948
+2025-11-14 18:38:19,370 - database - INFO - 产品已更新: https://test.com/product/949
+2025-11-14 18:38:19,409 - database - INFO - 产品已更新: https://test.com/product/950
+2025-11-14 18:38:19,439 - database - INFO - 产品已更新: https://test.com/product/951
+2025-11-14 18:38:19,475 - database - INFO - 产品已更新: https://test.com/product/952
+2025-11-14 18:38:19,508 - database - INFO - 产品已更新: https://test.com/product/953
+2025-11-14 18:38:19,541 - database - INFO - 产品已更新: https://test.com/product/954
+2025-11-14 18:38:19,575 - database - INFO - 产品已更新: https://test.com/product/955
+2025-11-14 18:38:19,604 - database - INFO - 产品已更新: https://test.com/product/956
+2025-11-14 18:38:19,635 - database - INFO - 产品已更新: https://test.com/product/957
+2025-11-14 18:38:19,676 - database - INFO - 产品已更新: https://test.com/product/958
+2025-11-14 18:38:19,712 - database - INFO - 产品已更新: https://test.com/product/959
+2025-11-14 18:38:19,755 - database - INFO - 产品已更新: https://test.com/product/960
+2025-11-14 18:38:19,787 - database - INFO - 产品已更新: https://test.com/product/961
+2025-11-14 18:38:19,824 - database - INFO - 产品已更新: https://test.com/product/962
+2025-11-14 18:38:19,868 - database - INFO - 产品已更新: https://test.com/product/963
+2025-11-14 18:38:19,908 - database - INFO - 产品已更新: https://test.com/product/964
+2025-11-14 18:38:19,943 - database - INFO - 产品已更新: https://test.com/product/965
+2025-11-14 18:38:19,980 - database - INFO - 产品已更新: https://test.com/product/966
+2025-11-14 18:38:20,017 - database - INFO - 产品已更新: https://test.com/product/967
+2025-11-14 18:38:20,059 - database - INFO - 产品已更新: https://test.com/product/968
+2025-11-14 18:38:20,097 - database - INFO - 产品已更新: https://test.com/product/969
+2025-11-14 18:38:20,135 - database - INFO - 产品已更新: https://test.com/product/970
+2025-11-14 18:38:20,169 - database - INFO - 产品已更新: https://test.com/product/971
+2025-11-14 18:38:20,209 - database - INFO - 产品已更新: https://test.com/product/972
+2025-11-14 18:38:20,254 - database - INFO - 产品已更新: https://test.com/product/973
+2025-11-14 18:38:20,293 - database - INFO - 产品已更新: https://test.com/product/974
+2025-11-14 18:38:20,342 - database - INFO - 产品已更新: https://test.com/product/975
+2025-11-14 18:38:20,376 - database - INFO - 产品已更新: https://test.com/product/976
+2025-11-14 18:38:20,402 - database - INFO - 产品已更新: https://test.com/product/977
+2025-11-14 18:38:20,436 - database - INFO - 产品已更新: https://test.com/product/978
+2025-11-14 18:38:20,478 - database - INFO - 产品已更新: https://test.com/product/979
+2025-11-14 18:38:20,552 - database - INFO - 产品已更新: https://test.com/product/980
+2025-11-14 18:38:20,602 - database - INFO - 产品已更新: https://test.com/product/981
+2025-11-14 18:38:20,647 - database - INFO - 产品已更新: https://test.com/product/982
+2025-11-14 18:38:20,690 - database - INFO - 产品已更新: https://test.com/product/983
+2025-11-14 18:38:20,726 - database - INFO - 产品已更新: https://test.com/product/984
+2025-11-14 18:38:20,760 - database - INFO - 产品已更新: https://test.com/product/985
+2025-11-14 18:38:20,805 - database - INFO - 产品已更新: https://test.com/product/986
+2025-11-14 18:38:20,836 - database - INFO - 产品已更新: https://test.com/product/987
+2025-11-14 18:38:20,872 - database - INFO - 产品已更新: https://test.com/product/988
+2025-11-14 18:38:20,906 - database - INFO - 产品已更新: https://test.com/product/989
+2025-11-14 18:38:20,957 - database - INFO - 产品已更新: https://test.com/product/990
+2025-11-14 18:38:21,002 - database - INFO - 产品已更新: https://test.com/product/991
+2025-11-14 18:38:21,038 - database - INFO - 产品已更新: https://test.com/product/992
+2025-11-14 18:38:21,075 - database - INFO - 产品已更新: https://test.com/product/993
+2025-11-14 18:38:21,118 - database - INFO - 产品已更新: https://test.com/product/994
+2025-11-14 18:38:21,159 - database - INFO - 产品已更新: https://test.com/product/995
+2025-11-14 18:38:21,211 - database - INFO - 产品已更新: https://test.com/product/996
+2025-11-14 18:38:21,253 - database - INFO - 产品已更新: https://test.com/product/997
+2025-11-14 18:38:21,283 - database - INFO - 产品已更新: https://test.com/product/998
+2025-11-14 18:38:21,310 - database - INFO - 产品已更新: https://test.com/product/999
+2025-11-14 18:38:21,339 - database - INFO - 产品已更新: https://test.com/product/1000
+2025-11-14 18:38:21,373 - database - INFO - 新产品已插入: ID 1001
+2025-11-14 18:38:21,416 - database - INFO - 新产品已插入: ID 1002
+2025-11-14 18:38:21,453 - database - INFO - 新产品已插入: ID 1003
+2025-11-14 18:38:21,489 - database - INFO - 新产品已插入: ID 1004
+2025-11-14 18:38:21,522 - database - INFO - 新产品已插入: ID 1005
+2025-11-14 18:38:21,553 - database - INFO - 新产品已插入: ID 1006
+2025-11-14 18:38:21,606 - database - INFO - 新产品已插入: ID 1007
+2025-11-14 18:38:21,644 - database - INFO - 新产品已插入: ID 1008
+2025-11-14 18:38:21,676 - database - INFO - 新产品已插入: ID 1009
+2025-11-14 18:38:21,704 - database - INFO - 新产品已插入: ID 1010
+2025-11-14 18:38:21,742 - database - INFO - 新产品已插入: ID 1011
+2025-11-14 18:38:21,779 - database - INFO - 新产品已插入: ID 1012
+2025-11-14 18:38:21,826 - database - INFO - 新产品已插入: ID 1013
+2025-11-14 18:38:21,879 - database - INFO - 新产品已插入: ID 1014
+2025-11-14 18:38:21,934 - database - INFO - 新产品已插入: ID 1015
+2025-11-14 18:38:21,961 - database - INFO - 新产品已插入: ID 1016
+2025-11-14 18:38:21,991 - database - INFO - 新产品已插入: ID 1017
+2025-11-14 18:38:22,023 - database - INFO - 新产品已插入: ID 1018
+2025-11-14 18:38:22,055 - database - INFO - 新产品已插入: ID 1019
+2025-11-14 18:38:22,088 - database - INFO - 新产品已插入: ID 1020
+2025-11-14 18:38:22,128 - database - INFO - 新产品已插入: ID 1021
+2025-11-14 18:38:22,164 - database - INFO - 新产品已插入: ID 1022
+2025-11-14 18:38:22,200 - database - INFO - 新产品已插入: ID 1023
+2025-11-14 18:38:22,237 - database - INFO - 新产品已插入: ID 1024
+2025-11-14 18:38:22,267 - database - INFO - 新产品已插入: ID 1025
+2025-11-14 18:38:22,313 - database - INFO - 新产品已插入: ID 1026
+2025-11-14 18:38:22,358 - database - INFO - 新产品已插入: ID 1027
+2025-11-14 18:38:22,408 - database - INFO - 新产品已插入: ID 1028
+2025-11-14 18:38:22,445 - database - INFO - 新产品已插入: ID 1029
+2025-11-14 18:38:22,480 - database - INFO - 新产品已插入: ID 1030
+2025-11-14 18:38:22,521 - database - INFO - 新产品已插入: ID 1031
+2025-11-14 18:38:22,553 - database - INFO - 新产品已插入: ID 1032
+2025-11-14 18:38:22,586 - database - INFO - 新产品已插入: ID 1033
+2025-11-14 18:38:22,623 - database - INFO - 新产品已插入: ID 1034
+2025-11-14 18:38:22,691 - database - INFO - 新产品已插入: ID 1035
+2025-11-14 18:38:22,731 - database - INFO - 新产品已插入: ID 1036
+2025-11-14 18:38:22,781 - database - INFO - 新产品已插入: ID 1037
+2025-11-14 18:38:22,827 - database - INFO - 新产品已插入: ID 1038
+2025-11-14 18:38:22,866 - database - INFO - 新产品已插入: ID 1039
+2025-11-14 18:38:22,912 - database - INFO - 新产品已插入: ID 1040
+2025-11-14 18:38:22,954 - database - INFO - 新产品已插入: ID 1041
+2025-11-14 18:38:22,997 - database - INFO - 新产品已插入: ID 1042
+2025-11-14 18:38:23,041 - database - INFO - 新产品已插入: ID 1043
+2025-11-14 18:38:23,071 - database - INFO - 新产品已插入: ID 1044
+2025-11-14 18:38:23,103 - database - INFO - 新产品已插入: ID 1045
+2025-11-14 18:38:23,143 - database - INFO - 新产品已插入: ID 1046
+2025-11-14 18:38:23,183 - database - INFO - 新产品已插入: ID 1047
+2025-11-14 18:38:23,220 - database - INFO - 新产品已插入: ID 1048
+2025-11-14 18:38:23,271 - database - INFO - 新产品已插入: ID 1049
+2025-11-14 18:38:23,303 - database - INFO - 新产品已插入: ID 1050
+2025-11-14 18:38:23,337 - database - INFO - 新产品已插入: ID 1051
+2025-11-14 18:38:23,374 - database - INFO - 新产品已插入: ID 1052
+2025-11-14 18:38:23,422 - database - INFO - 新产品已插入: ID 1053
+2025-11-14 18:38:23,454 - database - INFO - 新产品已插入: ID 1054
+2025-11-14 18:38:23,489 - database - INFO - 新产品已插入: ID 1055
+2025-11-14 18:38:23,541 - database - INFO - 新产品已插入: ID 1056
+2025-11-14 18:38:23,570 - database - INFO - 新产品已插入: ID 1057
+2025-11-14 18:38:23,610 - database - INFO - 新产品已插入: ID 1058
+2025-11-14 18:38:23,657 - database - INFO - 新产品已插入: ID 1059
+2025-11-14 18:38:23,698 - database - INFO - 新产品已插入: ID 1060
+2025-11-14 18:38:23,749 - database - INFO - 新产品已插入: ID 1061
+2025-11-14 18:38:23,831 - database - INFO - 新产品已插入: ID 1062
+2025-11-14 18:38:23,879 - database - INFO - 新产品已插入: ID 1063
+2025-11-14 18:38:23,909 - database - INFO - 新产品已插入: ID 1064
+2025-11-14 18:38:23,938 - database - INFO - 新产品已插入: ID 1065
+2025-11-14 18:38:23,986 - database - INFO - 新产品已插入: ID 1066
+2025-11-14 18:38:24,056 - database - INFO - 新产品已插入: ID 1067
+2025-11-14 18:38:24,091 - database - INFO - 新产品已插入: ID 1068
+2025-11-14 18:38:24,132 - database - INFO - 新产品已插入: ID 1069
+2025-11-14 18:38:24,164 - database - INFO - 新产品已插入: ID 1070
+2025-11-14 18:38:24,195 - database - INFO - 新产品已插入: ID 1071
+2025-11-14 18:38:24,231 - database - INFO - 新产品已插入: ID 1072
+2025-11-14 18:38:24,263 - database - INFO - 新产品已插入: ID 1073
+2025-11-14 18:38:24,295 - database - INFO - 新产品已插入: ID 1074
+2025-11-14 18:38:24,345 - database - INFO - 新产品已插入: ID 1075
+2025-11-14 18:38:24,379 - database - INFO - 新产品已插入: ID 1076
+2025-11-14 18:38:24,413 - database - INFO - 新产品已插入: ID 1077
+2025-11-14 18:38:24,458 - database - INFO - 新产品已插入: ID 1078
+2025-11-14 18:38:24,491 - database - INFO - 新产品已插入: ID 1079
+2025-11-14 18:38:24,524 - database - INFO - 新产品已插入: ID 1080
+2025-11-14 18:38:24,553 - database - INFO - 新产品已插入: ID 1081
+2025-11-14 18:38:24,581 - database - INFO - 新产品已插入: ID 1082
+2025-11-14 18:38:24,614 - database - INFO - 新产品已插入: ID 1083
+2025-11-14 18:38:24,646 - database - INFO - 新产品已插入: ID 1084
+2025-11-14 18:38:24,675 - database - INFO - 新产品已插入: ID 1085
+2025-11-14 18:38:24,711 - database - INFO - 新产品已插入: ID 1086
+2025-11-14 18:38:24,744 - database - INFO - 新产品已插入: ID 1087
+2025-11-14 18:38:24,777 - database - INFO - 新产品已插入: ID 1088
+2025-11-14 18:38:24,809 - database - INFO - 新产品已插入: ID 1089
+2025-11-14 18:38:24,856 - database - INFO - 新产品已插入: ID 1090
+2025-11-14 18:38:24,886 - database - INFO - 新产品已插入: ID 1091
+2025-11-14 18:38:24,916 - database - INFO - 新产品已插入: ID 1092
+2025-11-14 18:38:24,952 - database - INFO - 新产品已插入: ID 1093
+2025-11-14 18:38:24,997 - database - INFO - 新产品已插入: ID 1094
+2025-11-14 18:38:25,035 - database - INFO - 新产品已插入: ID 1095
+2025-11-14 18:38:25,072 - database - INFO - 新产品已插入: ID 1096
+2025-11-14 18:38:25,101 - database - INFO - 新产品已插入: ID 1097
+2025-11-14 18:38:25,134 - database - INFO - 新产品已插入: ID 1098
+2025-11-14 18:38:25,192 - database - INFO - 新产品已插入: ID 1099
+2025-11-14 18:38:25,221 - database - INFO - 新产品已插入: ID 1100
+2025-11-14 18:38:25,251 - database - INFO - 新产品已插入: ID 1101
+2025-11-14 18:38:25,282 - database - INFO - 新产品已插入: ID 1102
+2025-11-14 18:38:25,320 - database - INFO - 新产品已插入: ID 1103
+2025-11-14 18:38:25,360 - database - INFO - 新产品已插入: ID 1104
+2025-11-14 18:38:25,408 - database - INFO - 新产品已插入: ID 1105
+2025-11-14 18:38:25,446 - database - INFO - 新产品已插入: ID 1106
+2025-11-14 18:38:25,476 - database - INFO - 新产品已插入: ID 1107
+2025-11-14 18:38:25,504 - database - INFO - 新产品已插入: ID 1108
+2025-11-14 18:38:25,533 - database - INFO - 新产品已插入: ID 1109
+2025-11-14 18:38:25,589 - database - INFO - 新产品已插入: ID 1110
+2025-11-14 18:38:25,671 - database - INFO - 新产品已插入: ID 1111
+2025-11-14 18:38:25,944 - database - INFO - 新产品已插入: ID 1112
+2025-11-14 18:38:26,062 - database - INFO - 新产品已插入: ID 1113
+2025-11-14 18:38:26,108 - database - INFO - 新产品已插入: ID 1114
+2025-11-14 18:38:26,145 - database - INFO - 新产品已插入: ID 1115
+2025-11-14 18:38:26,191 - database - INFO - 新产品已插入: ID 1116
+2025-11-14 18:38:26,532 - database - INFO - 新产品已插入: ID 1117
+2025-11-14 18:38:26,560 - database - INFO - 新产品已插入: ID 1118
+2025-11-14 18:38:26,593 - database - INFO - 新产品已插入: ID 1119
+2025-11-14 18:38:26,638 - database - INFO - 新产品已插入: ID 1120
+2025-11-14 18:38:26,932 - database - INFO - 新产品已插入: ID 1121
+2025-11-14 18:38:27,058 - database - INFO - 新产品已插入: ID 1122
+2025-11-14 18:38:27,138 - database - INFO - 新产品已插入: ID 1123
+2025-11-14 18:38:27,173 - database - INFO - 新产品已插入: ID 1124
+2025-11-14 18:38:27,332 - database - INFO - 新产品已插入: ID 1125
+2025-11-14 18:38:27,465 - database - INFO - 新产品已插入: ID 1126
+2025-11-14 18:38:27,732 - database - INFO - 新产品已插入: ID 1127
+2025-11-14 18:38:27,864 - database - INFO - 新产品已插入: ID 1128
+2025-11-14 18:38:28,232 - database - INFO - 新产品已插入: ID 1129
+2025-11-14 18:38:28,264 - database - INFO - 新产品已插入: ID 1130
+2025-11-14 18:38:28,299 - database - INFO - 新产品已插入: ID 1131
+2025-11-14 18:38:28,432 - database - INFO - 新产品已插入: ID 1132
+2025-11-14 18:38:28,549 - database - INFO - 新产品已插入: ID 1133
+2025-11-14 18:38:28,652 - database - INFO - 新产品已插入: ID 1134
+2025-11-14 18:38:28,745 - database - INFO - 新产品已插入: ID 1135
+2025-11-14 18:38:28,775 - database - INFO - 新产品已插入: ID 1136
+2025-11-14 18:38:28,805 - database - INFO - 新产品已插入: ID 1137
+2025-11-14 18:38:28,834 - database - INFO - 新产品已插入: ID 1138
+2025-11-14 18:38:28,871 - database - INFO - 新产品已插入: ID 1139
+2025-11-14 18:38:28,901 - database - INFO - 新产品已插入: ID 1140
+2025-11-14 18:38:28,933 - database - INFO - 新产品已插入: ID 1141
+2025-11-14 18:38:28,966 - database - INFO - 新产品已插入: ID 1142
+2025-11-14 18:38:28,996 - database - INFO - 新产品已插入: ID 1143
+2025-11-14 18:38:29,032 - database - INFO - 新产品已插入: ID 1144
+2025-11-14 18:38:29,065 - database - INFO - 新产品已插入: ID 1145
+2025-11-14 18:38:29,151 - database - INFO - 新产品已插入: ID 1146
+2025-11-14 18:38:29,261 - database - INFO - 新产品已插入: ID 1147
+2025-11-14 18:38:29,302 - database - INFO - 新产品已插入: ID 1148
+2025-11-14 18:38:29,335 - database - INFO - 新产品已插入: ID 1149
+2025-11-14 18:38:29,366 - database - INFO - 新产品已插入: ID 1150
+2025-11-14 18:38:29,398 - database - INFO - 新产品已插入: ID 1151
+2025-11-14 18:38:29,439 - database - INFO - 新产品已插入: ID 1152
+2025-11-14 18:38:29,560 - database - INFO - 新产品已插入: ID 1153
+2025-11-14 18:38:29,592 - database - INFO - 新产品已插入: ID 1154
+2025-11-14 18:38:29,633 - database - INFO - 新产品已插入: ID 1155
+2025-11-14 18:38:29,668 - database - INFO - 新产品已插入: ID 1156
+2025-11-14 18:38:29,700 - database - INFO - 新产品已插入: ID 1157
+2025-11-14 18:38:29,736 - database - INFO - 新产品已插入: ID 1158
+2025-11-14 18:38:29,853 - database - INFO - 新产品已插入: ID 1159
+2025-11-14 18:38:29,885 - database - INFO - 新产品已插入: ID 1160
+2025-11-14 18:38:29,932 - database - INFO - 新产品已插入: ID 1161
+2025-11-14 18:38:29,963 - database - INFO - 新产品已插入: ID 1162
+2025-11-14 18:38:29,996 - database - INFO - 新产品已插入: ID 1163
+2025-11-14 18:38:30,032 - database - INFO - 新产品已插入: ID 1164
+2025-11-14 18:38:30,069 - database - INFO - 新产品已插入: ID 1165
+2025-11-14 18:38:30,102 - database - INFO - 新产品已插入: ID 1166
+2025-11-14 18:38:30,133 - database - INFO - 新产品已插入: ID 1167
+2025-11-14 18:38:30,169 - database - INFO - 新产品已插入: ID 1168
+2025-11-14 18:38:30,209 - database - INFO - 新产品已插入: ID 1169
+2025-11-14 18:38:30,267 - database - INFO - 新产品已插入: ID 1170
+2025-11-14 18:38:30,302 - database - INFO - 新产品已插入: ID 1171
+2025-11-14 18:38:30,339 - database - INFO - 新产品已插入: ID 1172
+2025-11-14 18:38:30,381 - database - INFO - 新产品已插入: ID 1173
+2025-11-14 18:38:30,413 - database - INFO - 新产品已插入: ID 1174
+2025-11-14 18:38:30,632 - database - INFO - 新产品已插入: ID 1175
+2025-11-14 18:38:30,733 - database - INFO - 新产品已插入: ID 1176
+2025-11-14 18:38:30,943 - database - INFO - 新产品已插入: ID 1177
+2025-11-14 18:38:31,067 - database - INFO - 新产品已插入: ID 1178
+2025-11-14 18:38:31,098 - database - INFO - 新产品已插入: ID 1179
+2025-11-14 18:38:31,129 - database - INFO - 新产品已插入: ID 1180
+2025-11-14 18:38:31,169 - database - INFO - 新产品已插入: ID 1181
+2025-11-14 18:38:31,202 - database - INFO - 新产品已插入: ID 1182
+2025-11-14 18:38:31,234 - database - INFO - 新产品已插入: ID 1183
+2025-11-14 18:38:31,271 - database - INFO - 新产品已插入: ID 1184
+2025-11-14 18:38:31,303 - database - INFO - 新产品已插入: ID 1185
+2025-11-14 18:38:31,337 - database - INFO - 新产品已插入: ID 1186
+2025-11-14 18:38:31,456 - database - INFO - 新产品已插入: ID 1187
+2025-11-14 18:38:31,491 - database - INFO - 新产品已插入: ID 1188
+2025-11-14 18:38:31,549 - database - INFO - 新产品已插入: ID 1189
+2025-11-14 18:38:31,580 - database - INFO - 新产品已插入: ID 1190
+2025-11-14 18:38:31,615 - database - INFO - 新产品已插入: ID 1191
+2025-11-14 18:38:31,758 - database - INFO - 新产品已插入: ID 1192
+2025-11-14 18:38:31,832 - database - INFO - 新产品已插入: ID 1193
+2025-11-14 18:38:31,864 - database - INFO - 新产品已插入: ID 1194
+2025-11-14 18:38:31,901 - database - INFO - 新产品已插入: ID 1195
+2025-11-14 18:38:31,940 - database - INFO - 新产品已插入: ID 1196
+2025-11-14 18:38:32,143 - database - INFO - 新产品已插入: ID 1197
+2025-11-14 18:38:32,275 - database - INFO - 新产品已插入: ID 1198
+2025-11-14 18:38:32,453 - database - INFO - 新产品已插入: ID 1199
+2025-11-14 18:38:32,482 - database - INFO - 新产品已插入: ID 1200
+2025-11-14 18:38:32,532 - database - INFO - 新产品已插入: ID 1201
+2025-11-14 18:38:32,563 - database - INFO - 新产品已插入: ID 1202
+2025-11-14 18:38:32,618 - database - INFO - 新产品已插入: ID 1203
+2025-11-14 18:38:32,664 - database - INFO - 新产品已插入: ID 1204
+2025-11-14 18:38:32,713 - database - INFO - 新产品已插入: ID 1205
+2025-11-14 18:38:32,840 - database - INFO - 新产品已插入: ID 1206
+2025-11-14 18:38:32,960 - database - INFO - 新产品已插入: ID 1207
+2025-11-14 18:38:32,992 - database - INFO - 新产品已插入: ID 1208
+2025-11-14 18:38:33,049 - database - INFO - 新产品已插入: ID 1209
+2025-11-14 18:38:33,149 - database - INFO - 新产品已插入: ID 1210
+2025-11-14 18:38:33,178 - database - INFO - 新产品已插入: ID 1211
+2025-11-14 18:38:33,244 - database - INFO - 新产品已插入: ID 1212
+2025-11-14 18:38:33,273 - database - INFO - 新产品已插入: ID 1213
+2025-11-14 18:38:33,305 - database - INFO - 新产品已插入: ID 1214
+2025-11-14 18:38:33,358 - database - INFO - 新产品已插入: ID 1215
+2025-11-14 18:38:33,397 - database - INFO - 新产品已插入: ID 1216
+2025-11-14 18:38:33,433 - database - INFO - 新产品已插入: ID 1217
+2025-11-14 18:38:33,464 - database - INFO - 新产品已插入: ID 1218
+2025-11-14 18:38:33,497 - database - INFO - 新产品已插入: ID 1219
+2025-11-14 18:38:33,538 - database - INFO - 新产品已插入: ID 1220
+2025-11-14 18:38:33,632 - database - INFO - 新产品已插入: ID 1221
+2025-11-14 18:38:33,664 - database - INFO - 新产品已插入: ID 1222
+2025-11-14 18:38:33,693 - database - INFO - 新产品已插入: ID 1223
+2025-11-14 18:38:33,737 - database - INFO - 新产品已插入: ID 1224
+2025-11-14 18:38:33,947 - database - INFO - 新产品已插入: ID 1225
+2025-11-14 18:38:34,044 - database - INFO - 新产品已插入: ID 1226
+2025-11-14 18:38:34,078 - database - INFO - 新产品已插入: ID 1227
+2025-11-14 18:38:34,132 - database - INFO - 新产品已插入: ID 1228
+2025-11-14 18:38:34,164 - database - INFO - 新产品已插入: ID 1229
+2025-11-14 18:38:34,199 - database - INFO - 新产品已插入: ID 1230
+2025-11-14 18:38:34,237 - database - INFO - 新产品已插入: ID 1231
+2025-11-14 18:38:34,273 - database - INFO - 新产品已插入: ID 1232
+2025-11-14 18:38:34,310 - database - INFO - 新产品已插入: ID 1233
+2025-11-14 18:38:34,348 - database - INFO - 新产品已插入: ID 1234
+2025-11-14 18:38:34,384 - database - INFO - 新产品已插入: ID 1235
+2025-11-14 18:38:34,421 - database - INFO - 新产品已插入: ID 1236
+2025-11-14 18:38:34,461 - database - INFO - 新产品已插入: ID 1237
+2025-11-14 18:38:34,494 - database - INFO - 新产品已插入: ID 1238
+2025-11-14 18:38:34,530 - database - INFO - 新产品已插入: ID 1239
+2025-11-14 18:38:34,561 - database - INFO - 新产品已插入: ID 1240
+2025-11-14 18:38:34,597 - database - INFO - 新产品已插入: ID 1241
+2025-11-14 18:38:34,629 - database - INFO - 新产品已插入: ID 1242
+2025-11-14 18:38:34,663 - database - INFO - 新产品已插入: ID 1243
+2025-11-14 18:38:34,698 - database - INFO - 新产品已插入: ID 1244
+2025-11-14 18:38:34,736 - database - INFO - 新产品已插入: ID 1245
+2025-11-14 18:38:34,781 - database - INFO - 新产品已插入: ID 1246
+2025-11-14 18:38:34,818 - database - INFO - 新产品已插入: ID 1247
+2025-11-14 18:38:34,864 - database - INFO - 新产品已插入: ID 1248
+2025-11-14 18:38:34,899 - database - INFO - 新产品已插入: ID 1249
+2025-11-14 18:38:34,936 - database - INFO - 新产品已插入: ID 1250
+2025-11-14 18:38:34,966 - database - INFO - 新产品已插入: ID 1251
+2025-11-14 18:38:35,003 - database - INFO - 新产品已插入: ID 1252
+2025-11-14 18:38:35,033 - database - INFO - 新产品已插入: ID 1253
+2025-11-14 18:38:35,065 - database - INFO - 新产品已插入: ID 1254
+2025-11-14 18:38:35,096 - database - INFO - 新产品已插入: ID 1255
+2025-11-14 18:38:35,150 - database - INFO - 新产品已插入: ID 1256
+2025-11-14 18:38:35,180 - database - INFO - 新产品已插入: ID 1257
+2025-11-14 18:38:35,213 - database - INFO - 新产品已插入: ID 1258
+2025-11-14 18:38:35,246 - database - INFO - 新产品已插入: ID 1259
+2025-11-14 18:38:35,276 - database - INFO - 新产品已插入: ID 1260
+2025-11-14 18:38:35,307 - database - INFO - 新产品已插入: ID 1261
+2025-11-14 18:38:35,340 - database - INFO - 新产品已插入: ID 1262
+2025-11-14 18:38:35,368 - database - INFO - 新产品已插入: ID 1263
+2025-11-14 18:38:35,400 - database - INFO - 新产品已插入: ID 1264
+2025-11-14 18:38:35,435 - database - INFO - 新产品已插入: ID 1265
+2025-11-14 18:38:35,468 - database - INFO - 新产品已插入: ID 1266
+2025-11-14 18:38:35,496 - database - INFO - 新产品已插入: ID 1267
+2025-11-14 18:38:35,527 - database - INFO - 新产品已插入: ID 1268
+2025-11-14 18:38:35,573 - database - INFO - 新产品已插入: ID 1269
+2025-11-14 18:38:35,601 - database - INFO - 新产品已插入: ID 1270
+2025-11-14 18:38:35,634 - database - INFO - 新产品已插入: ID 1271
+2025-11-14 18:38:35,671 - database - INFO - 新产品已插入: ID 1272
+2025-11-14 18:38:35,701 - database - INFO - 新产品已插入: ID 1273
+2025-11-14 18:38:35,741 - database - INFO - 新产品已插入: ID 1274
+2025-11-14 18:38:35,775 - database - INFO - 新产品已插入: ID 1275
+2025-11-14 18:38:35,814 - database - INFO - 新产品已插入: ID 1276
+2025-11-14 18:38:35,854 - database - INFO - 新产品已插入: ID 1277
+2025-11-14 18:38:35,892 - database - INFO - 新产品已插入: ID 1278
+2025-11-14 18:38:35,927 - database - INFO - 新产品已插入: ID 1279
+2025-11-14 18:38:35,962 - database - INFO - 新产品已插入: ID 1280
+2025-11-14 18:38:35,993 - database - INFO - 新产品已插入: ID 1281
+2025-11-14 18:38:36,030 - database - INFO - 新产品已插入: ID 1282
+2025-11-14 18:38:36,061 - database - INFO - 新产品已插入: ID 1283
+2025-11-14 18:38:36,093 - database - INFO - 新产品已插入: ID 1284
+2025-11-14 18:38:36,131 - database - INFO - 新产品已插入: ID 1285
+2025-11-14 18:38:36,171 - database - INFO - 新产品已插入: ID 1286
+2025-11-14 18:38:36,206 - database - INFO - 新产品已插入: ID 1287
+2025-11-14 18:38:36,238 - database - INFO - 新产品已插入: ID 1288
+2025-11-14 18:38:36,269 - database - INFO - 新产品已插入: ID 1289
+2025-11-14 18:38:36,302 - database - INFO - 新产品已插入: ID 1290
+2025-11-14 18:38:36,336 - database - INFO - 新产品已插入: ID 1291
+2025-11-14 18:38:36,368 - database - INFO - 新产品已插入: ID 1292
+2025-11-14 18:38:36,400 - database - INFO - 新产品已插入: ID 1293
+2025-11-14 18:38:36,436 - database - INFO - 新产品已插入: ID 1294
+2025-11-14 18:38:36,465 - database - INFO - 新产品已插入: ID 1295
+2025-11-14 18:38:36,497 - database - INFO - 新产品已插入: ID 1296
+2025-11-14 18:38:36,529 - database - INFO - 新产品已插入: ID 1297
+2025-11-14 18:38:36,562 - database - INFO - 新产品已插入: ID 1298
+2025-11-14 18:38:36,595 - database - INFO - 新产品已插入: ID 1299
+2025-11-14 18:38:36,631 - database - INFO - 新产品已插入: ID 1300
+2025-11-14 18:38:36,660 - database - INFO - 新产品已插入: ID 1301
+2025-11-14 18:38:36,692 - database - INFO - 新产品已插入: ID 1302
+2025-11-14 18:38:36,727 - database - INFO - 新产品已插入: ID 1303
+2025-11-14 18:38:36,763 - database - INFO - 新产品已插入: ID 1304
+2025-11-14 18:38:36,794 - database - INFO - 新产品已插入: ID 1305
+2025-11-14 18:38:36,826 - database - INFO - 新产品已插入: ID 1306
+2025-11-14 18:38:36,855 - database - INFO - 新产品已插入: ID 1307
+2025-11-14 18:38:36,884 - database - INFO - 新产品已插入: ID 1308
+2025-11-14 18:38:36,917 - database - INFO - 新产品已插入: ID 1309
+2025-11-14 18:38:36,946 - database - INFO - 新产品已插入: ID 1310
+2025-11-14 18:38:36,990 - database - INFO - 新产品已插入: ID 1311
+2025-11-14 18:38:37,028 - database - INFO - 新产品已插入: ID 1312
+2025-11-14 18:38:37,065 - database - INFO - 新产品已插入: ID 1313
+2025-11-14 18:38:37,092 - database - INFO - 新产品已插入: ID 1314
+2025-11-14 18:38:37,123 - database - INFO - 新产品已插入: ID 1315
+2025-11-14 18:38:37,166 - database - INFO - 新产品已插入: ID 1316
+2025-11-14 18:38:37,195 - database - INFO - 新产品已插入: ID 1317
+2025-11-14 18:38:37,224 - database - INFO - 新产品已插入: ID 1318
+2025-11-14 18:38:37,257 - database - INFO - 新产品已插入: ID 1319
+2025-11-14 18:38:37,287 - database - INFO - 新产品已插入: ID 1320
+2025-11-14 18:38:37,317 - database - INFO - 新产品已插入: ID 1321
+2025-11-14 18:38:37,345 - database - INFO - 新产品已插入: ID 1322
+2025-11-14 18:38:37,376 - database - INFO - 新产品已插入: ID 1323
+2025-11-14 18:38:37,409 - database - INFO - 新产品已插入: ID 1324
+2025-11-14 18:38:37,440 - database - INFO - 新产品已插入: ID 1325
+2025-11-14 18:38:37,473 - database - INFO - 新产品已插入: ID 1326
+2025-11-14 18:38:37,505 - database - INFO - 新产品已插入: ID 1327
+2025-11-14 18:38:37,578 - database - INFO - 新产品已插入: ID 1328
+2025-11-14 18:38:37,605 - database - INFO - 新产品已插入: ID 1329
+2025-11-14 18:38:37,640 - database - INFO - 新产品已插入: ID 1330
+2025-11-14 18:38:37,676 - database - INFO - 新产品已插入: ID 1331
+2025-11-14 18:38:37,713 - database - INFO - 新产品已插入: ID 1332
+2025-11-14 18:38:37,748 - database - INFO - 新产品已插入: ID 1333
+2025-11-14 18:38:37,785 - database - INFO - 新产品已插入: ID 1334
+2025-11-14 18:38:37,862 - database - INFO - 新产品已插入: ID 1335
+2025-11-14 18:38:37,909 - database - INFO - 新产品已插入: ID 1336
+2025-11-14 18:38:37,938 - database - INFO - 新产品已插入: ID 1337
+2025-11-14 18:38:37,979 - database - INFO - 新产品已插入: ID 1338
+2025-11-14 18:38:38,012 - database - INFO - 新产品已插入: ID 1339
+2025-11-14 18:38:38,047 - database - INFO - 新产品已插入: ID 1340
+2025-11-14 18:38:38,083 - database - INFO - 新产品已插入: ID 1341
+2025-11-14 18:38:38,116 - database - INFO - 新产品已插入: ID 1342
+2025-11-14 18:38:38,153 - database - INFO - 新产品已插入: ID 1343
+2025-11-14 18:38:38,187 - database - INFO - 新产品已插入: ID 1344
+2025-11-14 18:38:38,306 - database - INFO - 新产品已插入: ID 1345
+2025-11-14 18:38:38,361 - database - INFO - 新产品已插入: ID 1346
+2025-11-14 18:38:38,402 - database - INFO - 新产品已插入: ID 1347
+2025-11-14 18:38:38,442 - database - INFO - 新产品已插入: ID 1348
+2025-11-14 18:38:38,473 - database - INFO - 新产品已插入: ID 1349
+2025-11-14 18:38:38,508 - database - INFO - 新产品已插入: ID 1350
+2025-11-14 18:38:38,541 - database - INFO - 新产品已插入: ID 1351
+2025-11-14 18:38:38,580 - database - INFO - 新产品已插入: ID 1352
+2025-11-14 18:38:38,610 - database - INFO - 新产品已插入: ID 1353
+2025-11-14 18:38:38,640 - database - INFO - 新产品已插入: ID 1354
+2025-11-14 18:38:38,675 - database - INFO - 新产品已插入: ID 1355
+2025-11-14 18:38:38,709 - database - INFO - 新产品已插入: ID 1356
+2025-11-14 18:38:38,742 - database - INFO - 新产品已插入: ID 1357
+2025-11-14 18:38:38,775 - database - INFO - 新产品已插入: ID 1358
+2025-11-14 18:38:38,812 - database - INFO - 新产品已插入: ID 1359
+2025-11-14 18:38:38,850 - database - INFO - 新产品已插入: ID 1360
+2025-11-14 18:38:38,879 - database - INFO - 新产品已插入: ID 1361
+2025-11-14 18:38:38,912 - database - INFO - 新产品已插入: ID 1362
+2025-11-14 18:38:38,948 - database - INFO - 新产品已插入: ID 1363
+2025-11-14 18:38:38,975 - database - INFO - 新产品已插入: ID 1364
+2025-11-14 18:38:39,003 - database - INFO - 新产品已插入: ID 1365
+2025-11-14 18:38:39,035 - database - INFO - 新产品已插入: ID 1366
+2025-11-14 18:38:39,066 - database - INFO - 新产品已插入: ID 1367
+2025-11-14 18:38:39,098 - database - INFO - 新产品已插入: ID 1368
+2025-11-14 18:38:39,134 - database - INFO - 新产品已插入: ID 1369
+2025-11-14 18:38:39,169 - database - INFO - 新产品已插入: ID 1370
+2025-11-14 18:38:39,199 - database - INFO - 新产品已插入: ID 1371
+2025-11-14 18:38:39,228 - database - INFO - 新产品已插入: ID 1372
+2025-11-14 18:38:39,258 - database - INFO - 新产品已插入: ID 1373
+2025-11-14 18:38:39,287 - database - INFO - 新产品已插入: ID 1374
+2025-11-14 18:38:39,315 - database - INFO - 新产品已插入: ID 1375
+2025-11-14 18:38:39,352 - database - INFO - 新产品已插入: ID 1376
+2025-11-14 18:38:39,386 - database - INFO - 新产品已插入: ID 1377
+2025-11-14 18:38:39,416 - database - INFO - 新产品已插入: ID 1378
+2025-11-14 18:38:39,447 - database - INFO - 新产品已插入: ID 1379
+2025-11-14 18:38:39,477 - database - INFO - 新产品已插入: ID 1380
+2025-11-14 18:38:39,512 - database - INFO - 新产品已插入: ID 1381
+2025-11-14 18:38:39,545 - database - INFO - 新产品已插入: ID 1382
+2025-11-14 18:38:39,579 - database - INFO - 新产品已插入: ID 1383
+2025-11-14 18:38:39,613 - database - INFO - 新产品已插入: ID 1384
+2025-11-14 18:38:39,643 - database - INFO - 新产品已插入: ID 1385
+2025-11-14 18:38:39,676 - database - INFO - 新产品已插入: ID 1386
+2025-11-14 18:38:39,709 - database - INFO - 新产品已插入: ID 1387
+2025-11-14 18:38:39,743 - database - INFO - 新产品已插入: ID 1388
+2025-11-14 18:38:39,771 - database - INFO - 新产品已插入: ID 1389
+2025-11-14 18:38:39,798 - database - INFO - 新产品已插入: ID 1390
+2025-11-14 18:38:39,825 - database - INFO - 新产品已插入: ID 1391
+2025-11-14 18:38:39,857 - database - INFO - 新产品已插入: ID 1392
+2025-11-14 18:38:39,885 - database - INFO - 新产品已插入: ID 1393
+2025-11-14 18:38:39,915 - database - INFO - 新产品已插入: ID 1394
+2025-11-14 18:38:39,949 - database - INFO - 新产品已插入: ID 1395
+2025-11-14 18:38:39,979 - database - INFO - 新产品已插入: ID 1396
+2025-11-14 18:38:40,014 - database - INFO - 新产品已插入: ID 1397
+2025-11-14 18:38:40,047 - database - INFO - 新产品已插入: ID 1398
+2025-11-14 18:38:40,078 - database - INFO - 新产品已插入: ID 1399
+2025-11-14 18:38:40,109 - database - INFO - 新产品已插入: ID 1400
+2025-11-14 18:38:40,142 - database - INFO - 新产品已插入: ID 1401
+2025-11-14 18:38:40,176 - database - INFO - 新产品已插入: ID 1402
+2025-11-14 18:38:40,207 - database - INFO - 新产品已插入: ID 1403
+2025-11-14 18:38:40,237 - database - INFO - 新产品已插入: ID 1404
+2025-11-14 18:38:40,271 - database - INFO - 新产品已插入: ID 1405
+2025-11-14 18:38:40,301 - database - INFO - 新产品已插入: ID 1406
+2025-11-14 18:38:40,340 - database - INFO - 新产品已插入: ID 1407
+2025-11-14 18:38:40,376 - database - INFO - 新产品已插入: ID 1408
+2025-11-14 18:38:40,410 - database - INFO - 新产品已插入: ID 1409
+2025-11-14 18:38:40,460 - database - INFO - 新产品已插入: ID 1410
+2025-11-14 18:38:40,494 - database - INFO - 新产品已插入: ID 1411
+2025-11-14 18:38:40,534 - database - INFO - 新产品已插入: ID 1412
+2025-11-14 18:38:40,575 - database - INFO - 新产品已插入: ID 1413
+2025-11-14 18:38:40,607 - database - INFO - 新产品已插入: ID 1414
+2025-11-14 18:38:40,638 - database - INFO - 新产品已插入: ID 1415
+2025-11-14 18:38:40,675 - database - INFO - 新产品已插入: ID 1416
+2025-11-14 18:38:40,714 - database - INFO - 新产品已插入: ID 1417
+2025-11-14 18:38:40,747 - database - INFO - 新产品已插入: ID 1418
+2025-11-14 18:38:40,784 - database - INFO - 新产品已插入: ID 1419
+2025-11-14 18:38:40,816 - database - INFO - 新产品已插入: ID 1420
+2025-11-14 18:38:40,851 - database - INFO - 新产品已插入: ID 1421
+2025-11-14 18:38:40,886 - database - INFO - 新产品已插入: ID 1422
+2025-11-14 18:38:40,922 - database - INFO - 新产品已插入: ID 1423
+2025-11-14 18:38:40,953 - database - INFO - 新产品已插入: ID 1424
+2025-11-14 18:38:40,982 - database - INFO - 新产品已插入: ID 1425
+2025-11-14 18:38:41,010 - database - INFO - 新产品已插入: ID 1426
+2025-11-14 18:38:41,045 - database - INFO - 新产品已插入: ID 1427
+2025-11-14 18:38:41,077 - database - INFO - 新产品已插入: ID 1428
+2025-11-14 18:38:41,179 - database - INFO - 新产品已插入: ID 1429
+2025-11-14 18:38:41,211 - database - INFO - 新产品已插入: ID 1430
+2025-11-14 18:38:41,244 - database - INFO - 新产品已插入: ID 1431
+2025-11-14 18:38:41,275 - database - INFO - 新产品已插入: ID 1432
+2025-11-14 18:38:41,307 - database - INFO - 新产品已插入: ID 1433
+2025-11-14 18:38:41,338 - database - INFO - 新产品已插入: ID 1434
+2025-11-14 18:38:41,372 - database - INFO - 新产品已插入: ID 1435
+2025-11-14 18:38:41,401 - database - INFO - 新产品已插入: ID 1436
+2025-11-14 18:38:41,430 - database - INFO - 新产品已插入: ID 1437
+2025-11-14 18:38:41,463 - database - INFO - 新产品已插入: ID 1438
+2025-11-14 18:38:41,494 - database - INFO - 新产品已插入: ID 1439
+2025-11-14 18:38:41,532 - database - INFO - 新产品已插入: ID 1440
+2025-11-14 18:38:41,567 - database - INFO - 新产品已插入: ID 1441
+2025-11-14 18:38:41,601 - database - INFO - 新产品已插入: ID 1442
+2025-11-14 18:38:41,636 - database - INFO - 新产品已插入: ID 1443
+2025-11-14 18:38:41,674 - database - INFO - 新产品已插入: ID 1444
+2025-11-14 18:38:41,712 - database - INFO - 新产品已插入: ID 1445
+2025-11-14 18:38:41,748 - database - INFO - 新产品已插入: ID 1446
+2025-11-14 18:38:41,783 - database - INFO - 新产品已插入: ID 1447
+2025-11-14 18:38:41,818 - database - INFO - 新产品已插入: ID 1448
+2025-11-14 18:38:41,849 - database - INFO - 新产品已插入: ID 1449
+2025-11-14 18:38:41,881 - database - INFO - 新产品已插入: ID 1450
+2025-11-14 18:38:41,913 - database - INFO - 新产品已插入: ID 1451
+2025-11-14 18:38:41,945 - database - INFO - 新产品已插入: ID 1452
+2025-11-14 18:38:41,977 - database - INFO - 新产品已插入: ID 1453
+2025-11-14 18:38:42,014 - database - INFO - 新产品已插入: ID 1454
+2025-11-14 18:38:42,044 - database - INFO - 新产品已插入: ID 1455
+2025-11-14 18:38:42,085 - database - INFO - 新产品已插入: ID 1456
+2025-11-14 18:38:42,117 - database - INFO - 新产品已插入: ID 1457
+2025-11-14 18:38:42,155 - database - INFO - 新产品已插入: ID 1458
+2025-11-14 18:38:42,208 - database - INFO - 新产品已插入: ID 1459
+2025-11-14 18:38:42,247 - database - INFO - 新产品已插入: ID 1460
+2025-11-14 18:38:42,286 - database - INFO - 新产品已插入: ID 1461
+2025-11-14 18:38:42,321 - database - INFO - 新产品已插入: ID 1462
+2025-11-14 18:38:42,360 - database - INFO - 新产品已插入: ID 1463
+2025-11-14 18:38:42,393 - database - INFO - 新产品已插入: ID 1464
+2025-11-14 18:38:42,428 - database - INFO - 新产品已插入: ID 1465
+2025-11-14 18:38:42,459 - database - INFO - 新产品已插入: ID 1466
+2025-11-14 18:38:42,488 - database - INFO - 新产品已插入: ID 1467
+2025-11-14 18:38:42,521 - database - INFO - 新产品已插入: ID 1468
+2025-11-14 18:38:42,556 - database - INFO - 新产品已插入: ID 1469
+2025-11-14 18:38:42,588 - database - INFO - 新产品已插入: ID 1470
+2025-11-14 18:38:42,625 - database - INFO - 新产品已插入: ID 1471
+2025-11-14 18:38:42,665 - database - INFO - 新产品已插入: ID 1472
+2025-11-14 18:38:42,704 - database - INFO - 新产品已插入: ID 1473
+2025-11-14 18:38:42,782 - database - INFO - 新产品已插入: ID 1474
+2025-11-14 18:38:42,831 - database - INFO - 新产品已插入: ID 1475
+2025-11-14 18:38:42,867 - database - INFO - 新产品已插入: ID 1476
+2025-11-14 18:38:42,901 - database - INFO - 新产品已插入: ID 1477
+2025-11-14 18:38:42,938 - database - INFO - 新产品已插入: ID 1478
+2025-11-14 18:38:42,975 - database - INFO - 新产品已插入: ID 1479
+2025-11-14 18:38:43,015 - database - INFO - 新产品已插入: ID 1480
+2025-11-14 18:38:43,052 - database - INFO - 新产品已插入: ID 1481
+2025-11-14 18:38:43,088 - database - INFO - 新产品已插入: ID 1482
+2025-11-14 18:38:43,130 - database - INFO - 新产品已插入: ID 1483
+2025-11-14 18:38:43,161 - database - INFO - 新产品已插入: ID 1484
+2025-11-14 18:38:43,198 - database - INFO - 新产品已插入: ID 1485
+2025-11-14 18:38:43,233 - database - INFO - 新产品已插入: ID 1486
+2025-11-14 18:38:43,268 - database - INFO - 新产品已插入: ID 1487
+2025-11-14 18:38:43,300 - database - INFO - 新产品已插入: ID 1488
+2025-11-14 18:38:43,329 - database - INFO - 新产品已插入: ID 1489
+2025-11-14 18:38:43,356 - database - INFO - 新产品已插入: ID 1490
+2025-11-14 18:38:43,389 - database - INFO - 新产品已插入: ID 1491
+2025-11-14 18:38:43,427 - database - INFO - 新产品已插入: ID 1492
+2025-11-14 18:38:43,461 - database - INFO - 新产品已插入: ID 1493
+2025-11-14 18:38:43,496 - database - INFO - 新产品已插入: ID 1494
+2025-11-14 18:38:43,528 - database - INFO - 新产品已插入: ID 1495
+2025-11-14 18:38:43,555 - database - INFO - 新产品已插入: ID 1496
+2025-11-14 18:38:43,588 - database - INFO - 新产品已插入: ID 1497
+2025-11-14 18:38:43,619 - database - INFO - 新产品已插入: ID 1498
+2025-11-14 18:38:43,650 - database - INFO - 新产品已插入: ID 1499
+2025-11-14 18:38:43,679 - database - INFO - 新产品已插入: ID 1500
+2025-11-14 18:38:43,719 - database - INFO - 新产品已插入: ID 1501
+2025-11-14 18:38:43,747 - database - INFO - 新产品已插入: ID 1502
+2025-11-14 18:38:43,775 - database - INFO - 新产品已插入: ID 1503

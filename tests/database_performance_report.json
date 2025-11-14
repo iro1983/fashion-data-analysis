@@ -1,0 +1,89 @@
+{
+  "test_type": "database_performance",
+  "timestamp": "2025-11-14 18:45:11",
+  "database_type": "SQLite",
+  "test_results": {
+    "insert_50_records": {
+      "count": 50,
+      "time": 1.7148082256317139,
+      "rate": 29.157779425498514
+    },
+    "insert_200_records": {
+      "count": 200,
+      "time": 7.502191781997681,
+      "rate": 26.658875940751287
+    },
+    "insert_500_records": {
+      "count": 500,
+      "time": 18.04448103904724,
+      "rate": 27.7093034107231
+    },
+    "query_performance": {
+      "按平台筛选": {
+        "avg_time_ms": 7.61,
+        "min_time_ms": 6.03,
+        "max_time_ms": 16.39,
+        "std_dev_ms": 3.15,
+        "target_met": true
+      },
+      "按分类筛选": {
+        "avg_time_ms": 6.01,
+        "min_time_ms": 5.85,
+        "max_time_ms": 6.29,
+        "std_dev_ms": 0.12,
+        "target_met": true
+      },
+      "平台+分类筛选": {
+        "avg_time_ms": 6.48,
+        "min_time_ms": 5.63,
+        "max_time_ms": 11.96,
+        "std_dev_ms": 1.94,
+        "target_met": true
+      },
+      "获取全部数据": {
+        "avg_time_ms": 12.81,
+        "min_time_ms": 10.75,
+        "max_time_ms": 16.75,
+        "std_dev_ms": 2.31,
+        "target_met": true
+      },
+      "获取统计信息": {
+        "avg_time_ms": 41.83,
+        "min_time_ms": 34.31,
+        "max_time_ms": 50.5,
+        "std_dev_ms": 5.49,
+        "target_met": true
+      }
+    },
+    "concurrent_access": {
+      "total_workers": 10,
+      "total_time": 2.129739284515381,
+      "avg_query_time_ms": 105.65,
+      "min_query_time_ms": 1.13,
+      "max_query_time_ms": 167.47,
+      "total_queries": 200,
+      "total_errors": 0,
+      "overall_success_rate": 1.0,
+      "avg_worker_success_rate": 1.0,
+      "target_met": false
+    },
+    "index_performance": {
+      "time_without_index": 0.0227,
+      "time_with_index": 0.0493,
+      "improvement_percent": -117.22,
+      "target_met": false
+    },
+    "memory_usage": {
+      "initial_memory_mb": 34.12,
+      "peak_memory_mb": 35.94,
+      "memory_increase_mb": 1.81,
+      "target_met": true
+    }
+  },
+  "summary": {
+    "total_tests": 4,
+    "passed_tests": 2,
+    "failed_tests": 2,
+    "overall_status": "partial"
+  }
+}

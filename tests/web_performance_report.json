@@ -1,0 +1,42 @@
+{
+  "test_type": "web_performance",
+  "timestamp": "2025-11-14 18:45:30",
+  "framework": "React + Vite",
+  "test_results": {
+    "react_component_performance": {
+      "available": true,
+      "total_components": 11,
+      "components": [],
+      "potential_issues": [],
+      "targets_met": {
+        "no_large_components": true,
+        "no_deep_nesting": true,
+        "reasonable_imports": true
+      }
+    },
+    "mobile_responsiveness": {
+      "available": true,
+      "has_responsive_hooks": true,
+      "has_media_queries": true,
+      "has_mobile_components": true,
+      "touch_friendly_elements": 27,
+      "mobile_specific_files": [
+        "fashion-dashboard/src/hooks/use-mobile.tsx"
+      ],
+      "mobile_detection": true,
+      "media_queries_count": 2,
+      "targets_met": {
+        "has_responsive_hooks": true,
+        "has_media_queries": true,
+        "has_mobile_optimization": true
+      }
+    }
+  },
+  "summary": {
+    "total_tests": 2,
+    "passed_tests": 2,
+    "failed_tests": 0,
+    "overall_status": "passed",
+    "performance_score": 100.0
+  }
+}

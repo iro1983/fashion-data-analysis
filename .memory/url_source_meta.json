@@ -1,0 +1,295 @@
+{
+  "_source_id": 40,
+  "sources": {
+    "TikTok和Amazon竞品研究技术方案": {
+      "https://developers.tiktok.com/doc/our-guidelines-developer-guidelines": {
+        "id": 1,
+        "publisher": "TikTok for Developers",
+        "url": "https://developers.tiktok.com/doc/our-guidelines-developer-guidelines",
+        "title": "Developer Guidelines - TikTok for Developers",
+        "info": "获取TikTok官方API政策和开发者指南信息，了解商业使用限制和授权要求"
+      },
+      "https://developer-docs.amazon.com/sp-api/lang-zh_CN/docs/amazon-seller-data-access": {
+        "id": 2,
+        "publisher": "Amazon Developer",
+        "url": "https://developer-docs.amazon.com/sp-api/lang-zh_CN/docs/amazon-seller-data-access",
+        "title": "Amazon Seller Data Access",
+        "info": "分析Amazon卖家中心API的使用条件和数据访问权限，了解官方API服务的限制"
+      },
+      "https://www.scraperapi.com/web-scraping/amazon/is-it-legal/": {
+        "id": 3,
+        "publisher": "ScraperAPI",
+        "url": "https://www.scraperapi.com/web-scraping/amazon/is-it-legal/",
+        "title": "Is Scraping Amazon Legal? Tips and Best Practices",
+        "info": "获取网络抓取的法律合规要求和最佳实践指南"
+      },
+      "https://www.bardeen.ai/posts/zapier-vs-make": {
+        "id": 4,
+        "publisher": "Bardeen",
+        "url": "https://www.bardeen.ai/posts/zapier-vs-make",
+        "title": "Zapier vs. Make: Which no-code automation tool is right",
+        "info": "Zapier与Make功能对比、定价和易用性分析"
+      },
+      "https://www.scrapinglab.net/blog/top-10-no-code-web-scraping-tools-compared": {
+        "id": 5,
+        "publisher": "Scraping Lab",
+        "url": "https://www.scrapinglab.net/blog/top-10-no-code-web-scraping-tools-compared",
+        "title": "Top 10 No-Code Web Scraping Tools Compared",
+        "info": "十大无代码web抓取工具的功能对比和使用场景分析"
+      }
+    },
+    "2025年免费/低成本数据抓取工具和服务调研": {
+      "https://dev.to/wisdomudo/top-10-tools-for-efficient-web-scraping-in-2025-20jk": {
+        "id": 6,
+        "publisher": "DEV Community",
+        "url": "https://dev.to/wisdomudo/top-10-tools-for-efficient-web-scraping-in-2025-20jk",
+        "title": "Top 10 Web Scraping Tools in 2025 (Free & Paid Options)",
+        "info": "2025年顶级网页爬虫工具详细对比，包含10种工具的功能特性、定价模式和技术规格"
+      },
+      "https://rapidapi.com/collection/list-of-free-apis": {
+        "id": 7,
+        "publisher": "RapidAPI",
+        "url": "https://rapidapi.com/collection/list-of-free-apis",
+        "title": "Free Public APIs for Developers",
+        "info": "RapidAPI上超过25个免费API的详细信息，包括COVID-19数据、天气数据、金融数据等"
+      },
+      "https://supabase.com/pricing": {
+        "id": 8,
+        "publisher": "Supabase",
+        "url": "https://supabase.com/pricing",
+        "title": "Supabase Pricing & Plans",
+        "info": "Supabase免费计划：500MB数据库存储、50,000月活用户、1GB文件存储等基础限制详情"
+      },
+      "https://scrapy.org/": {
+        "id": 9,
+        "publisher": "Scrapy Project",
+        "url": "https://scrapy.org/",
+        "title": "Scrapy - An open source web scraping framework for Python",
+        "info": "Scrapy开源框架信息：55.1k GitHub Stars，免费开源，由Zyte维护，500+贡献者"
+      },
+      "https://docs.github.com/zh/billing/concepts/product-billing/github-actions": {
+        "id": 10,
+        "publisher": "GitHub",
+        "url": "https://docs.github.com/zh/billing/concepts/product-billing/github-actions",
+        "title": "GitHub Actions 计费",
+        "info": "GitHub Actions免费额度详细信息，包括免费分钟数和超出后的付费标准"
+      },
+      "https://www.scraperapi.com/blog/best-10-free-proxies-and-free-proxy-lists-for-web-scraping/": {
+        "id": 11,
+        "publisher": "ScraperAPI",
+        "url": "https://www.scraperapi.com/blog/best-10-free-proxies-and-free-proxy-lists-for-web-scraping/",
+        "title": "17 Best Free Proxy List For Web Scraping in 2025",
+        "info": "17个免费代理服务商详细对比，包括功能限制和可靠性评估"
+      },
+      "https://oxylabs.io/blog/best-rotating-proxies": {
+        "id": 12,
+        "publisher": "Oxylabs",
+        "url": "https://oxylabs.io/blog/best-rotating-proxies",
+        "title": "10 Best Rotating Proxy Service for Data Scraping in 2025",
+        "info": "2025年最佳旋转代理服务推荐，重点关注数据抓取应用"
+      },
+      "https://www.netlify.com/pricing/": {
+        "id": 13,
+        "publisher": "Netlify",
+        "url": "https://www.netlify.com/pricing/",
+        "title": "Pricing and Plans",
+        "info": "Netlify免费计划：100GB带宽、300构建分钟、服务器less函数等限制详情"
+      }
+    },
+    "TikTok数据获取方法研究": {
+      "https://developer.baidu.com/article/detail.html?id=3549630": {
+        "id": 14,
+        "publisher": "百度开发者中心",
+        "url": "https://developer.baidu.com/article/detail.html?id=3549630",
+        "title": "TikTok API接口文档详解与开发指南",
+        "info": "详细的TikTok API接口文档，包括认证协议(OAuth 2.0)、主要API类型(用户、内容、数据分析、广告)、接口列表和使用流程"
+      },
+      "https://docs.tikhub.io/4579905m0": {
+        "id": 15,
+        "publisher": "TikHub.io",
+        "url": "https://docs.tikhub.io/4579905m0",
+        "title": "TikHub API官方文档",
+        "info": "支持15个社交媒体平台的集成API服务平台，TikHub.io提供阶梯式折扣计费(0.001-0.0005美元/请求)，无月度门槛，按实际使用量计费"
+      },
+      "https://blog.csdn.net/gitblog_00364/article/details/147036252": {
+        "id": 16,
+        "publisher": "CSDN",
+        "url": "https://blog.csdn.net/gitblog_00364/article/details/147036252",
+        "title": "TikHub-API-Python-SDK使用教程",
+        "info": "开源Python SDK，支持多平台社交媒体数据获取，提供异步请求、自动重试、并发控制等功能，包含完整的代码示例和使用教程"
+      },
+      "https://zhuanlan.zhihu.com/p/1970514648928347057": {
+        "id": 17,
+        "publisher": "知乎",
+        "url": "https://zhuanlan.zhihu.com/p/1970514648928347057",
+        "title": "2025年靠谱好用的TikTok代理IP服务提供商推荐",
+        "info": "2025年TikTok原生住宅代理IP服务推荐，包括辣椒HTTP(9.9元/月)、Cliproxy、Brightdata、Oxylabs、Soax等服务商的价格和功能对比"
+      },
+      "https://blog.csdn.net/gitblog_00485/article/details/141418886": {
+        "id": 18,
+        "publisher": "CSDN",
+        "url": "https://blog.csdn.net/gitblog_00485/article/details/141418886",
+        "title": "TikTok API Python使用教程",
+        "info": "免费TikTok API Python使用教程，包含环境变量配置、Cookie设置、代理服务器配置和基础代码示例"
+      }
+    },
+    "TikTok和Amazon数据抓取法律合规分析": {
+      "https://mccarthylg.com/how-to-comply-with-the-gdpr-and-ccpa-as-a-web-scraper/": {
+        "id": 19,
+        "publisher": "McCarthy Law Group",
+        "url": "https://mccarthylg.com/how-to-comply-with-the-gdpr-and-ccpa-as-a-web-scraper/",
+        "title": "GDPR和CCPA网络爬虫合规指南",
+        "info": "详细阐述了GDPR和CCPA对网络爬虫的具体合规要求，包括适用性、个人数据定义、合规步骤和处罚规定"
+      },
+      "https://developer-docs.amazon.com/sp-api/changelog/policy-updates-amazon-api-services-developer-agreement-data-protection-policy-and-acceptable-use-policy": {
+        "id": 20,
+        "publisher": "Amazon Developer Docs",
+        "url": "https://developer-docs.amazon.com/sp-api/changelog/policy-updates-amazon-api-services-developer-agreement-data-protection-policy-and-acceptable-use-policy",
+        "title": "Amazon API服务开发者协议更新",
+        "info": "2024年6月12日生效的Amazon API服务开发者协议更新，涉及数据保护政策和可接受使用政策变更"
+      },
+      "https://www.oag.ca.gov/privacy/ccpa": {
+        "id": 21,
+        "publisher": "California Attorney General Office",
+        "url": "https://www.oag.ca.gov/privacy/ccpa",
+        "title": "加州消费者隐私法案(CCPA)官方指南",
+        "info": "CCPA的完整法律要求、消费者权利、商业义务、执法机制和具体实施规定"
+      },
+      "https://scrapecreators.com/blog/is-web-scraping-legal-a-guide-based-on-recent-court-ruling": {
+        "id": 22,
+        "publisher": "Scrapecreators",
+        "url": "https://scrapecreators.com/blog/is-web-scraping-legal-a-guide-based-on-recent-court-ruling",
+        "title": "网络爬虫法律指南：基于最近法院裁决",
+        "info": "基于2024年Meta v. Bright Data案等最新法院裁决，分析公开数据爬取的法律可辩护性"
+      },
+      "https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/obligations/what-rules-apply-if-my-organisation-transfers-data-outside-eu_en": {
+        "id": 23,
+        "publisher": "European Commission",
+        "url": "https://commission.europa.eu/law/law-topic/data-protection/rules-business-and-organisations/obligations/what-rules-apply-if-my-organisation-transfers-data-outside-eu_en",
+        "title": "GDPR跨境数据传输规定",
+        "info": "GDPR跨境数据传输的法律机制，包括充分性决定、适当保障措施和特定情况豁免"
+      },
+      "https://rebrowser.net/blog/web-scraping-a-comprehensive-legal-guide-with-expert-analysis-and-practical-framework": {
+        "id": 24,
+        "publisher": "Rebrowser",
+        "url": "https://rebrowser.net/blog/web-scraping-a-comprehensive-legal-guide-with-expert-analysis-and-practical-framework",
+        "title": "2025年网络爬虫综合法律指南",
+        "info": "2024年法院判决和隐私法规的最新分析，包括公共数据爬取的合法性框架"
+      },
+      "https://gdpr-info.eu/issues/fines-penalties/": {
+        "id": 25,
+        "publisher": "GDPR.info",
+        "url": "https://gdpr-info.eu/issues/fines-penalties/",
+        "title": "GDPR处罚框架",
+        "info": "GDPR处罚标准：严重违规可罚款2000万欧元或全球营业额4%，较轻违规可罚款1000万欧元或2%"
+      },
+      "https://rouse.com/insights/news/2024/balancing-data-scraping-and-ip-rights-in-the-age-of-ai": {
+        "id": 26,
+        "publisher": "Rouse",
+        "url": "https://rouse.com/insights/news/2024/balancing-data-scraping-and-ip-rights-in-the-age-of-ai",
+        "title": "AI时代数据爬取与知识产权权利的平衡",
+        "info": "AI开发中数据爬取与知识产权权利的复杂关系分析，包括版权侵权、公平使用辩护和网站条款可执行性"
+      },
+      "https://getdataforme.com/blog/web-scraping-best-practices-legal-compliance/": {
+        "id": 27,
+        "publisher": "Get Data For Me",
+        "url": "https://getdataforme.com/blog/web-scraping-best-practices-legal-compliance/",
+        "title": "2025年网络爬虫最佳实践和法律合规指南",
+        "info": "全面的伦理网络爬虫实践指南，包括技术规范、GDPR合规要求、安全措施和风险管理"
+      },
+      "https://blog.formtify.app/web-scraping-compliance-checklist-for-competitive-intelligence-contract-research/": {
+        "id": 28,
+        "publisher": "Formtify",
+        "url": "https://blog.formtify.app/web-scraping-compliance-checklist-for-competitive-intelligence-contract-research/",
+        "title": "网络爬虫合规清单：竞争情报和合同研究",
+        "info": "竞争情报和合同研究中网络爬虫的详细法律风险矩阵，包括知识产权风险、合同违约风险和隐私合规框架"
+      },
+      "https://www.hoganlovells.com/en/publications/global-privacy-regulators-update-guidance-on-protecting-against-unauthorized-data-scraping": {
+        "id": 29,
+        "publisher": "Hogan Lovells",
+        "url": "https://www.hoganlovells.com/en/publications/global-privacy-regulators-update-guidance-on-protecting-against-unauthorized-data-scraping",
+        "title": "全球隐私监管机构关于数据爬取的指导意见更新",
+        "info": "16个国际隐私监管机构关于保护免受未经授权数据爬取的结论声明，提供多层保障措施建议"
+      }
+    },
+    "Amazon美国站数据获取方案调研报告": {
+      "https://webservices.amazon.com/paapi5/documentation/": {
+        "id": 30,
+        "publisher": "Amazon Web Services",
+        "url": "https://webservices.amazon.com/paapi5/documentation/",
+        "title": "Product Advertising API 5.0官方文档",
+        "info": "PAAPI 5.0的申请条件、限制条件、支持的数据字段、申请流程等详细信息"
+      },
+      "https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html": {
+        "id": 31,
+        "publisher": "Amazon Web Services",
+        "url": "https://webservices.amazon.com/paapi5/documentation/troubleshooting/api-rates.html",
+        "title": "PAAPI 5.0 API速率限制",
+        "info": "初始限制1 TPS/8640 TPD，收入扩展机制，每$0.05收入获得1 TPD，每$4,320收入获得1 TPS"
+      },
+      "https://www.octoparse.com/blog/is-it-legal-to-scrape-amazon-data": {
+        "id": 32,
+        "publisher": "Octoparse",
+        "url": "https://www.octoparse.com/blog/is-it-legal-to-scrape-amazon-data",
+        "title": "Amazon数据抓取合法性分析",
+        "info": "详细分析Amazon数据抓取的法律风险，包括违反服务条款的后果、反爬虫技术等"
+      },
+      "https://www.rickyspears.com/scraper/amazon-web-scraping-policy/": {
+        "id": 33,
+        "publisher": "Ricky Spears",
+        "url": "https://www.rickyspears.com/scraper/amazon-web-scraping-policy/",
+        "title": "Amazon网络抓取政策",
+        "info": "Amazon服务条款中关于禁止自动化访问的详细条款，包括具体禁止内容和违反后果"
+      },
+      "https://www.bright.cn/blog/proxy-101/rotate-proxies-in-python": {
+        "id": 34,
+        "publisher": "Bright Data",
+        "url": "https://www.bright.cn/blog/proxy-101/rotate-proxies-in-python",
+        "title": "Python代理IP轮换技术指南",
+        "info": "在Python中使用Requests、AIOHTTP和Scrapy进行代理轮换的技术细节和最佳实践"
+      },
+      "https://docs.rapidapi.com/v1.0/docs/plans-pricing": {
+        "id": 35,
+        "publisher": "RapidAPI",
+        "url": "https://docs.rapidapi.com/v1.0/docs/plans-pricing",
+        "title": "RapidAPI定价计划",
+        "info": "RapidAPI平台的免费API、无订阅API、按使用量付费等不同定价模式信息"
+      },
+      "https://www.amazon.com/robots.txt": {
+        "id": 36,
+        "publisher": "Amazon.com",
+        "url": "https://www.amazon.com/robots.txt",
+        "title": "Amazon.com robots.txt文件",
+        "info": "Amazon网站禁止爬虫访问的具体路径和规则，包括详细的用户代理限制"
+      },
+      "https://developer.aliyun.com/article/1642713": {
+        "id": 37,
+        "publisher": "阿里云开发者社区",
+        "url": "https://developer.aliyun.com/article/1642713",
+        "title": "获取亚马逊畅销榜API接口的获取与应用",
+        "info": "详细介绍亚马逊畅销榜API接口的应用方法和常用API服务"
+      },
+      "https://serpapi.com/blog/scrape-amazon-product-data-tutorial/": {
+        "id": 38,
+        "publisher": "SerpApi",
+        "url": "https://serpapi.com/blog/scrape-amazon-product-data-tutorial/",
+        "title": "Amazon产品数据抓取教程",
+        "info": "SerpApi提供的Amazon产品数据抓取技术细节和使用方法"
+      },
+      "https://www.scrapingdog.com/blog/best-amazon-scraping-apis/": {
+        "id": 39,
+        "publisher": "ScrapingDog",
+        "url": "https://www.scrapingdog.com/blog/best-amazon-scraping-apis/",
+        "title": "4个最佳Amazon爬虫API(2025年测试)",
+        "info": "对比分析多个Amazon数据抓取API的功能、性能和定价"
+      },
+      "https://github.com/oxylabs/how-to-scrape-amazon-prices": {
+        "id": 40,
+        "publisher": "Oxylabs",
+        "url": "https://github.com/oxylabs/how-to-scrape-amazon-prices",
+        "title": "如何抓取Amazon价格数据",
+        "info": "GitHub提供的Amazon价格数据抓取实用教程和技术方案"
+      }
+    }
+  }
+}

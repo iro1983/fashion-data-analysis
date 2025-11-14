@@ -1,0 +1,386 @@
+name: 🛍️ 时尚数据分析系统 CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # 每天凌晨2点运行 (UTC时间 02:00)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: '选择数据抓取平台'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - amazon
+          - tiktok
+
+env:
+  PYTHON_VERSION: '3.9'
+  NODE_VERSION: '18'
+
+jobs:
+  # 代码质量检查
+  lint-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🐍 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 📦 缓存pip依赖
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: 🔧 安装Python依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 black isort
+        pip install -r code/requirements.txt
+        pip install -r code/requirements_data_cleaner.txt
+        
+    - name: 🎨 代码格式检查 (Black)
+      run: |
+        black --check --diff code/ || true
+        black --check --diff tests/ || true
+        
+    - name: 🔍 代码风格检查 (Flake8)
+      run: |
+        flake8 code/ tests/ || true
+        
+    - name: 📊 数据完整性检查 (isort)
+      run: |
+        isort --check-only --diff code/ || true
+        
+    - name: 📝 运行测试
+      run: |
+        cd tests
+        python run_all_tests.py
+        
+    - name: 📈 生成测试报告
+      if: always()
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./tests/coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+
+  # 数据库和依赖安装
+  setup-database:
+    runs-on: ubuntu-latest
+    needs: lint-and-test
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_USER: postgres
+          POSTGRES_DB: fashion_db
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+          
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🐍 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 📦 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install psycopg2-binary
+        pip install -r code/requirements.txt
+        
+    - name: 🗃️ 初始化数据库
+      run: |
+        cd code
+        python -c "
+        import os
+        os.environ['DATABASE_URL'] = 'postgresql://postgres:postgres@localhost:5432/fashion_db'
+        from database import Database
+        db = Database()
+        db.create_tables()
+        print('✅ 数据库初始化完成')
+        "
+
+  # 数据抓取任务
+  scrape-data:
+    runs-on: ubuntu-latest
+    needs: setup-database
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    
+    strategy:
+      matrix:
+        platform: [amazon, tiktok]
+        include:
+          - platform: amazon
+            category: "T-Shirt"
+          - platform: tiktok
+            category: "Printed"
+            
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🐍 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 🔧 安装系统依赖
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser
+        
+    - name: 📦 安装Python依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r code/requirements.txt
+        pip install -r code/requirements_data_cleaner.txt
+        
+    - name: ⚙️ 配置环境变量
+      run: |
+        echo "ENVIRONMENT=production" >> $GITHUB_ENV
+        echo "DATABASE_URL=sqlite:///data/fashion_data.db" >> $GITHUB_ENV
+        # 使用模拟API密钥进行测试
+        echo "AMAZON_ACCESS_KEY=test_key" >> $GITHUB_ENV
+        echo "TIKHUB_API_KEY=test_key" >> $GITHUB_ENV
+        
+    - name: 🗃️ 初始化数据库
+      run: |
+        mkdir -p data
+        cd code
+        python -c "
+        from database import Database
+        db = Database()
+        db.create_tables()
+        print('✅ 数据库初始化完成')
+        "
+        
+    - name: 🕷️ 执行数据抓取
+      run: |
+        cd code
+        python main.py scrape --platform ${{ matrix.platform }} --category "${{ matrix.category }}"
+        
+    - name: 🧹 数据清洗
+      run: |
+        cd code
+        python main.py clean
+        
+    - name: 📊 生成统计报告
+      run: |
+        cd code
+        python main.py stats > ../data/scraping_report_$(date +%Y%m%d).txt
+        
+    - name: 💾 存储数据文件
+      uses: actions/upload-artifact@v3
+      with:
+        name: scraped-data-${{ matrix.platform }}
+        path: |
+          data/
+          code/data/
+          
+    - name: 📈 上传爬取报告
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: scraping-report-${{ matrix.platform }}
+        path: data/scraping_report_*.txt
+
+  # 部署到Vercel (前端)
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    needs: [lint-and-test, scrape-data]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🌐 安装Vercel CLI
+      run: npm install --global vercel@canary
+      
+    - name: 🚀 部署到Vercel
+      run: |
+        cd fashion-dashboard
+        vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }} --scope ${{ secrets.VERCEL_ORG_ID }}
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+  # 部署到AWS Lambda (后端)
+  deploy-backend:
+    runs-on: ubuntu-latest
+    needs: [lint-and-test, scrape-data]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🐍 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: 📦 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r code/requirements.txt
+        pip install boto3
+        
+    - name: 🔧 打包Lambda函数
+      run: |
+        cd deployment/cloud-function
+        zip -r lambda_function.zip lambda_scraper.py
+        
+    - name: 🚀 部署到AWS Lambda
+      if: env.AWS_ACCESS_KEY_ID != ''
+      run: |
+        aws lambda update-function-code \
+          --function-name fashion-scraper \
+          --zip-file fileb://lambda_function.zip
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: us-east-1
+
+  # 容器化部署
+  deploy-docker:
+    runs-on: ubuntu-latest
+    needs: [lint-and-test]
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🔐 登录Docker Hub
+      if: env.DOCKERHUB_USERNAME != ''
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        
+    - name: 🏗️ 构建Docker镜像
+      run: |
+        docker build -t fashion-analyzer:latest .
+        docker tag fashion-analyzer:latest ${{ secrets.DOCKERHUB_USERNAME }}/fashion-analyzer:latest
+        
+    - name: 🚀 推送到Docker Hub
+      if: env.DOCKERHUB_USERNAME != ''
+      run: |
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/fashion-analyzer:latest
+        
+    - name: 🐳 推送到GitHub Container Registry
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: true
+        tags: ghcr.io/${{ github.repository_owner }}/fashion-analyzer:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+
+  # 发送通知
+  notify:
+    runs-on: ubuntu-latest
+    needs: [lint-and-test, deploy-frontend, deploy-backend, deploy-docker]
+    if: always()
+    
+    steps:
+    - name: 📊 工作流状态总结
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const jobs = ['lint-and-test', 'setup-database', 'scrape-data', 'deploy-frontend', 'deploy-backend', 'deploy-docker'];
+          let message = '🛍️ 时尚数据分析系统 - CI/CD 完成\\n\\n';
+          
+          for (const job of jobs) {
+            const status = context.payload.workflow_runs[0].jobs.find(j => j.name === job)?.conclusion || 'skipped';
+            const emoji = status === 'success' ? '✅' : status === 'failure' ? '❌' : '⏭️';
+            message += `${emoji} ${job}: ${status}\\n`;
+          }
+          
+          if (context.eventName === 'schedule') {
+            message += '\\n⏰ 定时任务完成';
+          }
+          
+          console.log(message);
+
+  # 性能测试和监控
+  performance-test:
+    runs-on: ubuntu-latest
+    needs: deploy-frontend
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 🧪 安装Playwright
+      run: |
+        pip install playwright
+        playwright install chromium
+        
+    - name: 🚀 启动本地服务器
+      run: |
+        cd fashion-dashboard
+        python -m http.server 9000 &
+        
+    - name: ⚡ 性能测试
+      run: |
+        python tests/web_performance.py --url http://localhost:9000
+        
+    - name: 📈 上传性能报告
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-report
+        path: performance_report.json
+
+# ==============================================================================
+# 环境变量配置指南
+# ==============================================================================
+# 在GitHub仓库设置中添加以下secrets:
+# 
+# VERCEL_TOKEN - Vercel访问令牌
+# VERCEL_ORG_ID - Vercel组织ID
+# VERCEL_PROJECT_ID - Vercel项目ID
+# 
+# AWS_ACCESS_KEY_ID - AWS访问密钥ID
+# AWS_SECRET_ACCESS_KEY - AWS密钥
+# 
+# DOCKERHUB_USERNAME - Docker Hub用户名
+# DOCKERHUB_TOKEN - Docker Hub访问令牌
+# 
+# 或者在.env文件中配置:
+# TIKHUB_API_KEY=your_tikhub_key
+# AMAZON_ACCESS_KEY=your_amazon_key
+# AMAZON_SECRET_KEY=your_amazon_secret
+# SUPABASE_URL=your_supabase_url
+# SUPABASE_ANON_KEY=your_supabase_key
+#

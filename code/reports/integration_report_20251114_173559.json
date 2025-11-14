@@ -1,0 +1,83 @@
+{
+  "total_products": 72,
+  "amazon_products": 40,
+  "tiktok_products": 32,
+  "price_ranges": {
+    "amazon": {
+      "min": 19.99,
+      "max": 67.49,
+      "avg": 43.739999999999995
+    },
+    "tiktok": {
+      "min": 29.99,
+      "max": 56.99,
+      "avg": 43.49
+    }
+  },
+  "categories": {
+    "Hoodie": 36,
+    "T-Shirt": 36
+  },
+  "top_rated": [
+    {
+      "product_id": "amz_hoodie_0009",
+      "title": "印花Hoodie - 款式10",
+      "price": 42.49,
+      "category": "Hoodie",
+      "shop_name": "品牌10",
+      "rating": 4.9,
+      "review_count": 100,
+      "sales_count": 50,
+      "url": "https://amazon.com/dp/B00000010",
+      "image_url": "https://m.media-amazon.com/images/I/10.jpg"
+    },
+    {
+      "product_id": "amz_hoodie_0019",
+      "title": "印花Hoodie - 款式20",
+      "price": 67.49,
+      "category": "Hoodie",
+      "shop_name": "品牌20",
+      "rating": 4.9,
+      "review_count": 200,
+      "sales_count": 100,
+      "url": "https://amazon.com/dp/B00000020",
+      "image_url": "https://m.media-amazon.com/images/I/20.jpg"
+    },
+    {
+      "product_id": "amz_t-shirt_0009",
+      "title": "印花T-Shirt - 款式10",
+      "price": 42.49,
+      "category": "T-Shirt",
+      "shop_name": "品牌10",
+      "rating": 4.9,
+      "review_count": 100,
+      "sales_count": 50,
+      "url": "https://amazon.com/dp/B00000010",
+      "image_url": "https://m.media-amazon.com/images/I/10.jpg"
+    },
+    {
+      "product_id": "amz_t-shirt_0019",
+      "title": "印花T-Shirt - 款式20",
+      "price": 67.49,
+      "category": "T-Shirt",
+      "shop_name": "品牌20",
+      "rating": 4.9,
+      "review_count": 200,
+      "sales_count": 100,
+      "url": "https://amazon.com/dp/B00000020",
+      "image_url": "https://m.media-amazon.com/images/I/20.jpg"
+    },
+    {
+      "product_id": "tt_t-shirt_0007",
+      "title": "时尚T-Shirt - 潮款8",
+      "price": 42.59,
+      "category": "T-Shirt",
+      "shop_name": "店铺8",
+      "rating": 4.9,
+      "review_count": 64,
+      "sales_count": 24,
+      "url": "https://tiktok.com/@shop8/product/8",
+      "image_url": "https://example.com/images/tt_8.jpg"
+    }
+  ]
+}

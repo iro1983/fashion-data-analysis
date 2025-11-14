@@ -1,0 +1,37 @@
+📄 Extracted from page: ItemInfo · Product Advertising API 5.0
+URL: https://webservices.amazon.com/paapi5/documentation/item-info.html
+
+Extracted content:
+```json
+{
+    "title": "ItemInfo · Product Advertising API 5.0",
+    "url": "https://webservices.amazon.com/paapi5/documentation/item-info.html",
+    "summary": "The ItemInfo resource is a comprehensive collection of product attributes logically grouped into multiple sub-resources. It provides detailed product information including basic details, classifications, content-specific attributes, technical specifications, and trade-in information. Available across all locales with variations based on locale and product category.",
+    "key_points": [
+        "ItemInfo is a high-level resource containing multiple logically grouped attributes",
+        "Available in all locales with attribute variations based on locale and product category",
+        "Each attribute follows a standard structure with DisplayValue, Label, and Locale fields",
+        "Contains 11 main sub-resources: ByLineInfo, Classifications, ContentInfo, ContentRating, ExternalIds, Features, ManufactureInfo, ProductInfo, TechnicalInfo, Title, and TradeInInfo",
+        "ByLineInfo includes Brand, Contributors, and Manufacturer information",
+        "Classifications provides Binding and ProductGroup categories",
+        "ContentInfo covers Edition, Languages, PagesCount, and PublicationDate for books/media",
+        "ContentRating provides AudienceRating for media products",
+        "ExternalIds includes EANs, ISBNs, and UPCs for global product identification",
+        "Features contains an array of product key features",
+        "ManufactureInfo provides ItemPartNumber, Model, and Warranty details",
+        "ProductInfo includes Color, IsAdultProduct, ItemDimensions, ReleaseDate, Size, and UnitCount",
+        "TechnicalInfo covers Formats and EnergyEfficiencyClass",
+        "Title provides the product title",
+        "TradeInInfo includes IsEligibleForTradeIn and Price information",
+        "Compatible with GetItems, GetVariationsItems, and SearchItems operations"
+    ],
+    "relevant_links": [
+        "https://webservices.amazon.com/paapi5/documentation/item-info.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/get-variations.html",
+        "https://webservices.amazon.com/paapi5/documentation/search-items.html",
+        "https://webservices.amazon.com/paapi5/documentation/operations-and-resources.html"
+    ],
+    "file_name": "iteminfo_product_advertising_api.json"
+}
+```
