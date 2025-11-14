@@ -1,55 +1,6 @@
-# TikTok热销服装数据抓取脚本依赖
-# 基于docs/tiktok_data_research.md调研结果
-
-# 基础HTTP请求
-requests>=2.31.0
-urllib3>=2.0.0
-
-# 网页爬虫相关
-selenium>=4.15.0
-webdriver-manager>=4.0.0
-
-# 图像处理和OCR
-Pillow>=10.0.0
-pytesseract>=0.3.10
-
-# 数据处理
-pandas>=2.0.0
-numpy>=1.24.0
-
-# 任务调度
-schedule>=1.2.0
-
-# 图像识别和计算机视觉
-opencv-python>=4.8.0
-
-# 日志和配置
-PyYAML>=6.0
-python-dotenv>=1.0.0
-
-# 数据验证
-jsonschema>=4.19.0
-
-# 时间处理
-python-dateutil>=2.8.0
-
-# HTTP缓存
-requests-cache>=1.1.0
-
-# 字符编码处理
-chardet>=5.2.0
-
-# 可选依赖（用于特定功能）
-# beautifulsoup4>=4.12.0  # HTML解析（如果需要）
-# lxml>=4.9.0             # XML/HTML解析器（如果需要）
-# aiohttp>=3.8.0          # 异步HTTP（如果需要）
-
-# Web框架
 fastapi>=0.104.0
-uvicorn>=0.24.0
-
-# 开发和测试依赖（可选）
-# pytest>=7.4.0
-# pytest-asyncio>=0.21.0
-# black>=23.0.0
-# flake8>=6.0.0
+uvicorn[standard]>=0.24.0
+requests>=2.31.0
+pandas>=2.0.0
+pillow>=10.0.0
+python-multipart>=0.0.6
