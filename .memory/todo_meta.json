@@ -25,7 +25,7 @@
       "4": {
         "id": "4",
         "content": "配置云端部署环境",
-        "details": "GitHub代码推送已完全成功！401个文件已成功推送到https://github.com/iro1983/fashion-data-analysis，仓库现在包含完整的项目代码：README.md、requirements.txt、code目录、fashion-dashboard等所有组件。Railway部署现在可以正常进行。",
+        "details": "Railway部署遇到构建错误。需要进行最终修复：1) 删除导致混乱的配置文件 2) 创建最简化的nixpacks.toml 3) 确保所有配置统一 4) 指导用户在Railway Dashboard中手动设置构建和启动命令",
         "status": "in_progress",
         "priority": "high"
       },

@@ -1,12 +1,12 @@
-# 简化Nixpacks配置
+# 极简化Nixpacks配置 - 明确指定Python FastAPI项目
 [phases.setup]
-nixPkgs = ['python3', 'python3Packages.pip']
+nixPkgs = ['python3']
 
 [phases.install]
 cmds = [
-    'pip install --upgrade uv pip',
-    'pip install fastapi uvicorn requests pandas numpy python-dotenv PyYAML jsonschema'
+    'python3 -m pip install --upgrade pip',
+    'python3 -m pip install -r requirements.txt'
 ]
 
 [start]
-command = 'python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT'
+cmd = 'python3 -m uvicorn app.main:app --host 0.0.0.0 --port $PORT'
