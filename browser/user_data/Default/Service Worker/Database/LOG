@@ -1,2 +1,3 @@
-2025/11/14-09:15:45.644 566 Creating DB /workspace/browser/user_data/Default/Service Worker/Database since it was missing.
-2025/11/14-09:15:45.726 566 Reusing MANIFEST /workspace/browser/user_data/Default/Service Worker/Database/MANIFEST-000001
+2025/11/14-13:23:52.812 b7b Reusing MANIFEST /workspace/browser/user_data/Default/Service Worker/Database/MANIFEST-000001
+2025/11/14-13:23:52.825 b7b Recovering log #3
+2025/11/14-13:23:52.831 b7b Reusing old log /workspace/browser/user_data/Default/Service Worker/Database/000003.log 
