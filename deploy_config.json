@@ -1,0 +1,1 @@
+{"deployment": {"platform": "railway", "language": "python", "start_command": "python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT", "health_check": "/health", "description": "Fashion Data Analysis System"}}

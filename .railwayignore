@@ -1,0 +1,19 @@
+# 忽略不需要的文件，减少混淆
+.DS_Store
+.git/
+node_modules/
+npm-debug.log
+.vscode/
+browser/
+tests/
+memory/
+shell_output_save/
+tmp/
+user_input_files/
+imgs/
+extract/
+*.md
+!requirements.txt
+railway.json
+nixpacks.toml
+pyproject.toml
