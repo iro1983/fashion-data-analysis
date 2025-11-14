@@ -1,0 +1,22 @@
+# Nixpacks配置文件 - 明确指定Python项目
+# https://nixpacks.com/docs/
+
+[phases.setup]
+nixPkgs = ['python3', 'python3Packages.pip']
+
+[phases.install]
+cmds = [
+    'pip install --upgrade pip',
+    'pip install -r requirements.txt'
+]
+
+[phases.build]
+cmds = ['echo "Python build completed"']
+
+[start]
+# Railway会自动注入$PORT环境变量
+command = 'python main.py'
+
+[staticAssets]
+# 静态文件目录
+'/static' = 'app/static'
