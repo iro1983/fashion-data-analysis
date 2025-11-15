@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时尚数据仪表板</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-8 text-blue-600">
+            🛍️ TikTok & Amazon 时尚数据仪表板
+        </h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+                <h2 class="text-xl font-semibold mb-4">📊 总览数据</h2>
+                <div class="space-y-2">
+                    <div>产品总数: <span class="font-bold text-blue-600">1,247</span></div>
+                    <div>TikTok产品: <span class="font-bold text-green-600">892</span></div>
+                    <div>Amazon产品: <span class="font-bold text-orange-600">355</span></div>
+                    <div>平均评分: <span class="font-bold text-yellow-600">4.5★</span></div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+                <h2 class="text-xl font-semibold mb-4">💰 价格统计</h2>
+                <div class="space-y-2">
+                    <div>平均价格: <span class="font-bold text-green-600">$32.50</span></div>
+                    <div>最高价格: <span class="font-bold text-red-600">$89.99</span></div>
+                    <div>最低价格: <span class="font-bold text-blue-600">$12.99</span></div>
+                    <div>价格中位数: <span class="font-bold text-purple-600">$28.75</span></div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+                <h2 class="text-xl font-semibold mb-4">🔥 热门趋势</h2>
+                <div class="space-y-2">
+                    <div>印花T恤: <span class="font-bold text-red-600">45%</span></div>
+                    <div>连帽衫: <span class="font-bold text-blue-600">32%</span></div>
+                    <div>卫衣: <span class="font-bold text-green-600">23%</span></div>
+                    <div>其他: <span class="font-bold text-gray-600">5%</span></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">📈 销量排行榜</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="p-2">排名</th>
+                            <th class="p-2">产品名称</th>
+                            <th class="p-2">平台</th>
+                            <th class="p-2">价格</th>
+                            <th class="p-2">销量</th>
+                            <th class="p-2">评分</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-2 font-bold text-red-600">1</td>
+                            <td class="p-2">潮流印花T恤</td>
+                            <td class="p-2"><span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-xs">TikTok</span></td>
+                            <td class="p-2 font-bold text-green-600">$29.99</td>
+                            <td class="p-2 font-bold">15,420</td>
+                            <td class="p-2 text-yellow-600">★★★★★</td>
+                        </tr>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-2 font-bold text-orange-600">2</td>
+                            <td class="p-2">时尚连帽衫</td>
+                            <td class="p-2"><span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Amazon</span></td>
+                            <td class="p-2 font-bold text-green-600">$45.99</td>
+                            <td class="p-2 font-bold">8,932</td>
+                            <td class="p-2 text-yellow-600">★★★★☆</td>
+                        </tr>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-2 font-bold text-yellow-600">3</td>
+                            <td class="p-2">经典卫衣</td>
+                            <td class="p-2"><span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-xs">TikTok</span></td>
+                            <td class="p-2 font-bold text-green-600">$38.99</td>
+                            <td class="p-2 font-bold">6,547</td>
+                            <td class="p-2 text-yellow-600">★★★★☆</td>
+                        </tr>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-2 font-bold">4</td>
+                            <td class="p-2">商务正装</td>
+                            <td class="p-2"><span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Amazon</span></td>
+                            <td class="p-2 font-bold text-green-600">$56.99</td>
+                            <td class="p-2 font-bold">4,321</td>
+                            <td class="p-2 text-yellow-600">★★★★☆</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="p-2 font-bold">5</td>
+                            <td class="p-2">休闲运动装</td>
+                            <td class="p-2"><span class="bg-pink-100 text-pink-800 px-2 py-1 rounded text-xs">TikTok</span></td>
+                            <td class="p-2 font-bold text-green-600">$24.99</td>
+                            <td class="p-2 font-bold">3,876</td>
+                            <td class="p-2 text-yellow-600">★★★★☆</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">📊 平台对比</h2>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>TikTok</span>
+                            <span class="font-bold">72%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-pink-600 h-2 rounded-full" style="width: 72%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Amazon</span>
+                            <span class="font-bold">28%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="bg-orange-600 h-2 rounded-full" style="width: 28%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">📅 数据更新</h2>
+                <div class="space-y-2">
+                    <div class="flex items-center">
+                        <i class="fas fa-clock text-blue-500 mr-2"></i>
+                        <span>最后更新: <span class="font-bold">2分钟前</span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-sync text-green-500 mr-2"></i>
+                        <span>自动更新: <span class="font-bold text-green-600">开启</span></span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-database text-purple-500 mr-2"></i>
+                        <span>数据源: <span class="font-bold">实时抓取</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center">
+            <p class="text-gray-500">由 MiniMax Agent 提供技术支持</p>
+            <div class="mt-4 space-x-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-sync mr-2"></i>刷新数据
+                </button>
+                <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-download mr-2"></i>导出报告
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .hover-scale:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+    </style>
+</body>
+</html>
